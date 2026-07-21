@@ -1,1 +1,6 @@
 body {}
+
+.remove_btn a img {
+    width: 20%;
+    height: auto;
+}
