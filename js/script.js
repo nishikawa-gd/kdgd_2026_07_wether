@@ -6,7 +6,7 @@
 window.addEventListener("load", () => {
     setTimeout(() => {
         document.querySelector(".loading").classList.add("hide");
-    }, 1000); // 2000ms = 2秒
+    }, 1000); // 1秒ってこと!
 });
 
 
@@ -44,12 +44,12 @@ window.addEventListener("load", () => {
         }
 
 
-        // ローディング後にScrollTriggerを作成
+        // ローディング後の動き
         gsap.utils.toArray(".h-tbspmap-btn a").forEach((item) => {
             gsap.from(item, {
                 opacity: 0,
                 y: 10,
-                duration: 0.8,
+                duration: 0.4,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: item,
