@@ -2,12 +2,12 @@
 
 // 各天気パターン
 const WEATHER_LIST = {
-  sunny: { text: "晴れ", className: "weather-sunny", img: "img/sun.png" },
-  cloudy: { text: "曇り", className: "weather-cloudy", img: "img/cloud.png" },
-  rain: { text: "雨", className: "weather-rain", img: "img/rain.png" },
-  snow: { text: "雪", className: "weather-snow", img: "img/snow.png" },
-  thunder: { text: "雷", className: "weather-thunder", img: "img/thunder.png" },
-  fog: { text: "霧", className: "weather-fog", img: "img/fog.png" }
+  sunny: { text: "晴れ", className: "weather-sunny", img: "../img/51_sunny.png" },
+  cloudy: { text: "曇り", className: "weather-cloudy", img: "../img/50_cloudy.png" },
+  rain: { text: "雨", className: "weather-rain", img: "../img/49_rain.png" },
+  snow: { text: "雪", className: "weather-snow", img: "../img/53_snow.png" },
+  thunder: { text: "雷", className: "weather-thunder", img: "../img/52_thunder.png" },
+  fog: { text: "霧", className: "weather-fog", img: "../img/54_fog.png" }
 };
 
 // 都道府県ごとの固定天気データ
