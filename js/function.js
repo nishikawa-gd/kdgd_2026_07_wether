@@ -1,73 +1,219 @@
-$(function() {
-
-	// bodyにhomeクラスがある場合の処理
-	if ($('body').hasClass('pref')) {
-		// URLパラメータから都道府県名を取得
-		const urlParams = new URLSearchParams(window.location.search);
-		// 取得できなかった場合は「不明」を設定
-		const pref = urlParams.get('pref') || "不明";
-
-		// 都道府県名を表示
-		$('.js-pref-name').text(pref);
-
-		// settings.jsで定義したPREF_WEATHERからパラメーターで指定された都道府県の天気情報を取得
-		const data = PREF_WEATHER[pref];
-
-		// 天気情報がない場合の処理
-		if (!data) {
-			$('.today-weather, .tomorrow-weather').html('<p>天気情報が登録されていません。</p>');
-			return;
-		}
-
-		// 日付表示用の配列
-		const dayNames = ['日', '月', '火', '水', '木', '金', '土'];
-		// 今日と明日の日付オブジェクトを作成
-		const today = new Date();
-		// 明日の日付オブジェクトを作成
-		const tomorrow = new Date();
-		// 明日の日付を設定
-		tomorrow.setDate(today.getDate() + 1);
-
-		// 日付を「M月D日 (曜)」の形式でフォーマットする関数
-		const formatDate = (d) => `${d.getMonth()+1}月${d.getDate()}日 (${dayNames[d.getDay()]})`;
-
-		// 天気情報を画面に表示する関数("today"または"tomorrow"をprefixに指定, dateObjに日付オブジェクト, infoに天気情報を指定)
-		const renderWeather = (prefix, dateObj, info) => {
-			
-			// 日付を表示
-			$(`.js-date-${prefix}`).text(formatDate(dateObj));
-			
-			// 天気情報を表示
-			$(`.js-weather-main-${prefix}`)
-				.text(info.weather.text)
-				.attr('class', `js-weather-main-${prefix} ${info.weather.className}`);
-			
-			// 気温と天気画像を表示
-			$(`.js-temp-${prefix}`).text(`${info.maxTemp}℃ / ${info.minTemp}℃`);
-
-			// 天気画像を表示
-			$(`.js-weather-img-${prefix}`).html(`<img src="${info.weather.img}" alt="${info.weather.text}" width="50">`);
-
-			// 詳細情報の表を表示
-			const $table = $(`.js-weather-table-${prefix}`);
-
-			// 表の中身をクリア
-			$table.empty();
-
-			// 表のヘッダー行を追加
-			info.table.forEach(row => {
-				const $tr = $('<tr>');
-				$tr.append(`<td>${row.time}</td>`);
-				$tr.append(`<td>${row.precip}</td>`);
-				$tr.append(`<td>${row.wind}</td>`);
-				$tr.append(`<td>${row.wave}</td>`);
-				$table.append($tr);
-			});
-		};
+$(function () {
 
 
-		// 今日と明日の天気情報を表示
-		renderWeather("today", today, data.today);
-		renderWeather("tomorrow", tomorrow, data.tomorrow);
-	}
+
+    if (!$('body').hasClass('pref')) {
+        return;
+    }
+
+
+
+    // URL取得
+    const urlParams = new URLSearchParams(window.location.search);
+    const pref = urlParams.get('pref');
+    const todayDate = new Date();
+    const tomorrowDate = new Date();
+    const dayafterDate = new Date();
+
+    tomorrowDate.setDate(todayDate.getDate() + 1);
+    dayafterDate.setDate(todayDate.getDate() + 2);
+
+    const dayNames = [
+        "日",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土"
+    ];
+
+
+
+    // 共通 - ファンクション
+    function formatDate(date) {
+        return `${date.getMonth() + 1}月${date.getDate()}日 (${dayNames[date.getDay()]})`;
+    }
+
+    function formatHour(date) {
+        return `${date.getHours()}時`;
+    }
+
+
+
+    getWeather(pref).then(data => {
+
+
+        if (!data) {
+            $('.today-weather, .tomorrow-weather, .dayaftertomorrow-weather')
+                .addClass("weather-error")
+                .html(`<p>天気情報がありません</p>`);
+            return;
+        }
+
+
+
+        // テキスト - 日付/時間まわり
+        $(".js-date-today")
+        .text(formatDate(todayDate));
+
+        $(".js-time-today")
+        .text(formatHour(todayDate));
+
+        $(".js-date-tomorrow")
+        .text(formatDate(tomorrowDate));
+
+        $(".js-date-dayaftertomorrow")
+        .text(formatDate(dayafterDate));
+
+
+
+        // テキスト - 県名
+        $(".js-pref-name")
+        .text(pref)
+        .addClass(`region-${data.region}`);
+
+        $(".js-place-name")
+        .text(data.location);
+
+
+
+        // 天気アイコン
+        function getWeatherImage(icon) {
+
+            if (icon.startsWith("01")) {
+                return "../img/pref/p-whether-sun.png"; // 晴れ
+            }
+
+            if (icon.startsWith("02")) {
+                return "../img/pref/p-whether-cloud-and-sun.png"; // 曇り時々晴れ
+            }
+
+            if (icon.startsWith("03") || icon.startsWith("04") || icon.startsWith("50")) {
+                return "../img/pref/p-whether-cloud.png"; // 曇り・霧
+            }
+
+            if (icon.startsWith("09")) {
+                return "../img/pref/p-whether-cloud-and-rain.png"; // 曇り時々雨
+            }
+
+            if (icon.startsWith("10")) {
+                return "../img/pref/p-whether-sun-and-rain.png"; // 晴れ時々雨
+            }
+
+            if (icon.startsWith("11")) {
+                return "../img/pref/p-whether-thunder.png"; // 雷
+            }
+
+            if (icon.startsWith("13")) {
+                return "../img/pref/p-whether-snow.png"; // 雪
+            }
+
+            // 万が一どれにも当てはまらなかった時は曇り!
+            return "../img/pref/p-whether-cloud.png";
+        }
+
+
+
+        // 今日 - xxx
+        $(".js-temp-today")
+        .text(
+            Math.round(data.list[0].main.temp) + "℃"
+        );
+
+        $(".js-weather-img-today")
+        .html(
+            `<img src="${getWeatherImage(data.list[0].weather[0].icon)}">`
+        );
+
+
+
+        // 今日 - 3時間予報（0〜7個くらい）から探す
+        const todayList = data.list.slice(0, 8);
+
+        const maxTemp = Math.max(
+            ...todayList.map(item => item.main.temp)
+        );
+
+        const minTemp = Math.min(
+            ...todayList.map(item => item.main.temp)
+        );
+
+
+
+        // 今日 - 最高気温/最低気温
+        $(".js-temp-max-today")
+        .text(
+            Math.round(maxTemp) + "℃"
+        );
+
+        $(".js-temp-min-today")
+        .text(
+            Math.round(minTemp) + "℃"
+        );
+
+
+
+        // 明日 - 気温/天気
+        const tomorrow = data.list[8];
+
+        $(".js-temp-tomorrow")
+        .text(
+            Math.round(tomorrow.main.temp) + "℃"
+        );
+
+        $(".js-weather-img-tomorrow")
+        .html(
+            `<img src="${getWeatherImage(tomorrow.weather[0].icon)}">`
+        );
+
+
+
+        // 明後日 - 気温/天気
+        const dayafter = data.list[16];
+
+        $(".js-temp-dayaftertomorrow")
+        .text(
+            Math.round(dayafter.main.temp) + "℃"
+        );
+
+        $(".js-weather-img-dayaftertomorrow")
+        .html(
+            `<img src="${getWeatherImage(dayafter.weather[0].icon)}">`
+        );
+
+
+
+        // 降水確率 (%変換)
+        let rain = Math.round(
+            data.list[0].pop * 100
+        );
+
+
+
+        // テーブル
+        $(".js-weather-table-today")
+        .html(
+            `<tr>
+            <th>時間帯</th>
+            <td>現在</td>
+            </tr>
+            
+            <tr>
+            <th>降水確率</th>
+            <td>${rain}%</td>
+            </tr>
+            
+            <tr>
+            <th>風</th>
+            <td>${data.list[0].wind.speed}m/s</td>
+            </tr>
+            
+            <tr>
+            <th>波</th>
+            <td>取得不可</td>
+            </tr>
+            `
+        );
+    });
 });

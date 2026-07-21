@@ -1,2 +1,1344 @@
-body {
+
+
+
+/* 共通 - wrapper周り */
+:root {
+    --color-white: #fff;
+    --color-red: #FFC6D3;
+    --color-red-dark: #FAB3C3;
+    --color-orange: #FFE0BD;
+    --color-orange-dark: #FFD5A5;
+    --color-orange-lite: #FFE9D0;
+    --color-yellow: #FFEFAA;
+    --color-yellow-dark: #FFE396;
+    --color-yellow-lite: #FFF6CD;
+    --color-green: #C0F9C1;
+    --color-green-dark: #ABF1AC;
+    --color-green-lite: #D6FFD8;
+    --color-mint: #A5F0D8;
+    --color-mint-dark: #8AE5C8;
+    --color-mint-lite: #C6FFED;
+    --color-sky: #C5EFFE;
+    --color-sky-dark: #A3DAEE;
+    --color-blue: #CFD8FF;
+    --color-blue-dark: #B7C2F5;
+    --color-purple: #E4C5EF;
+    --color-purple-dark: #D6ADE7;
+    --color-purple-lite: #FAE8FE;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--color-purple);
+}
+
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.inner{
+    position: relative;
+    z-index: 1;
+    padding: 0 80px;
+}
+
+.pref .inner{
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+
+#h-tbsp{
+    display: none;
+}
+
+
+
+
+
+/* 共通 - アニメーション */
+@keyframes poyo{
+    0%,100% {scale: 1;}
+    8% {scale: 1.04 0.96;}
+    18% {scale: 0.98 1.02;}
+    28% {scale: 1.02 0.99;}
+    38% {scale: 0.995 1.005;}
+    48% {scale: 1;}
+}
+
+
+
+
+
+/* 共通 - スクロールバー */
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        to bottom,
+        var(--color-red),
+        var(--color-purple)
+    );
+    border-radius: 10px;
+    border: 4px solid var(--color-white);
+    cursor: pointer;
+}
+
+
+
+
+
+/* 共通 - ローディング */
+.loading{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background: var(--color-purple-lite);
+    transition: all 0.8s ease-in-out;
+}
+
+.loading.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.l-pic{
+    animation: l-picanm 2s ease-in-out infinite;
+}
+
+.l-text{
+    color: var(--color-purple-dark);
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+}
+
+.l-text span::after{
+    content: "";
+    animation: l-textanm 2s steps(4, end) infinite;
+}
+
+@keyframes l-picanm{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes l-textanm{
+    0%{content: "";}
+    25%{content: ".";}
+    50%{content: "..";}
+    75%,100%{content: "...";}
+}
+
+
+
+
+
+/* 共通 - ヘッダー */
+.wrapper::before{
+    position: absolute;
+    content: "";
+    top: clamp(-40px, -3vw, 0px);
+    left: clamp(-80px, -3vw, -40px);
+    width: min(800px, 60vw);
+    aspect-ratio: 800 / 280;
+    z-index: -1;
+    background: url(../img/component/t-pic.png) no-repeat center / contain;
+}
+
+
+
+
+
+/* 共通 - フッター */
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+footer img{
+    display: block;
+    width: 100%;
+}
+
+.f-inner{
+    position: relative;
+}
+
+.f-inner::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 10px;
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    background: url(../img/component/f-deco-left.png) no-repeat center / contain;
+
+    animation:
+        f-up 6s ease-in-out infinite,
+        poyo 2.8s ease-in-out infinite;
+}
+
+.f-inner::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 10px;
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    background: url(../img/component/f-deco-right.png) no-repeat center / contain;
+
+    animation:
+        f-down 6s ease-in-out infinite,
+        poyo 2.8s ease-in-out infinite 0.6s;
+}
+
+@keyframes f-up{
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(18px);}
+}
+
+@keyframes f-down{
+    0%,100% {transform: translateY(18px);}
+    50% {transform: translateY(0);}
+}
+
+
+
+
+
+/* 共通 - エラーメッセージ */
+.weather-error{
+    color: var(--color-purple-dark);
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ps-item.weather-error{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+
+
+/* --- ホーム --- */
+
+
+
+
+
+/* ホーム - ロゴ */
+.h-logo{
+    position: absolute;
+    top: 12%;
+    left: 24%;
+    width: clamp(200px, 35vw, 400px);
+}
+
+.h-logo-inner{
+    position: relative;
+}
+
+.h-logo img{
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+}
+
+.h-logo::before,
+.h-logo::after{
+    position: absolute;
+    content: "";
+    bottom: 2%;
+    width: 30%;
+    aspect-ratio: 1; /* 1/1ということ! */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.h-logo::before{
+    left: -30%;
+    background-image: url(../img/component/ml-deco-left.png);
+    animation: poyo 2.8s ease-in-out infinite;
+}
+
+.h-logo::after{
+    right: -30%;
+    background-image: url(../img/component/ml-deco-right.png);
+    animation: poyo 2.8s ease-in-out infinite 0.6s;
+}
+
+
+
+
+
+/* ホーム - 地図/マップ色 */
+#h-pc{
+    padding: 90px 0px;
+}
+
+.h-map-outline{
+    fill: var(--color-purple-dark);
+    stroke: var(--color-purple-dark);
+    stroke-width: 80;
+}
+
+.h-map-inline{
+    fill: var(--color-white);;
+    stroke: var(--color-white);
+    stroke-width: 60;
+    paint-order: stroke fill;
+}
+
+.h-map-outline,
+.h-map-inline{
+    stroke-linejoin: round;
+}
+
+.prefecture{
+    stroke-width: 16;
+    paint-order: stroke fill;
+}
+
+.okinawa-border{
+    fill: var(--color-purple-dark);
+    stroke: var(--color-purple-dark);
+    stroke-width: 2px;
+}
+
+#hokkaido path,
+#okinawa path{
+    fill: var(--color-red);
+    stroke: var(--color-red-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+#hokkaido:hover path,
+#okinawa:hover path{
+    fill: var(--color-red-dark);
+}
+
+.tohoku path{
+    fill: var(--color-orange);
+    stroke: var(--color-orange-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.tohoku:hover path{
+    fill: var(--color-orange-dark);
+}
+
+.kanto path{
+    fill: var(--color-yellow);
+    stroke: var(--color-yellow-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.kanto:hover path{
+    fill: var(--color-yellow-dark);
+}
+
+.chubu path{
+    fill: var(--color-green);
+    stroke: var(--color-green-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.chubu:hover path{
+    fill: var(--color-green-dark);
+}
+
+.kinki path{
+    fill: var(--color-mint);
+    stroke: var(--color-mint-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.kinki:hover path{
+    fill: var(--color-mint-dark);
+}
+
+.chugoku path{
+    fill: var(--color-sky);
+    stroke: var(--color-sky-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.chugoku:hover path{
+    fill: var(--color-sky-dark);
+}
+
+.shikoku path{
+    fill: var(--color-blue);
+    stroke: var(--color-blue-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.shikoku:hover path{
+    fill: var(--color-blue-dark);
+}
+
+.kyushu path{
+    fill: var(--color-purple);
+    stroke: var(--color-purple-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.kyushu:hover path{
+    fill: var(--color-purple-dark);
+}
+
+
+
+
+
+/* ホーム - 地図/テキスト色 */
+.h-maptxt{
+    fill: var(--color-white);
+    stroke-width: 14;
+    paint-order: stroke fill;
+    font-size: 80px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+}
+
+#hokkaido .h-maptxt,
+#okinawa .h-maptxt{
+    stroke: var(--color-red-dark);
+}
+
+.tohoku .h-maptxt{
+    stroke: var(--color-orange-dark);
+}
+
+.kanto .h-maptxt{
+    stroke: var(--color-yellow-dark);
+}
+
+.chubu .h-maptxt{
+    stroke: var(--color-green-dark);
+}
+
+.kinki .h-maptxt{
+    stroke: var(--color-mint-dark);
+}
+
+.chugoku .h-maptxt{
+    stroke: var(--color-sky-dark);
+}
+
+.shikoku .h-maptxt{
+    stroke: var(--color-blue-dark);
+}
+
+.kyushu .h-maptxt{
+    stroke: var(--color-purple-dark);
+}
+
+
+
+
+
+/* --- プレフェクチャー(県の子ページ) --- */
+
+
+
+
+
+/* プレフ - 県名 */
+.p-logo{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-inline: auto;
+}
+
+.p-logo-deco-wrapper{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.p-logo-deco-wrapper::before,
+.p-logo-deco-wrapper::after{
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.p-logo-deco-wrapper::before{
+    left: -76px;
+    background-image: url(../img/component/ml-deco-left.png);
+    animation: poyo 2.8s ease-in-out infinite;
+}
+
+.p-logo-deco-wrapper::after{
+    right: -76px;
+    background-image: url(../img/component/ml-deco-right.png);
+    animation: poyo 2.8s ease-in-out infinite 0.6s;
+}
+
+.js-pref-name{
+    font-size: 80px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+}
+
+.logo-main{
+    fill: var(--color-purple);
+    stroke: var(--color-purple-dark);
+    stroke-width: 6;
+    paint-order: stroke fill;
+}
+
+.region-hokkaido,
+.region-okinawa{
+    fill: var(--color-red);
+    stroke: var(--color-red-dark);
+}
+
+.region-tohoku{
+    fill: var(--color-orange-lite);
+    stroke: var(--color-orange-dark);
+}
+
+.region-kanto{
+    fill: var(--color-yellow-lite);
+    stroke: var(--color-yellow-dark);
+}
+
+.region-chubu{
+    fill: var(--color-green-lite);
+    stroke: var(--color-green-dark);
+}
+
+.region-kinki{
+    fill: var(--color-mint-lite);
+    stroke: var(--color-mint-dark);
+}
+
+.region-chugoku{
+    fill: var(--color-sky);
+    stroke: var(--color-sky-dark);
+}
+
+.region-shikoku{
+    fill: var(--color-blue);
+    stroke: var(--color-blue-dark);
+}
+
+.region-kyushu{
+    fill: var(--color-purple);
+    stroke: var(--color-purple-dark);
+}
+
+.logo-white{
+    fill: var(--color-white);
+    stroke: var(--color-white);
+    stroke-width: 12;
+}
+
+.logo-purple{
+    fill: var(--color-purple-dark);
+    stroke: var(--color-purple-dark);
+    stroke-width: 16;
+}
+
+
+
+
+
+/* プレフ - カードタイトル */
+.pref h2{
+    color: var(--color-white);
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    width: fit-content;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: var(--color-purple-dark);
+}
+
+.pm-datetime{
+    display: flex;
+    gap: 20px;
+}
+
+.pm-title p{
+    color: var(--color-white);
+    font-size: 30px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 4px var(--color-purple-dark);
+    paint-order: stroke;
+}
+
+.ps-title p{
+    color: var(--color-white);
+    font-size: 24px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 4px var(--color-purple-dark);
+    paint-order: stroke;
+}
+
+
+
+
+
+/* プレフ - カード */
+.p-cards{
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+
+.p-maincard,
+.ps-item{
+    padding: 60px 80px;
+    border-radius: 40px;
+    border: 2px var(--color-purple-dark) solid;
+    background-color: var(--color-purple-lite);
+}
+
+.ps-item{
+    padding: 40px 80px;
+}
+
+
+
+
+
+/* プレフ - カード/メイン */
+.p-maincard{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pm-datainfo{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.pm-summary{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pm-tempinfo{
+    padding: 20px 0px;
+}
+
+.pm-weatherpic{
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.pm-table{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.js-temp-today{
+    color: var(--color-white);
+    font-size: 100px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 4px var(--color-purple-dark);
+    paint-order: stroke;
+}
+
+.pm-weatherpic{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pm-weatherpic img{
+    width: 100%;
+    max-width: 460px;
+    height: 460px;
+    object-fit: contain;
+}
+
+.pm-temp-maxmin,
+.pm-place{
+    display: flex;
+    color: var(--color-white);
+    font-size: 22px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 4px var(--color-purple-dark);
+    paint-order: stroke;
+    align-items: center;
+}
+
+.js-temp-max-today::after{
+    content: "/";
+    margin: 0px 8px;
+}
+
+.pm-place-temp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pm-place{
+    position: relative;
+    padding-left: 38px;
+}
+
+.pm-place::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    aspect-ratio: 1;
+    background: url(../img/pref/p-map-icon.png) no-repeat center / contain;
+}
+
+
+
+
+
+/* プレフ - カード/メイン テーブル */
+.pm-table{
+    width:100%;
+    max-width: 500px;
+}
+
+.pm-table tbody{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 10px;
+}
+
+.pm-table tr{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    width: max-content;
+}
+
+.pm-table th{
+    padding: 12px 20px;
+    color: var(--color-white);
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    height: 20px;
+    border-radius: 8px;
+    background-color: var(--color-purple-dark);
+}
+
+.pm-table td{
+    padding: 16px 20px;
+    color: var(--color-purple-dark);
+    font-size: 18px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* プレフ - カード/サブ */
+.p-subcard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.ps-item{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.ps-title{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ps-tempinfo{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.ps-weatherpic{
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.ps-weatherpic img{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.ps-tempinfo{
+    display: flex;
+    color: var(--color-white);
+    font-size: 68px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 4px var(--color-purple-dark);
+    paint-order: stroke;
+    align-items: center;
+}
+
+
+
+
+
+/* プレフ - ボタン */
+.p-backbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.p-backbtn a{
+    display: inline-flex;
+    color: var(--color-purple-dark);
+    font-size: 24px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    border-radius: 999px;
+    background: #fff7d3;
+    border: 2px var(--color-purple-dark) solid;
+    transition: all 0.38s ease-in-out;
+}
+
+.p-backbtn a:hover{
+    transform: scale(1.06);
+}
+
+
+
+
+
+/* --- レスポンシブ --- */
+
+
+
+
+
+/* TB */
+@media (max-width: 1200px) {
+    .inner{
+        padding: 0px 40px;
+    }
+
+    .p-maincard,
+    .ps-item{
+        padding: 60px 50px;
+    }
+
+    #h-pc{
+        display: none;
+    }
+
+    #h-tbsp{
+        display: block;
+    }
+
+
+
+    /* ホーム - ロゴ */
+    .home .inner{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .h-logo{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(240px, 40vw, 400px);
+    }
+
+
+
+    /* ホーム - 地図/TB */
+    #h-tbsp{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 60px 0px;
+    }
+
+    .h-tbsp-item{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding: 20px 40px;
+        border-radius: 20px;
+        border: 2px var(--color-purple-dark) solid;
+        background-color: var(--color-purple-lite);
+    }
+
+    .h-tbspmap-title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .h-tbspmap-btn{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .h-tbspmap-title p{
+        color: var(--color-white);
+        font-size: 16px;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        padding: 10px 20px;
+        background-color: var(--color-purple-dark);
+    }
+
+    .h-tbspmap-btn a{
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        background-color: red; /* あとで消す */
+    }
+
+    .h-tbspmap-btn span{
+        color: var(--color-white);
+        paint-order: stroke;
+        font-size: 22px;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 700;
+    }
+
+    .h-tbspmap-hokkaido-okinawa a{
+        border: 2px var(--color-red-dark) solid;
+        background-color: var(--color-red);
+    }
+
+    .h-tbspmap-hokkaido-okinawa a:hover{
+        background-color: var(--color-red-dark);
+    }
+
+    .h-tbspmap-hokkaido-okinawa span{
+        -webkit-text-stroke: 4px var(--color-red-dark);
+    }
+
+    .h-tbspmap-tohoku a{
+        border: 2px var(--color-orange-dark) solid;
+        background-color: var(--color-orange);
+    }
+
+    .h-tbspmap-tohoku a:hover{
+        background-color: var(--color-orange-dark);
+    }
+
+    .h-tbspmap-tohoku span{
+        -webkit-text-stroke: 4px var(--color-orange-dark);
+    }
+
+    .h-tbspmap-kanto a{
+        border: 2px var(--color-yellow-dark) solid;
+        background-color: var(--color-yellow);
+    }
+
+    .h-tbspmap-kanto a:hover{
+        background-color: var(--color-yellow-dark);
+    }
+
+    .h-tbspmap-kanto span{
+        -webkit-text-stroke: 4px var(--color-yellow-dark);
+    }
+
+    .h-tbspmap-chubu a{
+        border: 2px var(--color-green-dark) solid;
+        background-color: var(--color-green);
+    }
+
+    .h-tbspmap-chubu a:hover{
+        background-color: var(--color-green-dark);
+    }
+
+    .h-tbspmap-chubu span{
+        -webkit-text-stroke: 4px var(--color-green-dark);
+    }
+
+    .h-tbspmap-kinki a{
+        border: 2px var(--color-mint-dark) solid;
+        background-color: var(--color-mint);
+    }
+
+    .h-tbspmap-kinki a:hover{
+        background-color: var(--color-mint-dark);
+    }
+
+    .h-tbspmap-kinki span{
+        -webkit-text-stroke: 4px var(--color-mint-dark);
+    }
+
+    .h-tbspmap-chugoku a{
+        border: 2px var(--color-sky-dark) solid;
+        background-color: var(--color-sky);
+    }
+
+    .h-tbspmap-chugoku a:hover{
+        background-color: var(--color-sky-dark);
+    }
+
+    .h-tbspmap-chugoku span{
+        -webkit-text-stroke: 4px var(--color-sky-dark);
+    }
+
+    .h-tbspmap-shikoku a{
+        border: 2px var(--color-blue-dark) solid;
+        background-color: var(--color-blue);
+    }
+
+    .h-tbspmap-shikoku a:hover{
+        background-color: var(--color-blue-dark);
+    }
+
+    .h-tbspmap-shikoku span{
+        -webkit-text-stroke: 4px var(--color-blue-dark);
+    }
+
+    .h-tbspmap-kyushu a{
+        border: 2px var(--color-purple-dark) solid;
+        background-color: var(--color-purple);
+    }
+
+    .h-tbspmap-kyushu a:hover{
+        background-color: var(--color-purple-dark);
+    }
+
+    .h-tbspmap-kyushu span{
+        -webkit-text-stroke: 4px var(--color-purple-dark);
+    }
+
+
+
+    /* プレフ - カード/メイン */
+    .pm-datainfo{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .pm-weatherpic{
+        grid-column:1;
+        grid-row:2;
+    }
+
+    .pm-table{
+        grid-column: 1;
+        grid-row: 3;
+        width: fit-content;
+        justify-self:center;
+    }
+
+    .pm-table tbody{
+        padding-top: 30px;
+    }
+
+    .pm-tempinfo{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .pm-weatherpic{
+        justify-content: center;
+    }
+    
+    .pm-weatherpic img{
+        max-width: 500px;
+        height: 500px;
+    }
+
+
+
+    /* プレフ - カード/サブ */
+    .p-subcard{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .ps-item{
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 80px;
+    }
+
+    .ps-title{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ps-title p{
+        font-size: 40px;
+    }
+
+    .ps-weatherpic{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .ps-tempinfo{
+        justify-content: center;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .ps-weatherpic img{
+        max-width: 160px;
+        height: 160px;
+    }
+}
+
+
+
+
+
+/* SP */
+@media (max-width: 800px) {
+    .inner{
+        padding: 0px 20px;
+    }
+
+    .p-maincard,
+    .ps-item{
+        padding: 60px 40px;
+    }
+
+
+
+    /* 共通 - フッター */
+    .f-inner::before,
+    .f-inner::after{
+        max-width: 110px;
+        height: 110px;
+    }
+
+    @keyframes f-up{
+        0%,100% {transform: translateY(0px);}
+        50% {transform: translateY(20px);}
+    }
+
+    @keyframes f-down{
+        0%,100% {transform: translateY(20px);}
+        50% {transform: translateY(0px);}
+    }
+
+
+
+    /* ホーム - 地図/SP */
+    #h-tbsp{
+        grid-template-columns: 1fr;
+        padding: 30px 0px;
+    }
+    
+    .home .inner{
+        padding-top: 60px;
+        padding-bottom: 160px;
+    }
+
+
+
+    /* プレフ - 県名 */
+    .p-logo{
+        max-width: 300px;
+    }
+
+    .js-pref-name{
+        font-size: 60px;
+    }
+
+    .p-logo-deco-wrapper::before,
+    .p-logo-deco-wrapper::after{
+        bottom: 30px;
+        width: 72px;
+        height: 72px;
+    }
+    
+    .p-logo-deco-wrapper::before{
+        left: -20px;
+    }
+    
+    .p-logo-deco-wrapper::after{
+        right: -20px;
+    }
+
+
+
+    /* プレフ - カードタイトル */
+    .pref h2{
+        justify-self: center;
+    }
+
+    .pm-datetime{
+        justify-self: center;
+    }
+
+
+
+    /* プレフ - カード/数字まわり */
+    .pm-title p,
+    .ps-title p{
+        font-size: 24px;
+    }
+
+    .js-temp-today{
+        font-size: 80px;
+    }
+
+    .pm-temp-maxmin{
+        font-size: 16px;
+    }
+
+
+
+    /* プレフ - カード/メイン */
+    .p-maincard,
+    .ps-item{
+        padding: 40px;
+    }
+
+    .pm-datainfo{
+        display: block;
+    }
+
+    .pm-title{
+        justify-self: center;
+        width: fit-content;
+    }
+
+    .pm-place-temp{
+        gap: 10px;
+    }
+
+    .pm-tempinfo{
+        gap: 0px;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pm-weatherpic img{
+        height: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+
+
+
+    /* プレフ - カード/メイン テーブル */
+    .pm-table tbody{
+        grid-template-columns: 1fr;
+    }
+    
+    .pm-table th{
+        width: 100%;
+        max-width: 72px;
+        height: 18px;
+        font-size: 18px;
+    }
+    
+    .pm-table td{
+        align-self:center;
+        padding: 0px;
+    }
+
+
+
+    /* プレフ - カード/サブ */
+    .ps-item{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .ps-title,
+    .ps-tempinfo,
+    .ps-weatherpic{
+        justify-self: center;
+    }
+
+    .ps-title{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ps-tempinfo{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .ps-weatherpic{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .ps-weatherpic img{
+        max-width: 200px;
+        height: 200px;
+    }
 }

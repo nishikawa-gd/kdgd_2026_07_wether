@@ -2,67 +2,146 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <title>都道府県の天気</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <title>都道府県の天気</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- レスポンシブ対策 -->
+    <link rel="icon" href="./img/component/siteicon.png" type="image/png" alt="アイコン">
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="./js/settings.js"></script>
-  <script src="./js/function.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <script src="./js/settings.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body class="pref">
-  <h2 class="js-pref-name">都道府県名</h2>
 
 
-  <section class="today-weather">
-    <h3>今日の天気</h3>
-
-    <p class="js-date-today"></p>
-    <p class="js-weather-main-today"></p>
-    <p class="js-temp-today"></p>
-    <div class="js-weather-img-today"></div>
-
-    <table>
-      <thead>
-        <tr>
-          <th>時間帯</th>
-          <th>降水確率</th>
-          <th>風</th>
-          <th>波</th>
-        </tr>
-      </thead>
-      <tbody class="js-weather-table-today"></tbody>
-    </table>
-  </section>
+    <div class="loading">
+        <div class="l-pic"><img src="./img/component/l-pic.png" alt="ローディング画像"></div>
+        <p class="l-text">now loading<span></span></p>
+    </div>
 
 
-  <section class="tomorrow-weather">
-    <h3>明日の天気</h3>
-
-    <p class="js-date-tomorrow"></p>
-    <p class="js-weather-main-tomorrow"></p>
-    <p class="js-temp-tomorrow"></p>
-    <div class="js-weather-img-tomorrow"></div>
-
-    <table>
-      <thead>
-        <tr>
-          <th>時間帯</th>
-          <th>降水確率</th>
-          <th>風</th>
-          <th>波</th>
-        </tr>
-      </thead>
-      <tbody class="js-weather-table-tomorrow"></tbody>
-    </table>
-  </section>
+    <div class="wrapper">
+        <div class="inner">
 
 
-  <div>
-    <a href="index.html">日本地図に戻る</a>
-  </div>
+            <div class="p-logo-deco-wrapper">
+                <svg class="p-logo">
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        class="logo-purple js-pref-name">都道府県名</text>
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        class="logo-white js-pref-name">都道府県名</text>
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        class="logo-main js-pref-name">都道府県名</text>
+                </svg>
+            </div>
+
+
+            <div class="p-cards">
+                <section class="p-maincard today-weather">
+                    <div class="pm-datainfo">
+                        <div class="pm-summary">
+                            <div class="pm-title">
+                                <h2>今日の天気</h2>
+                                <div class="pm-datetime">
+                                    <p class="js-date-today"></p> <!-- 日付 -->
+                                    <p class="js-time-today"></p> <!-- 追加要素/現在の時刻 -->
+                                </div>
+                            </div>
+
+
+                            <div class="pm-tempinfo">
+                                <p class="js-temp-today"></p> <!-- 追加要素/現在の気温 -->
+                                <div class="pm-place-temp">
+                                    <div class="pm-place">
+                                        <p class="js-place-name"></p> <!-- 追加要素/場所 -->
+                                    </div>
+
+                                    <div class="pm-temp-maxmin">
+                                        <p>最高気温: <span class="js-temp-max-today"></span></p> <!-- 追加要素/今日の最高気温 -->
+                                        <p>最低気温: <span class="js-temp-min-today"></span></p> <!-- 追加要素/今日の最低気温 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="pm-weatherpic">
+                            <div class="js-weather-img-today"></div> <!-- 天気の画像 -->
+                        </div>
+                        
+                        
+                        <table class="pm-table">
+                            <tbody class="js-weather-table-today"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+
+
+                <div class="p-subcard">
+                    <section class="ps-item tomorrow-weather">
+                        <div class="ps-title">
+                            <h2>明日の天気</h2>
+                            <p class="js-date-tomorrow"></p> <!-- 日付 -->
+                        </div>
+
+                        <div class="ps-tempinfo">
+                            <p class="js-temp-tomorrow"></p> <!-- 追加要素/現在の気温 -->
+                        </div>
+
+                        <div class="ps-weatherpic">
+                            <div class="js-weather-img-tomorrow"></div> <!-- 天気の画像 -->
+                        </div>
+                    </section>
+
+
+                    <section class="ps-item dayaftertomorrow-weather">
+                        <div class="ps-title">
+                            <h2>明後日の天気</h2>
+                            <p class="js-date-dayaftertomorrow"></p> <!-- 日付 -->
+                        </div>
+
+                        <div class="ps-tempinfo">
+                            <p class="js-temp-dayaftertomorrow"></p> <!-- 追加要素/現在の気温 -->
+                        </div>
+
+                        <div class="ps-weatherpic">
+                            <div class="js-weather-img-dayaftertomorrow"></div> <!-- 天気の画像 -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+            <div class="p-backbtn">
+                <a href="index.html">日本地図に戻る</a>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="f-inner">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./img/component/f-pic-sp.png">
+                    <img src="./img/component/f-pic-pctb.png" alt="フッター雲">
+                </picture>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
