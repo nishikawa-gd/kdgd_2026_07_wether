@@ -1,5 +1,15 @@
 body {}
 
+.map {
+    position: relative;
+}
+
+.map a {
+    position: absolute;
+}
+
+
+
 .remove_btn a img {
     width: 20%;
     height: auto;
