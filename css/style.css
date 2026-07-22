@@ -1,15 +1,148 @@
-body {}
+.home_inner {
+    max-width: 1240px;
+    margin: 0 auto;
+}
 
 .map {
     position: relative;
+    top: -50px;
 }
 
 .map a {
     position: absolute;
 }
 
+/* 北海道・東北 */
+.hokkaido {
+    right: 100px;
+}
+
+.aomori {
+    right: 230px;
+    top: 210px;
+}
+
+.iwate {
+    right: 220px;
+    top: 294px;
+}
+
+.miyagi {
+    right: 226px;
+    top: 386px;
+}
+
+.akita {
+    right: 300px;
+    top: 294px;
+}
+
+.yamagata {
+    right: 308px;
+    top: 390px;
+}
+
+.fukushima {
+    right: 240px;
+    top: 456px;
+}
+
+/* 関東 */
+.ibaraki {
+    right: 216px;
+    top: 528px;
+}
+
+.tochigi {
+    right: 270px;
+    top: 525px;
+}
+
+.gunma {
+    right: 321px;
+    top: 528px;
+}
+
+.saitama {
+    right: 272px;
+    top: 586px;
+}
+
+.chiba {
+    right: 208px;
+    top: 608px;
+}
+
+.tokyo {
+    right: 268px;
+    top: 624px;
+}
+
+.kanagawa {
+    right: 272px;
+    top: 648px;
+}
+
+/* 中部地方 */
+.niigata {
+    right: 346px;
+    top: 422px;
+}
+
+.toyama {
+    right: 460px;
+    top: 510px;
+}
+
+.ishikawa {
+    right: 488px;
+    top: 468px;
+}
+
+.fukui {
+    right: 538px;
+    top: 550px;
+}
+
+.yamanashi {
+    right: 346px;
+    top: 618px;
+}
+
+.nagano {
+    right: 370px;
+    top: 534px;
+}
+
+.gifu {
+    right: 462px;
+    top: 566px;
+}
+
+.shizuoka {
+    right: 326px;
+    top: 658px;
+}
+
+.aichi {
+    right: 444px;
+    top: 660px;
+}
+
+/* 近畿地方 */
+.mie {
+    right: 496px;
+    top: 648px;
+}
+
+.siga {
+    right: 552px;
+    top: 604px;
+}
 
 
+
+/* 下層ページ */
 .remove_btn a img {
     width: 20%;
     height: auto;
