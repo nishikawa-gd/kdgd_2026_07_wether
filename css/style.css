@@ -5,7 +5,7 @@
 
 .map {
     position: relative;
-    top: -60px;
+    top: -50px;
 }
 
 .map a {
@@ -222,6 +222,46 @@
     left: 320px;
 }
 
+.saga {
+    top: 608px;
+    left: 280px;
+}
+
+.nagasaki {
+    top: 622px;
+    left: 260px;
+}
+
+.kumamoto {
+    top: 648px;
+    left: 312px;
+}
+
+.ooita {
+    top: 618px;
+    left: 352px;
+}
+
+.miyazaki {
+    top: 672px;
+    left: 352px;
+}
+
+.kagoshima {
+    top: 714px;
+    left: 300px;
+}
+
+/* 沖縄 */
+.okinawa {
+    top: 360px;
+    left: 300px;
+}
+
+.okinawa_boader {
+    top: 380px;
+    left: 260px;
+}
 
 
 
