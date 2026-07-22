@@ -12,6 +12,10 @@
     position: absolute;
 }
 
+.map a img {
+    width: 90%;
+}
+
 /* 北海道・東北 */
 .hokkaido {
     right: 100px;
@@ -19,201 +23,204 @@
 
 .aomori {
     right: 230px;
-    top: 210px;
+    top: 190px;
 }
 
 .iwate {
-    right: 220px;
-    top: 294px;
+    right: 226px;
+    top: 264px;
 }
 
 .miyagi {
-    right: 226px;
-    top: 386px;
+    right: 230px;
+    top: 346px;
 }
 
 .akita {
-    right: 300px;
-    top: 294px;
+    right: 298px;
+    top: 264px;
 }
 
 .yamagata {
-    right: 308px;
-    top: 390px;
+    right: 304px;
+    top: 350px;
 }
 
 .fukushima {
     right: 240px;
-    top: 456px;
+    top: 408px;
 }
 
 /* 関東 */
 .ibaraki {
-    right: 216px;
-    top: 528px;
+    right: 222px;
+    top: 472px;
 }
 
 .tochigi {
     right: 270px;
-    top: 525px;
+    top: 470px;
 }
 
 .gunma {
-    right: 321px;
-    top: 528px;
+    right: 316px;
+    top: 470px;
 }
 
 .saitama {
     right: 272px;
-    top: 586px;
+    top: 522px;
 }
 
 .chiba {
-    right: 208px;
-    top: 608px;
+    right: 214px;
+    top: 542px;
 }
 
 .tokyo {
     right: 268px;
-    top: 624px;
+    top: 556px;
 }
 
 .kanagawa {
     right: 272px;
-    top: 648px;
+    top: 578px;
 }
 
 /* 中部地方 */
 .niigata {
-    right: 346px;
-    top: 422px;
+    right: 334px;
+    top: 376px;
 }
 
 .toyama {
-    right: 460px;
-    top: 510px;
+    right: 440px;
+    top: 454px;
 }
 
 .ishikawa {
-    right: 488px;
-    top: 468px;
+    right: 464px;
+    top: 414px;
 }
 
 .fukui {
-    right: 538px;
-    top: 550px;
+    right: 508px;
+    top: 490px;
 }
 
 .yamanashi {
-    right: 346px;
-    top: 618px;
+    right: 340px;
+    top: 550px;
 }
 
 .nagano {
-    right: 370px;
-    top: 534px;
+    right: 356px;
+    top: 476px;
 }
 
 .gifu {
-    right: 462px;
-    top: 566px;
+    right: 440px;
+    top: 506px;
 }
 
 .shizuoka {
-    right: 326px;
-    top: 658px;
+    right: 316px;
+    top: 588px;
 }
 
 .aichi {
-    right: 444px;
-    top: 660px;
+    right: 428px;
+    top: 590px;
 }
 
 /* 近畿地方 */
 .mie {
-    right: 496px;
-    top: 648px;
+    right: 476px;
+    top: 578px;
 }
 
 .siga {
-    right: 552px;
-    top: 604px;
+    right: 526px;
+    top: 540px;
 }
 
 .kyoto {
-    right: 566px;
-    top: 602px;
+    right: 538px;
+    top: 536px;
 }
 
 .osaka {
-    right: 586px;
-    top: 658px;
+    right: 562px;
+    top: 588px;
 }
 
 .hyogo {
-    right: 624px;
-    top: 604px;
+    right: 594px;
+    top: 540px;
 }
 
 .nara {
-    right: 548px;
-    top: 678px;
+    right: 526px;
+    top: 604px;
 }
 
 .wakayama {
-    right: 548px;
-    top: 726px;
+    right: 524px;
+    top: 650px;
 }
 
 /* 四国地方 */
 .tottori {
-    left: 478px;
-    top: 604px;
+    left: 514px;
+    top: 542px;
 }
 
 .shimane {
-    left: 408px;
-    top: 598px;
+    left: 450px;
+    top: 538px;
 }
 
 .okayama {
-    left: 488px;
-    top: 638px;
+    left: 522px;
+    top: 574px;
 }
 
 .hiroshima {
-    left: 418px;
-    top: 638px;
+    left: 456px;
+    top: 576px;
 }
 
 .yamaguchi {
-    top: 632px;
-    left: 358px;
+    top: 570px;
+    left: 400px;
 }
 
 /* 四国 */
 .tokushima {
-    left: 528px;
-    top: 730px;
+    left: 556px;
+    top: 660px;
 }
 
 .kagawa {
-    left: 528px;
-    top: 710px;
+    left: 556px;
+    top: 640px;
 }
 
 .ehime {
-    left: 432px;
-    top: 714px;
+    left: 470px;
+    top: 648px;
 }
 
 .kouchi {
-    left: 432px;
-    top: 746px;
+    left: 472px;
+    top: 676px;
 }
 
 /* 九州 */
-.kouchi {}
+.fukuoka {
+    top: 588px;
+    left: 320px;
+}
 
 
 
