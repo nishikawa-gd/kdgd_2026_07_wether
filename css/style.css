@@ -23,8 +23,8 @@
 .balloon {
     position: absolute;
 
-    top: 100%;
-    left: 100%;
+    top: 80px;
+    left: 0;
     margin-top: 10px;
     margin-left: 10px;
 
@@ -34,9 +34,9 @@
     padding: 10px;
     box-sizing: border-box;
 
-    background: #331004;
+    background-color: #0c6ca0;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 100px;
 
     display: flex;
     justify-content: center;
@@ -50,6 +50,37 @@
     z-index: 1000;
 }
 
+.tohoku {
+    background-color: #00c68d;
+}
+
+.kantou {
+    background-color: #f46138;
+}
+
+.chubu {
+    background-color: #a4d618;
+}
+
+.kinki {
+    background-color: #ffce45;
+}
+
+.chugoku {
+    background-color: #ce7ce0;
+}
+
+.sikoku {
+    background-color: #a87343;
+}
+
+.kyuushuu {
+    background-color: #cc1300;
+}
+
+.okinawa {
+    background-color: #8b00cc;
+}
 
 .map div:hover .balloon {
     opacity: 1;
