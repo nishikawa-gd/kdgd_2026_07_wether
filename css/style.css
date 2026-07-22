@@ -5,7 +5,7 @@
 
 .map {
     position: relative;
-    top: -50px;
+    top: -60px;
 }
 
 .map a {
@@ -166,6 +166,56 @@
 }
 
 /* 四国地方 */
+.tottori {
+    left: 478px;
+    top: 604px;
+}
+
+.shimane {
+    left: 408px;
+    top: 598px;
+}
+
+.okayama {
+    left: 488px;
+    top: 638px;
+}
+
+.hiroshima {
+    left: 418px;
+    top: 638px;
+}
+
+.yamaguchi {
+    top: 632px;
+    left: 358px;
+}
+
+/* 四国 */
+.tokushima {
+    left: 528px;
+    top: 730px;
+}
+
+.kagawa {
+    left: 528px;
+    top: 710px;
+}
+
+.ehime {
+    left: 432px;
+    top: 714px;
+}
+
+.kouchi {
+    left: 432px;
+    top: 746px;
+}
+
+/* 九州 */
+.kouchi {}
+
+
 
 
 /* 下層ページ */
