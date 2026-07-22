@@ -8,13 +8,55 @@
     top: -50px;
 }
 
-.map a {
+.map div a {
     position: absolute;
 }
 
-.map a img {
+.map div a img {
     width: 90%;
 }
+
+.balloon_inner {
+    position: relative;
+}
+
+.balloon {
+    position: absolute;
+
+    top: 100%;
+    left: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    width: 100px;
+    height: 100px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    background: #331004;
+    color: #fff;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    z-index: 1000;
+}
+
+
+.map div:hover .balloon {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 
 /* 北海道・東北 */
 .hokkaido {
@@ -262,6 +304,7 @@
     top: 380px;
     left: 60px;
 }
+
 
 
 
