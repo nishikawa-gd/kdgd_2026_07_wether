@@ -338,7 +338,64 @@
 
 
 /* 下層ページ */
+.pref_inner {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.js-pref-name {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ed4401;
+    border-radius: 30px;
+}
+
+/* .remove_btn a img {
+    border: 3px solid #331004;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
 .remove_btn a img {
     width: 20%;
     height: auto;
+}
+
+.remove_btn a img:hover {
+    color: #fff;
+    background-color: #331004;
+} */
+
+
+
+
+
+.remove_btn a {
+    display: inline-block;
+}
+
+.remove_btn a svg {
+    width: 80%;
+    height: auto;
+    padding: 16px 30px;
+    border: 3px solid #331004;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.remove_btn a svg path {
+    fill: #331004;
+    transition: fill .3s;
+}
+
+.remove_btn a:hover svg {
+    background-color: #331004;
+}
+
+.remove_btn a:hover svg path {
+    fill: #fff;
 }
