@@ -1,5 +1,5 @@
 .home_inner {
-    max-width: 1240px;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -171,96 +171,96 @@
 
 /* 四国地方 */
 .tottori {
-    left: 514px;
     top: 542px;
+    left: 314px;
 }
 
 .shimane {
-    left: 450px;
     top: 538px;
+    left: 250px;
 }
 
 .okayama {
-    left: 522px;
     top: 574px;
+    left: 322px;
 }
 
 .hiroshima {
-    left: 456px;
     top: 576px;
+    left: 256px;
 }
 
 .yamaguchi {
     top: 570px;
-    left: 400px;
+    left: 200px;
 }
 
 /* 四国 */
 .tokushima {
-    left: 556px;
     top: 660px;
+    left: 356px;
 }
 
 .kagawa {
-    left: 556px;
     top: 640px;
+    left: 356px;
 }
 
 .ehime {
-    left: 470px;
     top: 648px;
+    left: 270px;
 }
 
 .kouchi {
-    left: 472px;
     top: 676px;
+    left: 272px;
 }
 
 /* 九州 */
 .fukuoka {
     top: 588px;
-    left: 320px;
+    left: 120px;
 }
 
 .saga {
     top: 608px;
-    left: 280px;
+    left: 80px;
 }
 
 .nagasaki {
     top: 622px;
-    left: 260px;
+    left: 60px;
 }
 
 .kumamoto {
     top: 648px;
-    left: 312px;
+    left: 112px;
 }
 
 .ooita {
     top: 618px;
-    left: 352px;
+    left: 152px;
 }
 
 .miyazaki {
     top: 672px;
-    left: 352px;
+    left: 152px;
 }
 
 .kagoshima {
     top: 714px;
-    left: 300px;
+    left: 100px;
 }
 
 /* 沖縄 */
 .okinawa {
     top: 360px;
-    left: 300px;
+    left: 100px;
 }
 
 .okinawa_boader {
     top: 380px;
-    left: 260px;
+    left: 60px;
 }
 
 
