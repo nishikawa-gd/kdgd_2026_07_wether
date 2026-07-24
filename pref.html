@@ -19,16 +19,18 @@
 
     <section class="weather">
       <section class="today-weather">
-        <h3>今日の天気</h3>
-        <p class="js-date-today"></p>
         <div class="weather_wrapper">
-          <p class="js-weather-main-today"></p>
-          <p class="js-temp-today"></p>
-          <div class="js-weather-img-today"></div>
+          <div class="weather_wrapper_inner">
+            <h3><img src="img/57_today.png" alt="今日の天気"></h3>
+            <p class="js-date-today"></p><!-- 日付と曜日 -->
+            <p class="js-weather-main-today"></p><!-- 天気のテキスト(ex:曇り) -->
+          </div>
+          <div class="js-weather-img-today"></div><!-- 天気のimg -->
         </div>
-        <table>
+        <p class="js-temp-today"></p><!-- 温度 -->
+        <table class="pref_list">
           <thead>
-            <tr>
+            <tr class="pref_tr">
               <th>時間帯</th>
               <th>降水確率</th>
               <th>風</th>
@@ -40,16 +42,18 @@
       </section>
 
       <section class="tomorrow-weather">
-        <h3>明日の天気</h3>
-        <p class="js-date-tomorrow"></p>
         <div class="weather_wrapper">
-          <p class="js-weather-main-tomorrow"></p>
-          <p class="js-temp-tomorrow"></p>
-          <div class="js-weather-img-tomorrow"></div>
+          <div class="weather_wrapper_inner">
+            <h3><img src="img/58_tomorrow.png" alt="明日の天気"></h3>
+            <p class="js-date-tomorrow"></p>
+            <p class="js-weather-main-tomorrow"></p><!-- 天気のテキスト(ex:曇り) -->
+          </div>
+          <div class="js-weather-img-tomorrow"></div><!-- 天気のimg -->
         </div>
-        <table>
+        <p class="js-temp-tomorrow"></p><!-- 温度 -->
+        <table class="pref_list">
           <thead>
-            <tr>
+            <tr class="pref_tr">
               <th>時間帯</th>
               <th>降水確率</th>
               <th>風</th>

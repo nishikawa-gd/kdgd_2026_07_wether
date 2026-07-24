@@ -1,6 +1,14 @@
+body {
+    color: #331004;
+}
+
 .home_inner {
     max-width: 1040px;
     margin: 0 auto;
+}
+
+.home_inner h1 {
+    padding-top: 10px;
 }
 
 .map {
@@ -346,22 +354,74 @@
 .js-pref-name {
     display: inline-block;
     margin-top: 40px;
-    padding: 20px;
     font-size: 40px;
     font-weight: bold;
-    color: #fff;
-    background-color: #ed4401;
+    color: #331004;
     border-radius: 30px;
 }
 
 .weather {
     display: flex;
     margin: 60px 0;
-    gap: 40px;
+    gap: 61px;
+}
+
+.today-weather,
+.tomorrow-weather {
+    position: relative;
+    max-width: 490px;
+    max-height: 530px;
+    padding: 24px;
+    border: 2px solid #331004;
+    border-radius: 20px;
+}
+
+.today-weather h3,
+.tomorrow-weather h3 {
+    margin-bottom: 14px;
+}
+
+.js-date-today,
+.js-date-tomorrow {
+    font-size: 24px;
 }
 
 .weather_wrapper {
     display: flex;
+}
+
+.js-weather-img-today,
+.js-weather-img-tomorrow {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.js-weather-img-today img,
+.js-weather-img-tomorrow img {
+    width: 200px;
+    height: auto;
+}
+
+.js-temp-today,
+.js-temp-tomorrow {
+    display: block;
+    font-size: 70px;
+    text-align: right;
+    margin-bottom: 51px;
+}
+
+.pref_list {
+    width: 100%;
+    table-layout: fixed;
+    /* margin-top: 50px; */
+}
+
+.pref_list th,
+.pref_list td {
+    border-bottom: 1px solid #BD9487;
+    padding: 6px 0;
 }
 
 /* 日本地図へ戻るbtn */
