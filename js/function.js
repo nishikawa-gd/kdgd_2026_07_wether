@@ -71,3 +71,43 @@ $(function() {
 		renderWeather("tomorrow", tomorrow, data.tomorrow);
 	}
 });
+
+
+
+$(function () {
+
+    if (!$("body").hasClass("home")) return;
+
+    const tbody = $("#weather-body");
+
+    for (const pref in PREF_WEATHER) {
+
+        const today = PREF_WEATHER[pref].today;
+        const tomorrow = PREF_WEATHER[pref].tomorrow;
+
+        tbody.append(`
+            <tr>
+                <td>
+                    <a href="pref.html?pref=${pref}">
+                        ${pref}
+                    </a>
+                </td>
+
+                <td>
+                    <img src="${today.weather.img}" class="weather-icon">
+                    ${today.weather.text}
+                </td>
+                <td>${today.maxTemp}℃</td>
+                <td>${today.minTemp}℃</td>
+
+                <td>
+                    <img src="${tomorrow.weather.img}" class="weather-icon">
+                    ${tomorrow.weather.text}
+                </td>
+                <td>${tomorrow.maxTemp}℃</td>
+                <td>${tomorrow.minTemp}℃</td>
+            </tr>
+        `);
+    }
+
+});
