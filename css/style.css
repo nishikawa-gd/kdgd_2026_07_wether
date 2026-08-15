@@ -65,7 +65,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px;
+    padding: 20px 10px 15px 10px;
     border-bottom: 2px solid #fff;
 }
 
@@ -212,29 +212,34 @@ td {
 }
 
 .btn {
-    position: absolute;
-    bottom: -95px;
-    right: 50%;
-    transform: translate(50%, 0);
-    margin: 25px auto 0 auto;
+    width: 290px;
+    height: 50px;
+    margin: 25px auto;
+    background-color: #fff;
+    border-radius: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+}
 
+.btn p {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    background-color: #fff;
-    border-radius: 30px;
-    width: 290px;
-    height: 50px;
-    padding: 0 30px;
+    color: #81A2D7;
 }
 
-.btn a {
-    color: #81A2D7;
-    text-decoration: none;
-    padding: 0 69px;
+.btn svg {
+    position: absolute;
+    right: 30px;
+    width: 10px;
+    height: auto;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
 }
 
 .no_weather {
@@ -247,4 +252,28 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.weather-map a path {
+    transition: fill 0.2s ease;
+}
+
+.weather-map a .path_background {
+    fill: white;
+    stroke: white;
+    transition: 0.2s;
+}
+
+.weather-map a .path_txt {
+    fill: #81A2D7;
+    transition: 0.2s;
+}
+
+.weather-map a:hover .path_background {
+    fill: #81A2D7;
+    stroke: white;
+}
+
+.weather-map a:hover .path_txt {
+    fill: white;
 }
