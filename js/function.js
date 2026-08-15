@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
 	// bodyにhomeクラスがある場合の処理
 	if ($('body').hasClass('pref')) {
@@ -15,7 +15,7 @@ $(function() {
 
 		// 天気情報がない場合の処理
 		if (!data) {
-			$('.today-weather, .tomorrow-weather').html('<p>天気情報が登録されていません。</p>');
+			$('.today-weather, .tomorrow-weather').html('<p class="no_weather">天気情報が登録されていません。</p>');
 			return;
 		}
 
@@ -29,19 +29,19 @@ $(function() {
 		tomorrow.setDate(today.getDate() + 1);
 
 		// 日付を「M月D日 (曜)」の形式でフォーマットする関数
-		const formatDate = (d) => `${d.getMonth()+1}月${d.getDate()}日 (${dayNames[d.getDay()]})`;
+		const formatDate = (d) => `${d.getMonth() + 1}月${d.getDate()}日 (${dayNames[d.getDay()]})`;
 
 		// 天気情報を画面に表示する関数("today"または"tomorrow"をprefixに指定, dateObjに日付オブジェクト, infoに天気情報を指定)
 		const renderWeather = (prefix, dateObj, info) => {
-			
+
 			// 日付を表示
 			$(`.js-date-${prefix}`).text(formatDate(dateObj));
-			
+
 			// 天気情報を表示
 			$(`.js-weather-main-${prefix}`)
 				.text(info.weather.text)
 				.attr('class', `js-weather-main-${prefix} ${info.weather.className}`);
-			
+
 			// 気温と天気画像を表示
 			$(`.js-temp-${prefix}`).text(`${info.maxTemp}℃ / ${info.minTemp}℃`);
 
