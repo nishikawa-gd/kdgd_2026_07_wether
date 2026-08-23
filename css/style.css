@@ -1,2 +1,216 @@
-body {
+@charset "UTF-8";
+/* ========================================
+   全体設定
+   ======================================== */
+/* ========================================
+   ローディングスピナー
+   ======================================== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85); /* 半透明の白背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 最前面に表示 */
 }
+
+/* 円形アニメーション */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e2e8f0;
+  border-top: 5px solid #3182ce; /* ブランドカラー */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body.pref {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #f4f7f9;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+}
+
+/* ページタイトル */
+.js-pref-name {
+  font-size: 28px;
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3182ce;
+}
+
+/* ========================================
+   天気表示セクション（カード）
+   ======================================== */
+.today-weather,
+.tomorrow-weather {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.today-weather h3,
+.tomorrow-weather h3 {
+  font-size: 20px;
+  color: #2b6cb0;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* 日付とメイン天気 */
+.js-date-today,
+.js-date-tomorrow {
+  font-weight: bold;
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.js-weather-main-today,
+.js-weather-main-tomorrow {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+/* 気温表示 */
+.js-temp-today,
+.js-temp-tomorrow {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e53e3e; /* 印象に残るアクセントカラー */
+  margin-bottom: 16px;
+}
+
+/* 天気アイコン表示部 */
+.js-weather-img-today,
+.js-weather-img-tomorrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.js-weather-img-today img,
+.js-weather-img-tomorrow img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* ========================================
+   テーブルデザイン
+   ======================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+thead {
+  background-color: #ebf8ff;
+}
+
+th {
+  color: #2b6cb0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #bee3f8;
+  white-space: nowrap;
+}
+
+td {
+  padding: 12px 10px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #edf2f7;
+}
+
+/* 偶数行の背景色（ゼブラパターンで視認性向上） */
+tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+/* テーブルホバー効果 */
+tbody tr:hover {
+  background-color: #edf2f7;
+}
+
+/* ========================================
+   ナビゲーション・戻るボタン
+   ======================================== */
+body.pref > p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body.pref a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4299e1;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(66, 153, 225, 0.4);
+  transition: all 0.2s ease;
+}
+
+body.pref a:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(66, 153, 225, 0.5);
+}
+
+/* ========================================
+   スマホ対応 (レスポンシブ)
+   ======================================== */
+@media (max-width: 600px) {
+  body.pref {
+    padding: 10px;
+  }
+  .today-weather,
+  .tomorrow-weather {
+    padding: 16px;
+  }
+  th, td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  .js-weather-img-today img,
+  .js-weather-img-tomorrow img {
+    width: 60px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */
