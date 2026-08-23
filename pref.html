@@ -15,39 +15,87 @@
   <div id="loading" class="loading-overlay"><div class="spinner"></div></div>
   <h2 class="js-pref-name">都道府県名</h2>
 
-  <section class="today-weather">
+<div class="weather-container">
+  <!-- ========================================
+       【主役】今日の天気
+       ======================================== -->
+  <div class="today-weather">
     <h3>今日の天気</h3>
     <p class="js-date-today"></p>
-    <p class="js-weather-main-today"></p>
-    <p class="js-temp-today"></p>
-    <div class="js-weather-img-today"></div>
-    <table>
+    
+    <!-- 天気メイン表記 -->
+    <p class="weather-main js-weather-main-today"></p>
+    
+    <!-- アイコン画像 -->
+    <div class="weather-img js-weather-img-today"></div>
+    
+    <!-- 気温 & 風情報 (アイコン付き) -->
+    <div class="weather-details">
+      <p class="weather-info info-temp js-temp-today"></p>
+      <p class="weather-info info-wind js-wind-today"></p>
+    </div>
+
+    <!-- 降水確率テーブル -->
+    <table class="rain-table">
       <thead>
         <tr>
-          <th>時間帯</th><th>降水確率</th><th>風</th><th>波</th>
+          <th colspan="4" class="table-header-rain">降水確率</th>
+        </tr>
+        <tr>
+          <th>00-06</th>
+          <th>06-12</th>
+          <th>12-18</th>
+          <th>18-24</th>
         </tr>
       </thead>
-      <tbody class="js-weather-table-today"></tbody>
+      <tbody>
+        <tr class="js-rain-today"></tr>
+      </tbody>
     </table>
-  </section>
+  </div>
 
-  <section class="tomorrow-weather">
+  <!-- ========================================
+       【控えめ】明日の天気
+       ======================================== -->
+  <div class="tomorrow-weather">
     <h3>明日の天気</h3>
     <p class="js-date-tomorrow"></p>
-    <p class="js-weather-main-tomorrow"></p>
-    <p class="js-temp-tomorrow"></p>
-    <div class="js-weather-img-tomorrow"></div>
-    <table>
+    
+    <!-- 天気メイン表記 -->
+    <p class="weather-main js-weather-main-tomorrow"></p>
+    
+    <!-- アイコン画像 -->
+    <div class="weather-img js-weather-img-tomorrow"></div>
+    
+    <!-- 気温 & 風情報 (アイコン付き) -->
+    <div class="weather-details">
+      <p class="weather-info info-temp js-temp-tomorrow"></p>
+      <p class="weather-info info-wind js-wind-tomorrow"></p>
+    </div>
+
+    <!-- 降水確率テーブル -->
+    <table class="rain-table">
       <thead>
         <tr>
-          <th>時間帯</th><th>降水確率</th><th>風</th><th>波</th>
+          <th colspan="4" class="table-header-rain">降水確率</th>
+        </tr>
+        <tr>
+          <th>00-06</th>
+          <th>06-12</th>
+          <th>12-18</th>
+          <th>18-24</th>
         </tr>
       </thead>
-      <tbody class="js-weather-table-tomorrow"></tbody>
+      <tbody>
+        <tr class="js-rain-tomorrow"></tr>
+      </tbody>
     </table>
-  </section>
+  </div>
+</div>
 
-  <p><a href="index.html">日本地図に戻る</a></p>
+ <div class="back-link-container">
+  <a href="index.html" class="btn-back">日本地図に戻る</a>
+</div>
 
 </body>
 </html>

@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /* ========================================
-   全体設定
+   変数定義 (Variables)
    ======================================== */
+/* ========================================
+変数定義 (Variables)
+======================================== */
 /* ========================================
    ローディングスピナー
    ======================================== */
@@ -11,19 +14,17 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.85); /* 半透明の白背景 */
+  background-color: rgba(255, 255, 255, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* 最前面に表示 */
+  z-index: 9999;
 }
-
-/* 円形アニメーション */
-.spinner {
+.loading-overlay .spinner {
   width: 50px;
   height: 50px;
   border: 5px solid #e2e8f0;
-  border-top: 5px solid #3182ce; /* ブランドカラー */
+  border-top: 5px solid #3182ce;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -36,18 +37,300 @@
     transform: rotate(360deg);
   }
 }
+/* ========================================
+   トップページ (body.home) - 日本地図レイアウト
+   ======================================== */
+body.home {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #f4f7f9;
+  color: #333333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+}
+body.home h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 8px;
+}
+body.home .lead-text {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+body.home .japan-map-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+body.home {
+  /* CSS Grid による簡易日本地図配置 */
+}
+body.home .japan-map {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(12, 42px);
+  gap: 4px;
+  min-width: 600px;
+}
+body.home .japan-map .map-pref {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body.home .japan-map .map-pref:hover {
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body.home .japan-map {
+  /* 地方ごとの色分け */
+}
+body.home .japan-map .pref-hokkaido, body.home .japan-map .pref-aomori, body.home .japan-map .pref-akita, body.home .japan-map .pref-iwate,
+body.home .japan-map .pref-yamagata, body.home .japan-map .pref-miyagi, body.home .japan-map .pref-fukushima {
+  background-color: #3182ce;
+}
+body.home .japan-map .pref-ibaraki, body.home .japan-map .pref-tochigi, body.home .japan-map .pref-gunma, body.home .japan-map .pref-saitama,
+body.home .japan-map .pref-chiba, body.home .japan-map .pref-tokyo, body.home .japan-map .pref-kanagawa {
+  background-color: #38a169;
+}
+body.home .japan-map .pref-niigata, body.home .japan-map .pref-toyama, body.home .japan-map .pref-ishikawa, body.home .japan-map .pref-fukui, body.home .japan-map .pref-yamanashi,
+body.home .japan-map .pref-nagano, body.home .japan-map .pref-gifu, body.home .japan-map .pref-shizuoka, body.home .japan-map .pref-aichi {
+  background-color: #d69e2e;
+}
+body.home .japan-map .pref-mie, body.home .japan-map .pref-shiga, body.home .japan-map .pref-kyoto, body.home .japan-map .pref-osaka,
+body.home .japan-map .pref-hyogo, body.home .japan-map .pref-nara, body.home .japan-map .pref-wakayama {
+  background-color: #dd6b20;
+}
+body.home .japan-map .pref-tottori, body.home .japan-map .pref-shimane, body.home .japan-map .pref-okayama, body.home .japan-map .pref-hiroshima, body.home .japan-map .pref-yamaguchi,
+body.home .japan-map .pref-tokushima, body.home .japan-map .pref-kagawa, body.home .japan-map .pref-ehime, body.home .japan-map .pref-kochi {
+  background-color: #e53e3e;
+}
+body.home .japan-map .pref-fukuoka, body.home .japan-map .pref-saga, body.home .japan-map .pref-nagasaki, body.home .japan-map .pref-kumamoto,
+body.home .japan-map .pref-oita, body.home .japan-map .pref-miyazaki, body.home .japan-map .pref-kagoshima, body.home .japan-map .pref-okinawa {
+  background-color: #805ad5;
+}
+body.home .japan-map {
+  /* 位置指定 */
+}
+body.home .japan-map .pref-hokkaido {
+  grid-column: 14/16;
+  grid-row: 1/3;
+}
+body.home .japan-map .pref-aomori {
+  grid-column: 14;
+  grid-row: 3;
+}
+body.home .japan-map .pref-akita {
+  grid-column: 13;
+  grid-row: 4;
+}
+body.home .japan-map .pref-iwate {
+  grid-column: 14;
+  grid-row: 4;
+}
+body.home .japan-map .pref-yamagata {
+  grid-column: 13;
+  grid-row: 5;
+}
+body.home .japan-map .pref-miyagi {
+  grid-column: 14;
+  grid-row: 5;
+}
+body.home .japan-map .pref-fukushima {
+  grid-column: 14;
+  grid-row: 6;
+}
+body.home .japan-map .pref-ibaraki {
+  grid-column: 14;
+  grid-row: 7;
+}
+body.home .japan-map .pref-tochigi {
+  grid-column: 13;
+  grid-row: 6;
+}
+body.home .japan-map .pref-gunma {
+  grid-column: 12;
+  grid-row: 6;
+}
+body.home .japan-map .pref-saitama {
+  grid-column: 13;
+  grid-row: 7;
+}
+body.home .japan-map .pref-chiba {
+  grid-column: 14;
+  grid-row: 8;
+}
+body.home .japan-map .pref-tokyo {
+  grid-column: 13;
+  grid-row: 8;
+}
+body.home .japan-map .pref-kanagawa {
+  grid-column: 13;
+  grid-row: 9;
+}
+body.home .japan-map .pref-niigata {
+  grid-column: 12;
+  grid-row: 5;
+}
+body.home .japan-map .pref-toyama {
+  grid-column: 10;
+  grid-row: 5;
+}
+body.home .japan-map .pref-ishikawa {
+  grid-column: 10;
+  grid-row: 4;
+}
+body.home .japan-map .pref-fukui {
+  grid-column: 9;
+  grid-row: 5;
+}
+body.home .japan-map .pref-yamanashi {
+  grid-column: 12;
+  grid-row: 7;
+}
+body.home .japan-map .pref-nagano {
+  grid-column: 11;
+  grid-row: 6;
+}
+body.home .japan-map .pref-gifu {
+  grid-column: 10;
+  grid-row: 6;
+}
+body.home .japan-map .pref-shizuoka {
+  grid-column: 12;
+  grid-row: 8;
+}
+body.home .japan-map .pref-aichi {
+  grid-column: 11;
+  grid-row: 7;
+}
+body.home .japan-map .pref-mie {
+  grid-column: 10;
+  grid-row: 8;
+}
+body.home .japan-map .pref-shiga {
+  grid-column: 9;
+  grid-row: 6;
+}
+body.home .japan-map .pref-kyoto {
+  grid-column: 9;
+  grid-row: 7;
+}
+body.home .japan-map .pref-osaka {
+  grid-column: 9;
+  grid-row: 8;
+}
+body.home .japan-map .pref-hyogo {
+  grid-column: 8;
+  grid-row: 7;
+}
+body.home .japan-map .pref-nara {
+  grid-column: 10;
+  grid-row: 9;
+}
+body.home .japan-map .pref-wakayama {
+  grid-column: 9;
+  grid-row: 9;
+}
+body.home .japan-map .pref-tottori {
+  grid-column: 7;
+  grid-row: 6;
+}
+body.home .japan-map .pref-shimane {
+  grid-column: 6;
+  grid-row: 6;
+}
+body.home .japan-map .pref-okayama {
+  grid-column: 7;
+  grid-row: 7;
+}
+body.home .japan-map .pref-hiroshima {
+  grid-column: 6;
+  grid-row: 7;
+}
+body.home .japan-map .pref-yamaguchi {
+  grid-column: 5;
+  grid-row: 7;
+}
+body.home .japan-map .pref-tokushima {
+  grid-column: 7;
+  grid-row: 9;
+}
+body.home .japan-map .pref-kagawa {
+  grid-column: 7;
+  grid-row: 8;
+}
+body.home .japan-map .pref-ehime {
+  grid-column: 6;
+  grid-row: 8;
+}
+body.home .japan-map .pref-kochi {
+  grid-column: 6;
+  grid-row: 9;
+}
+body.home .japan-map .pref-fukuoka {
+  grid-column: 4;
+  grid-row: 7;
+}
+body.home .japan-map .pref-saga {
+  grid-column: 3;
+  grid-row: 7;
+}
+body.home .japan-map .pref-nagasaki {
+  grid-column: 2;
+  grid-row: 7;
+}
+body.home .japan-map .pref-oita {
+  grid-column: 4;
+  grid-row: 8;
+}
+body.home .japan-map .pref-kumamoto {
+  grid-column: 3;
+  grid-row: 8;
+}
+body.home .japan-map .pref-miyazaki {
+  grid-column: 4;
+  grid-row: 9;
+}
+body.home .japan-map .pref-kagoshima {
+  grid-column: 3;
+  grid-row: 9;
+}
+body.home .japan-map .pref-okinawa {
+  grid-column: 1;
+  grid-row: 11;
+}
+
+/* ========================================
+   全体・都道府県ページ (body.pref)
+   ======================================== */
 body.pref {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   background-color: #f4f7f9;
   color: #333333;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px 15px 40px;
 }
-
-/* ページタイトル */
-.js-pref-name {
+@media (max-width: 600px) {
+  body.pref {
+    padding: 10px;
+  }
+}
+body.pref .js-pref-name {
   font-size: 28px;
   text-align: center;
   color: #1a365d;
@@ -55,92 +338,227 @@ body.pref {
   padding-bottom: 10px;
   border-bottom: 3px solid #3182ce;
 }
-
-/* ========================================
-   天気表示セクション（カード）
-   ======================================== */
-.today-weather,
-.tomorrow-weather {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.today-weather h3,
-.tomorrow-weather h3 {
-  font-size: 20px;
-  color: #2b6cb0;
-  margin-bottom: 12px;
+body.pref .weather-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 30px;
 }
-
-/* 日付とメイン天気 */
-.js-date-today,
-.js-date-tomorrow {
-  font-weight: bold;
-  color: #718096;
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.js-weather-main-today,
-.js-weather-main-tomorrow {
-  font-size: 18px;
+body.pref .weather-main {
   font-weight: bold;
   color: #2d3748;
-  margin-bottom: 8px;
+  line-height: 1.4;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
-
-/* 気温表示 */
-.js-temp-today,
-.js-temp-tomorrow {
-  font-size: 16px;
-  font-weight: bold;
-  color: #e53e3e; /* 印象に残るアクセントカラー */
-  margin-bottom: 16px;
-}
-
-/* 天気アイコン表示部 */
-.js-weather-img-today,
-.js-weather-img-tomorrow {
+body.pref .weather-img {
+  background-color: #f7fafc;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7fafc;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
 }
-
-.js-weather-img-today img,
-.js-weather-img-tomorrow img {
-  width: 80px;
-  height: 80px;
+body.pref .weather-img img {
   -o-object-fit: contain;
      object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
-
-/* ========================================
-   テーブルデザイン
-   ======================================== */
-table {
+body.pref .weather-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d3748;
+  font-weight: 500;
+  margin: 6px 0;
+}
+body.pref .weather-info::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+body.pref .weather-info.info-temp::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23e53e3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>');
+}
+body.pref .weather-info.info-wind::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%233182ce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>');
+}
+body.pref .rain-table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 16px;
+}
+body.pref .rain-table th, body.pref .rain-table td {
+  text-align: center;
+  border-bottom: 1px solid #edf2f7;
+  white-space: nowrap;
+}
+body.pref .rain-table .table-header-rain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: bold;
+}
+body.pref .rain-table .table-header-rain::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233182ce"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>');
+  flex-shrink: 0;
+}
+body.pref .today-weather {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(49, 130, 206, 0.12);
+  border: 2px solid #ebf8ff;
+}
+body.pref .today-weather h3 {
+  font-size: 24px;
+  color: #2b6cb0;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ebf8ff;
+  padding-bottom: 8px;
+}
+body.pref .today-weather .js-date-today {
+  font-size: 16px;
+  color: #718096;
+  font-weight: bold;
+}
+body.pref .today-weather .js-weather-main-today {
+  font-size: 26px;
+  margin: 12px 0;
+}
+body.pref .today-weather .weather-img {
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+body.pref .today-weather .weather-img img {
+  width: 100px;
+  height: 100px;
+}
+body.pref .today-weather .info-temp {
+  font-size: 20px;
+  font-weight: bold;
+}
+body.pref .today-weather .info-temp::before {
+  width: 24px;
+  height: 24px;
+}
+body.pref .today-weather .info-wind {
+  font-size: 16px;
+}
+body.pref .today-weather .info-wind::before {
+  width: 22px;
+  height: 22px;
+}
+body.pref .today-weather .rain-table th, body.pref .today-weather .rain-table td {
+  padding: 10px 8px;
+  font-size: 14px;
+}
+body.pref .today-weather .rain-table .table-header-rain {
+  font-size: 15px;
+}
+body.pref .today-weather .rain-table .table-header-rain::before {
+  width: 18px;
+  height: 18px;
+}
+body.pref .tomorrow-weather {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+body.pref .tomorrow-weather h3 {
+  font-size: 16px;
+  color: #718096;
+  margin-bottom: 6px;
+}
+body.pref .tomorrow-weather .js-date-tomorrow {
+  font-size: 13px;
+  color: #718096;
+}
+body.pref .tomorrow-weather .js-weather-main-tomorrow {
+  font-size: 16px;
+  margin: 6px 0;
+}
+body.pref .tomorrow-weather .weather-img {
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+body.pref .tomorrow-weather .weather-img img {
+  width: 50px;
+  height: 50px;
+}
+body.pref .tomorrow-weather .info-temp {
+  font-size: 14px;
+}
+body.pref .tomorrow-weather .info-temp::before {
+  width: 18px;
+  height: 18px;
+}
+body.pref .tomorrow-weather .info-wind {
+  font-size: 13px;
+  color: #718096;
+}
+body.pref .tomorrow-weather .info-wind::before {
+  width: 16px;
+  height: 16px;
+}
+body.pref .tomorrow-weather .rain-table {
   margin-top: 10px;
+}
+body.pref .tomorrow-weather .rain-table th, body.pref .tomorrow-weather .rain-table td {
+  padding: 6px 4px;
+  font-size: 12px;
+}
+body.pref .tomorrow-weather .rain-table .table-header-rain {
+  font-size: 13px;
+}
+body.pref .tomorrow-weather .rain-table .table-header-rain::before {
+  width: 14px;
+  height: 14px;
+}
+@media (max-width: 600px) {
+  body.pref .today-weather {
+    padding: 20px 16px;
+  }
+  body.pref .today-weather h3 {
+    font-size: 20px;
+  }
+  body.pref .today-weather .js-weather-main-today {
+    font-size: 20px;
+  }
+  body.pref .today-weather .info-temp {
+    font-size: 17px;
+  }
+  body.pref .today-weather .weather-img img {
+    width: 75px;
+    height: 75px;
+  }
+}
+body.pref .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 10px;
+}
+body.pref table {
+  width: 100%;
+  border-collapse: collapse;
   overflow: hidden;
   border-radius: 8px;
   background-color: #ffffff;
 }
-
-thead {
+body.pref table thead {
   background-color: #ebf8ff;
 }
-
-th {
+body.pref table th {
   color: #2b6cb0;
   font-size: 14px;
   font-weight: bold;
@@ -149,32 +567,35 @@ th {
   border-bottom: 2px solid #bee3f8;
   white-space: nowrap;
 }
-
-td {
+body.pref table td {
   padding: 12px 10px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   border-bottom: 1px solid #edf2f7;
 }
-
-/* 偶数行の背景色（ゼブラパターンで視認性向上） */
-tbody tr:nth-child(even) {
+body.pref table td .pop-badge-high {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  body.pref table th, body.pref table td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+}
+body.pref table tbody tr:nth-child(even) {
   background-color: #f7fafc;
 }
-
-/* テーブルホバー効果 */
-tbody tr:hover {
+body.pref table tbody tr:hover {
   background-color: #edf2f7;
 }
-
-/* ========================================
-   ナビゲーション・戻るボタン
-   ======================================== */
 body.pref > p {
   text-align: center;
   margin-top: 30px;
 }
-
 body.pref a {
   display: inline-block;
   padding: 12px 24px;
@@ -186,7 +607,6 @@ body.pref a {
   box-shadow: 0 2px 6px rgba(66, 153, 225, 0.4);
   transition: all 0.2s ease;
 }
-
 body.pref a:hover {
   background-color: #3182ce;
   transform: translateY(-2px);
@@ -194,23 +614,657 @@ body.pref a:hover {
 }
 
 /* ========================================
-   スマホ対応 (レスポンシブ)
+   ローディングスピナー
    ======================================== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.loading-overlay .spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e2e8f0;
+  border-top: 5px solid #3182ce;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ========================================
+   トップページ (body.home) - 日本地図レイアウト
+   ======================================== */
+body.home {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #f4f7f9;
+  color: #333333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+}
+body.home h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 8px;
+}
+body.home .lead-text {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+body.home .japan-map-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+body.home {
+  /* CSS Grid による簡易日本地図配置 */
+}
+body.home .japan-map {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(12, 42px);
+  gap: 4px;
+  min-width: 600px;
+}
+body.home .japan-map .map-pref {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body.home .japan-map .map-pref:hover {
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body.home .japan-map {
+  /* 地方ごとの色分け */
+}
+body.home .japan-map .pref-hokkaido, body.home .japan-map .pref-aomori, body.home .japan-map .pref-akita, body.home .japan-map .pref-iwate,
+body.home .japan-map .pref-yamagata, body.home .japan-map .pref-miyagi, body.home .japan-map .pref-fukushima {
+  background-color: #3182ce;
+}
+body.home .japan-map .pref-ibaraki, body.home .japan-map .pref-tochigi, body.home .japan-map .pref-gunma, body.home .japan-map .pref-saitama,
+body.home .japan-map .pref-chiba, body.home .japan-map .pref-tokyo, body.home .japan-map .pref-kanagawa {
+  background-color: #38a169;
+}
+body.home .japan-map .pref-niigata, body.home .japan-map .pref-toyama, body.home .japan-map .pref-ishikawa, body.home .japan-map .pref-fukui, body.home .japan-map .pref-yamanashi,
+body.home .japan-map .pref-nagano, body.home .japan-map .pref-gifu, body.home .japan-map .pref-shizuoka, body.home .japan-map .pref-aichi {
+  background-color: #d69e2e;
+}
+body.home .japan-map .pref-mie, body.home .japan-map .pref-shiga, body.home .japan-map .pref-kyoto, body.home .japan-map .pref-osaka,
+body.home .japan-map .pref-hyogo, body.home .japan-map .pref-nara, body.home .japan-map .pref-wakayama {
+  background-color: #dd6b20;
+}
+body.home .japan-map .pref-tottori, body.home .japan-map .pref-shimane, body.home .japan-map .pref-okayama, body.home .japan-map .pref-hiroshima, body.home .japan-map .pref-yamaguchi,
+body.home .japan-map .pref-tokushima, body.home .japan-map .pref-kagawa, body.home .japan-map .pref-ehime, body.home .japan-map .pref-kochi {
+  background-color: #e53e3e;
+}
+body.home .japan-map .pref-fukuoka, body.home .japan-map .pref-saga, body.home .japan-map .pref-nagasaki, body.home .japan-map .pref-kumamoto,
+body.home .japan-map .pref-oita, body.home .japan-map .pref-miyazaki, body.home .japan-map .pref-kagoshima, body.home .japan-map .pref-okinawa {
+  background-color: #805ad5;
+}
+body.home .japan-map {
+  /* 各都道府県の位置設定 (列 / 行) */
+}
+body.home .japan-map .pref-hokkaido {
+  grid-column: 14/16;
+  grid-row: 1/3;
+}
+body.home .japan-map .pref-aomori {
+  grid-column: 14;
+  grid-row: 3;
+}
+body.home .japan-map .pref-akita {
+  grid-column: 13;
+  grid-row: 4;
+}
+body.home .japan-map .pref-iwate {
+  grid-column: 14;
+  grid-row: 4;
+}
+body.home .japan-map .pref-yamagata {
+  grid-column: 13;
+  grid-row: 5;
+}
+body.home .japan-map .pref-miyagi {
+  grid-column: 14;
+  grid-row: 5;
+}
+body.home .japan-map .pref-fukushima {
+  grid-column: 14;
+  grid-row: 6;
+}
+body.home .japan-map .pref-ibaraki {
+  grid-column: 14;
+  grid-row: 7;
+}
+body.home .japan-map .pref-tochigi {
+  grid-column: 13;
+  grid-row: 6;
+}
+body.home .japan-map .pref-gunma {
+  grid-column: 12;
+  grid-row: 6;
+}
+body.home .japan-map .pref-saitama {
+  grid-column: 13;
+  grid-row: 7;
+}
+body.home .japan-map .pref-chiba {
+  grid-column: 14;
+  grid-row: 8;
+}
+body.home .japan-map .pref-tokyo {
+  grid-column: 13;
+  grid-row: 8;
+}
+body.home .japan-map .pref-kanagawa {
+  grid-column: 13;
+  grid-row: 9;
+}
+body.home .japan-map .pref-niigata {
+  grid-column: 12;
+  grid-row: 5;
+}
+body.home .japan-map .pref-toyama {
+  grid-column: 10;
+  grid-row: 5;
+}
+body.home .japan-map .pref-ishikawa {
+  grid-column: 10;
+  grid-row: 4;
+}
+body.home .japan-map .pref-fukui {
+  grid-column: 9;
+  grid-row: 5;
+}
+body.home .japan-map .pref-yamanashi {
+  grid-column: 12;
+  grid-row: 7;
+}
+body.home .japan-map .pref-nagano {
+  grid-column: 11;
+  grid-row: 6;
+}
+body.home .japan-map .pref-gifu {
+  grid-column: 10;
+  grid-row: 6;
+}
+body.home .japan-map .pref-shizuoka {
+  grid-column: 12;
+  grid-row: 8;
+}
+body.home .japan-map .pref-aichi {
+  grid-column: 11;
+  grid-row: 7;
+}
+body.home .japan-map .pref-mie {
+  grid-column: 10;
+  grid-row: 8;
+}
+body.home .japan-map .pref-shiga {
+  grid-column: 9;
+  grid-row: 6;
+}
+body.home .japan-map .pref-kyoto {
+  grid-column: 9;
+  grid-row: 7;
+}
+body.home .japan-map .pref-osaka {
+  grid-column: 9;
+  grid-row: 8;
+}
+body.home .japan-map .pref-hyogo {
+  grid-column: 8;
+  grid-row: 7;
+}
+body.home .japan-map .pref-nara {
+  grid-column: 10;
+  grid-row: 9;
+}
+body.home .japan-map .pref-wakayama {
+  grid-column: 9;
+  grid-row: 9;
+}
+body.home .japan-map .pref-tottori {
+  grid-column: 7;
+  grid-row: 6;
+}
+body.home .japan-map .pref-shimane {
+  grid-column: 6;
+  grid-row: 6;
+}
+body.home .japan-map .pref-okayama {
+  grid-column: 7;
+  grid-row: 7;
+}
+body.home .japan-map .pref-hiroshima {
+  grid-column: 6;
+  grid-row: 7;
+}
+body.home .japan-map .pref-yamaguchi {
+  grid-column: 5;
+  grid-row: 7;
+}
+body.home .japan-map .pref-tokushima {
+  grid-column: 7;
+  grid-row: 9;
+}
+body.home .japan-map .pref-kagawa {
+  grid-column: 7;
+  grid-row: 8;
+}
+body.home .japan-map .pref-ehime {
+  grid-column: 6;
+  grid-row: 8;
+}
+body.home .japan-map .pref-kochi {
+  grid-column: 6;
+  grid-row: 9;
+}
+body.home .japan-map .pref-fukuoka {
+  grid-column: 4;
+  grid-row: 7;
+}
+body.home .japan-map .pref-saga {
+  grid-column: 3;
+  grid-row: 7;
+}
+body.home .japan-map .pref-nagasaki {
+  grid-column: 2;
+  grid-row: 7;
+}
+body.home .japan-map .pref-oita {
+  grid-column: 4;
+  grid-row: 8;
+}
+body.home .japan-map .pref-kumamoto {
+  grid-column: 3;
+  grid-row: 8;
+}
+body.home .japan-map .pref-miyazaki {
+  grid-column: 4;
+  grid-row: 9;
+}
+body.home .japan-map .pref-kagoshima {
+  grid-column: 3;
+  grid-row: 9;
+}
+body.home .japan-map .pref-okinawa {
+  grid-column: 1;
+  grid-row: 11;
+}
+
+/* ========================================
+   全体・都道府県ページ (body.pref)
+   ======================================== */
+body.pref {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #f4f7f9;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+}
 @media (max-width: 600px) {
   body.pref {
     padding: 10px;
   }
-  .today-weather,
-  .tomorrow-weather {
-    padding: 16px;
+}
+body.pref .js-pref-name {
+  font-size: 28px;
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3182ce;
+}
+body.pref {
+  /* ========================================
+    天気表示セクション（統合完全版）
+    ======================================== */
+}
+body.pref .weather-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+body.pref {
+  /* --- 共通コンポーネント --- */
+  /* 天気テキストの崩れ防止 */
+}
+body.pref .weather-main {
+  font-weight: bold;
+  color: #2d3748;
+  line-height: 1.4;
+  word-break: keep-all; /* 単語の途中で変な改行を防ぐ */
+  overflow-wrap: anywhere; /* 長い文字の安全な折り返し */
+}
+body.pref {
+  /* 画像コンテナ */
+}
+body.pref .weather-img {
+  background-color: #f7fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.pref .weather-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body.pref {
+  /* アイコン付き情報 (気温・風) */
+}
+body.pref .weather-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d3748;
+  font-weight: 500;
+  margin: 6px 0;
+}
+body.pref .weather-info::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+body.pref .weather-info {
+  /* 温度計アイコン（赤系） */
+}
+body.pref .weather-info.info-temp::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23e53e3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>');
+}
+body.pref .weather-info {
+  /* 風アイコン（青系） */
+}
+body.pref .weather-info.info-wind::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%233182ce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>');
+}
+body.pref {
+  /* 降水確率テーブル & 雨粒アイコン */
+}
+body.pref .rain-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+body.pref .rain-table th, body.pref .rain-table td {
+  text-align: center;
+  border-bottom: 1px solid #edf2f7;
+  white-space: nowrap; /* テーブル内の不自然な改行防止 */
+}
+body.pref .rain-table .table-header-rain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: bold;
+  /* 雨粒アイコン（青色） */
+}
+body.pref .rain-table .table-header-rain::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233182ce"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>');
+  flex-shrink: 0;
+}
+body.pref {
+  /* ----------------------------------------
+     【主役】今日の天気 (大きく目立たせる)
+     ---------------------------------------- */
+}
+body.pref .today-weather {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(49, 130, 206, 0.12);
+  border: 2px solid #ebf8ff;
+}
+body.pref .today-weather h3 {
+  font-size: 24px;
+  color: #2b6cb0;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ebf8ff;
+  padding-bottom: 8px;
+}
+body.pref .today-weather .js-date-today {
+  font-size: 16px;
+  color: #718096;
+  font-weight: bold;
+}
+body.pref .today-weather .js-weather-main-today {
+  font-size: 26px;
+  margin: 12px 0;
+}
+body.pref .today-weather .weather-img {
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+body.pref .today-weather .weather-img img {
+  width: 100px;
+  height: 100px;
+}
+body.pref .today-weather .info-temp {
+  font-size: 20px;
+  font-weight: bold;
+}
+body.pref .today-weather .info-temp::before {
+  width: 24px;
+  height: 24px;
+}
+body.pref .today-weather .info-wind {
+  font-size: 16px;
+}
+body.pref .today-weather .info-wind::before {
+  width: 22px;
+  height: 22px;
+}
+body.pref .today-weather .rain-table th, body.pref .today-weather .rain-table td {
+  padding: 10px 8px;
+  font-size: 14px;
+}
+body.pref .today-weather .rain-table .table-header-rain {
+  font-size: 15px;
+}
+body.pref .today-weather .rain-table .table-header-rain::before {
+  width: 18px;
+  height: 18px;
+}
+body.pref {
+  /* ----------------------------------------
+     【控えめ】明日の天気 (小さくコンパクトに)
+     ---------------------------------------- */
+}
+body.pref .tomorrow-weather {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+body.pref .tomorrow-weather h3 {
+  font-size: 16px;
+  color: #718096;
+  margin-bottom: 6px;
+}
+body.pref .tomorrow-weather .js-date-tomorrow {
+  font-size: 13px;
+  color: #718096;
+}
+body.pref .tomorrow-weather .js-weather-main-tomorrow {
+  font-size: 16px;
+  margin: 6px 0;
+}
+body.pref .tomorrow-weather .weather-img {
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+body.pref .tomorrow-weather .weather-img img {
+  width: 50px;
+  height: 50px;
+}
+body.pref .tomorrow-weather .info-temp {
+  font-size: 14px;
+}
+body.pref .tomorrow-weather .info-temp::before {
+  width: 18px;
+  height: 18px;
+}
+body.pref .tomorrow-weather .info-wind {
+  font-size: 13px;
+  color: #718096;
+}
+body.pref .tomorrow-weather .info-wind::before {
+  width: 16px;
+  height: 16px;
+}
+body.pref .tomorrow-weather .rain-table {
+  margin-top: 10px;
+}
+body.pref .tomorrow-weather .rain-table th, body.pref .tomorrow-weather .rain-table td {
+  padding: 6px 4px;
+  font-size: 12px;
+}
+body.pref .tomorrow-weather .rain-table .table-header-rain {
+  font-size: 13px;
+}
+body.pref .tomorrow-weather .rain-table .table-header-rain::before {
+  width: 14px;
+  height: 14px;
+}
+body.pref {
+  /* ----------------------------------------
+     レスポンシブ対応 (スマホ表示)
+     ---------------------------------------- */
+}
+@media (max-width: 600px) {
+  body.pref .today-weather {
+    padding: 20px 16px;
   }
-  th, td {
+  body.pref .today-weather h3 {
+    font-size: 20px;
+  }
+  body.pref .today-weather .js-weather-main-today {
+    font-size: 20px;
+  }
+  body.pref .today-weather .info-temp {
+    font-size: 17px;
+  }
+  body.pref .today-weather .weather-img img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* ----------------------------------------
+   テーブル＆はみ出し防止ラッパー（拡張）
+   ---------------------------------------- */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+table thead {
+  background-color: #ebf8ff;
+}
+table th {
+  color: #2b6cb0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #bee3f8;
+  white-space: nowrap;
+}
+table td {
+  padding: 12px 10px;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #edf2f7;
+  /* 拡張：降水確率が高い場合などのバッジ装飾（JSで付与可） */
+}
+table td .pop-badge-high {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  table th, table td {
     padding: 8px 4px;
     font-size: 12px;
   }
-  .js-weather-img-today img,
-  .js-weather-img-tomorrow img {
-    width: 60px;
-    height: 60px;
-  }
+}
+table tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+table tbody tr:hover {
+  background-color: #edf2f7;
+}
+
+> p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4299e1;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(66, 153, 225, 0.4);
+  transition: all 0.2s ease;
+}
+a:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(66, 153, 225, 0.5);
 }/*# sourceMappingURL=style.css.map */

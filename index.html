@@ -1,79 +1,83 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日本の天気予報</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/function.js"></script>
-  
 </head>
 <body class="home">
   <h1>日本の天気予報</h1>
-  <div>
-    <img src="japan-map.png" alt="日本地図で各都道府県を選択したらページ移動できるようにする">
-  </div>
-  <div>
-    <a href="pref.html?pref=北海">北海道</a>
-    <a href="pref.html?pref=青森">青森県</a>
-    <a href="pref.html?pref=岩手">岩手県</a>
-    <a href="pref.html?pref=宮城">宮城県</a>
-    <a href="pref.html?pref=秋田">秋田県</a>
-    <a href="pref.html?pref=山形">山形県</a>
-    <a href="pref.html?pref=福島">福島県</a>
-    <a href="pref.html?pref=茨城">茨城県</a>
-    <a href="pref.html?pref=栃木">栃木県</a>
-    <a href="pref.html?pref=群馬">群馬県</a>
-    <a href="pref.html?pref=埼玉">埼玉県</a>
-    <a href="pref.html?pref=千葉">千葉県</a>
-    <a href="pref.html?pref=東京">東京都</a>
-    <a href="pref.html?pref=神奈川">神奈川県</a>
-    <a href="pref.html?pref=新潟">新潟県</a>
-    <a href="pref.html?pref=富山">富山県</a>
-    <a href="pref.html?pref=石川">石川県</a>
-    <a href="pref.html?pref=福井">福井県</a>
-    <a href="pref.html?pref=山梨">山梨県</a>
-    <a href="pref.html?pref=長野">長野県</a>
-    <a href="pref.html?pref=岐阜">岐阜県</a>
-    <a href="pref.html?pref=静岡">静岡県</a>
-    <a href="pref.html?pref=愛知">愛知県</a>
-    <a href="pref.html?pref=三重">三重県</a>
-    <a href="pref.html?pref=滋賀">滋賀県</a>
-    <a href="pref.html?pref=京都">京都府</a>
-    <a href="pref.html?pref=大阪">大阪府</a>
-    <a href="pref.html?pref=兵庫">兵庫県</a>
-    <a href="pref.html?pref=奈良">奈良県</a>
-    <a href="pref.html?pref=和歌山">和歌山県</a>
-    <a href="pref.html?pref=鳥取">鳥取県</a>
-    <a href="pref.html?pref=島根">島根県</a>
-    <a href="pref.html?pref=岡山">岡山県</a>
-    <a href="pref.html?pref=広島">広島県</a>
-    <a href="pref.html?pref=山口">山口県</a>
-    <a href="pref.html?pref=徳島">徳島県</a>
-    <a href="pref.html?pref=香川">香川県</a>
-    <a href="pref.html?pref=愛媛">愛媛県</a>
-    <a href="pref.html?pref=高知">高知県</a>
-    <a href="pref.html?pref=福岡">福岡県</a>
-    <a href="pref.html?pref=佐賀">佐賀県</a>
-    <a href="pref.html?pref=長崎">長崎県</a>
-    <a href="pref.html?pref=熊本">熊本県</a>
-    <a href="pref.html?pref=大分">大分県</a>
-    <a href="pref.html?pref=宮崎">宮崎県</a>
-    <a href="pref.html?pref=鹿児島">鹿児島県</a>
-    <a href="pref.html?pref=沖縄">沖縄県</a>
-  </div>
+  <p class="lead-text">都道府県または地図のエリアを選択してください</p>
 
+  <!-- 日本地図エリア (グリッド配置によるSVGライクな日本地図) -->
+  <main class="japan-map-container">
+    <div class="japan-map">
+      <!-- 北海道・東北 -->
+      <a href="pref.html?pref=hokkaido" class="map-pref pref-hokkaido">北海道</a>
+      <a href="pref.html?pref=aomori" class="map-pref pref-aomori">青森</a>
+      <a href="pref.html?pref=akita" class="map-pref pref-akita">秋田</a>
+      <a href="pref.html?pref=iwate" class="map-pref pref-iwate">岩手</a>
+      <a href="pref.html?pref=yamagata" class="map-pref pref-yamagata">山形</a>
+      <a href="pref.html?pref=miyagi" class="map-pref pref-miyagi">宮城</a>
+      <a href="pref.html?pref=fukushima" class="map-pref pref-fukushima">福島</a>
+
+      <!-- 関東 -->
+      <a href="pref.html?pref=ibaraki" class="map-pref pref-ibaraki">茨城</a>
+      <a href="pref.html?pref=tochigi" class="map-pref pref-tochigi">栃木</a>
+      <a href="pref.html?pref=gunma" class="map-pref pref-gunma">群馬</a>
+      <a href="pref.html?pref=saitama" class="map-pref pref-saitama">埼玉</a>
+      <a href="pref.html?pref=chiba" class="map-pref pref-chiba">千葉</a>
+      <a href="pref.html?pref=tokyo" class="map-pref pref-tokyo">東京</a>
+      <a href="pref.html?pref=kanagawa" class="map-pref pref-kanagawa">神奈川</a>
+
+      <!-- 中部 -->
+      <a href="pref.html?pref=niigata" class="map-pref pref-niigata">新潟</a>
+      <a href="pref.html?pref=toyama" class="map-pref pref-toyama">富山</a>
+      <a href="pref.html?pref=ishikawa" class="map-pref pref-ishikawa">石川</a>
+      <a href="pref.html?pref=fukui" class="map-pref pref-fukui">福井</a>
+      <a href="pref.html?pref=yamanashi" class="map-pref pref-yamanashi">山梨</a>
+      <a href="pref.html?pref=nagano" class="map-pref pref-nagano">長野</a>
+      <a href="pref.html?pref=gifu" class="map-pref pref-gifu">岐阜</a>
+      <a href="pref.html?pref=shizuoka" class="map-pref pref-shizuoka">静岡</a>
+      <a href="pref.html?pref=aichi" class="map-pref pref-aichi">愛知</a>
+
+      <!-- 近畿 -->
+      <a href="pref.html?pref=mie" class="map-pref pref-mie">三重</a>
+      <a href="pref.html?pref=shiga" class="map-pref pref-shiga">滋賀</a>
+      <a href="pref.html?pref=kyoto" class="map-pref pref-kyoto">京都</a>
+      <a href="pref.html?pref=osaka" class="map-pref pref-osaka">大阪</a>
+      <a href="pref.html?pref=hyogo" class="map-pref pref-hyogo">兵庫</a>
+      <a href="pref.html?pref=nara" class="map-pref pref-nara">奈良</a>
+      <a href="pref.html?pref=wakayama" class="map-pref pref-wakayama">和歌山</a>
+
+      <!-- 中国 -->
+      <a href="pref.html?pref=tottori" class="map-pref pref-tottori">鳥取</a>
+      <a href="pref.html?pref=shimane" class="map-pref pref-shimane">島根</a>
+      <a href="pref.html?pref=okayama" class="map-pref pref-okayama">岡山</a>
+      <a href="pref.html?pref=hiroshima" class="map-pref pref-hiroshima">広島</a>
+      <a href="pref.html?pref=yamaguchi" class="map-pref pref-yamaguchi">山口</a>
+
+      <!-- 四国 -->
+      <a href="pref.html?pref=tokushima" class="map-pref pref-tokushima">徳島</a>
+      <a href="pref.html?pref=kagawa" class="map-pref pref-kagawa">香川</a>
+      <a href="pref.html?pref=ehime" class="map-pref pref-ehime">愛媛</a>
+      <a href="pref.html?pref=kochi" class="map-pref pref-kochi">高知</a>
+
+      <!-- 九州・沖縄 -->
+      <a href="pref.html?pref=fukuoka" class="map-pref pref-fukuoka">福岡</a>
+      <a href="pref.html?pref=saga" class="map-pref pref-saga">佐賀</a>
+      <a href="pref.html?pref=nagasaki" class="map-pref pref-nagasaki">長崎</a>
+      <a href="pref.html?pref=kumamoto" class="map-pref pref-kumamoto">熊本</a>
+      <a href="pref.html?pref=oita" class="map-pref pref-oita">大分</a>
+      <a href="pref.html?pref=miyazaki" class="map-pref pref-miyazaki">宮崎</a>
+      <a href="pref.html?pref=kagoshima" class="map-pref pref-kagoshima">鹿児島</a>
+      <a href="pref.html?pref=okinawa" class="map-pref pref-okinawa">沖縄</a>
+    </div>
+  </main>
 </body>
 </html>

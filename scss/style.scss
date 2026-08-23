@@ -1,8 +1,44 @@
-@charset "UTF-8";
-
 /* ========================================
-   全体設定
+   変数定義 (Variables)
    ======================================== */
+$font-family-base: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+// カラーパレット
+$primary-color: #3182ce;
+$primary-dark: #2b6cb0;
+$primary-light: #ebf8ff;
+$border-color-light: #bee3f8;
+
+$text-main: #333333;
+$text-title: #1a365d;/* ========================================
+   変数定義 (Variables)
+   ======================================== */
+$font-family-base: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+// カラーパレット
+$primary-color: #3182ce;
+$primary-dark: #2b6cb0;
+$primary-light: #ebf8ff;
+$border-color-light: #bee3f8;
+
+$text-main: #333333;
+$text-title: #1a365d;
+$text-dark: #2d3748;
+$text-muted: #718096;
+
+$bg-main: #f4f7f9;
+$bg-card: #ffffff;
+$bg-sub: #f7fafc;
+
+// アクセントカラー
+$temp-max-color: #e53e3e;
+$temp-min-color: #3182ce;
+$button-bg: #4299e1;
+
+// ブレイクポイント
+$breakpoint-sp: 600px;
+$breakpoint-pc: 768px;
+
 /* ========================================
    ローディングスピナー
    ======================================== */
@@ -12,204 +48,1008 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.85); /* 半透明の白背景 */
+  background-color: rgba(255, 255, 255, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* 最前面に表示 */
-}
+  z-index: 9999;
 
-/* 円形アニメーション */
-.spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #e2e8f0;
-  border-top: 5px solid #3182ce; /* ブランドカラー */
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e2e8f0;
+    border-top: 5px solid $primary-color;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-body.pref {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  background-color: #f4f7f9;
-  color: #333333;
-  line-height: 1.6;
-  max-width: 800px;
+
+/* ========================================
+   トップページ (body.home) - 日本地図レイアウト
+   ======================================== */
+body.home {
+  font-family: $font-family-base;
+  background-color: $bg-main;
+  color: $text-main;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px 15px 40px;
-}
 
-/* ページタイトル */
-.js-pref-name {
-  font-size: 28px;
-  text-align: center;
-  color: #1a365d;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #3182ce;
-}
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    color: $text-title;
+    margin-bottom: 8px;
+  }
 
-/* ========================================
-   天気表示セクション（カード）
-   ======================================== */
-.today-weather,
-.tomorrow-weather {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
+  .lead-text {
+    text-align: center;
+    color: $text-muted;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 
-.today-weather h3,
-.tomorrow-weather h3 {
-  font-size: 20px;
-  color: #2b6cb0;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-}
+  .japan-map-container {
+    background-color: $bg-card;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+  }
 
-/* 日付とメイン天気 */
-.js-date-today,
-.js-date-tomorrow {
-  font-weight: bold;
-  color: #718096;
-  font-size: 14px;
-  margin-bottom: 4px;
-}
+  /* CSS Grid による簡易日本地図配置 */
+  .japan-map {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(12, 42px);
+    gap: 4px;
+    min-width: 600px;
 
-.js-weather-main-today,
-.js-weather-main-tomorrow {
-  font-size: 18px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 8px;
-}
+    .map-pref {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-/* 気温表示 */
-.js-temp-today,
-.js-temp-tomorrow {
-  font-size: 16px;
-  font-weight: bold;
-  color: #e53e3e; /* 印象に残るアクセントカラー */
-  margin-bottom: 16px;
-}
+      &:hover {
+        transform: scale(1.08);
+        z-index: 10;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
 
-/* 天気アイコン表示部 */
-.js-weather-img-today,
-.js-weather-img-tomorrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7fafc;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
+    /* 地方ごとの色分け */
+    .pref-hokkaido, .pref-aomori, .pref-akita, .pref-iwate, 
+    .pref-yamagata, .pref-miyagi, .pref-fukushima { background-color: #3182ce; }
 
-.js-weather-img-today img,
-.js-weather-img-tomorrow img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
+    .pref-ibaraki, .pref-tochigi, .pref-gunma, .pref-saitama, 
+    .pref-chiba, .pref-tokyo, .pref-kanagawa { background-color: #38a169; }
 
-/* ========================================
-   テーブルデザイン
-   ======================================== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: #ffffff;
-}
+    .pref-niigata, .pref-toyama, .pref-ishikawa, .pref-fukui, .pref-yamanashi, 
+    .pref-nagano, .pref-gifu, .pref-shizuoka, .pref-aichi { background-color: #d69e2e; }
 
-thead {
-  background-color: #ebf8ff;
-}
+    .pref-mie, .pref-shiga, .pref-kyoto, .pref-osaka, 
+    .pref-hyogo, .pref-nara, .pref-wakayama { background-color: #dd6b20; }
 
-th {
-  color: #2b6cb0;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 2px solid #bee3f8;
-  white-space: nowrap;
-}
+    .pref-tottori, .pref-shimane, .pref-okayama, .pref-hiroshima, .pref-yamaguchi,
+    .pref-tokushima, .pref-kagawa, .pref-ehime, .pref-kochi { background-color: #e53e3e; }
 
-td {
-  padding: 12px 10px;
-  font-size: 14px;
-  text-align: center;
-  border-bottom: 1px solid #edf2f7;
-}
+    .pref-fukuoka, .pref-saga, .pref-nagasaki, .pref-kumamoto, 
+    .pref-oita, .pref-miyazaki, .pref-kagoshima, .pref-okinawa { background-color: #805ad5; }
 
-/* 偶数行の背景色（ゼブラパターンで視認性向上） */
-tbody tr:nth-child(even) {
-  background-color: #f7fafc;
-}
+    /* 位置指定 */
+    .pref-hokkaido { grid-column: 14 / 16; grid-row: 1 / 3; }
+    .pref-aomori   { grid-column: 14; grid-row: 3; }
+    .pref-akita    { grid-column: 13; grid-row: 4; }
+    .pref-iwate    { grid-column: 14; grid-row: 4; }
+    .pref-yamagata { grid-column: 13; grid-row: 5; }
+    .pref-miyagi   { grid-column: 14; grid-row: 5; }
+    .pref-fukushima{ grid-column: 14; grid-row: 6; }
 
-/* テーブルホバー効果 */
-tbody tr:hover {
-  background-color: #edf2f7;
-}
+    .pref-ibaraki  { grid-column: 14; grid-row: 7; }
+    .pref-tochigi  { grid-column: 13; grid-row: 6; }
+    .pref-gunma    { grid-column: 12; grid-row: 6; }
+    .pref-saitama  { grid-column: 13; grid-row: 7; }
+    .pref-chiba    { grid-column: 14; grid-row: 8; }
+    .pref-tokyo    { grid-column: 13; grid-row: 8; }
+    .pref-kanagawa { grid-column: 13; grid-row: 9; }
 
-/* ========================================
-   ナビゲーション・戻るボタン
-   ======================================== */
-body.pref > p {
-  text-align: center;
-  margin-top: 30px;
-}
+    .pref-niigata  { grid-column: 12; grid-row: 5; }
+    .pref-toyama   { grid-column: 10; grid-row: 5; }
+    .pref-ishikawa { grid-column: 10; grid-row: 4; }
+    .pref-fukui    { grid-column: 9;  grid-row: 5; }
+    .pref-yamanashi{ grid-column: 12; grid-row: 7; }
+    .pref-nagano   { grid-column: 11; grid-row: 6; }
+    .pref-gifu     { grid-column: 10; grid-row: 6; }
+    .pref-shizuoka { grid-column: 12; grid-row: 8; }
+    .pref-aichi    { grid-column: 11; grid-row: 7; }
 
-body.pref a {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #4299e1;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(66, 153, 225, 0.4);
-  transition: all 0.2s ease;
-}
+    .pref-mie      { grid-column: 10; grid-row: 8; }
+    .pref-shiga    { grid-column: 9;  grid-row: 6; }
+    .pref-kyoto    { grid-column: 9;  grid-row: 7; }
+    .pref-osaka    { grid-column: 9;  grid-row: 8; }
+    .pref-hyogo    { grid-column: 8;  grid-row: 7; }
+    .pref-nara     { grid-column: 10; grid-row: 9; }
+    .pref-wakayama { grid-column: 9;  grid-row: 9; }
 
-body.pref a:hover {
-  background-color: #3182ce;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(66, 153, 225, 0.5);
+    .pref-tottori  { grid-column: 7;  grid-row: 6; }
+    .pref-shimane  { grid-column: 6;  grid-row: 6; }
+    .pref-okayama  { grid-column: 7;  grid-row: 7; }
+    .pref-hiroshima{ grid-column: 6;  grid-row: 7; }
+    .pref-yamaguchi{ grid-column: 5;  grid-row: 7; }
+
+    .pref-tokushima{ grid-column: 7;  grid-row: 9; }
+    .pref-kagawa   { grid-column: 7;  grid-row: 8; }
+    .pref-ehime    { grid-column: 6;  grid-row: 8; }
+    .pref-kochi    { grid-column: 6;  grid-row: 9; }
+
+    .pref-fukuoka  { grid-column: 4;  grid-row: 7; }
+    .pref-saga     { grid-column: 3;  grid-row: 7; }
+    .pref-nagasaki { grid-column: 2;  grid-row: 7; }
+    .pref-oita     { grid-column: 4;  grid-row: 8; }
+    .pref-kumamoto { grid-column: 3;  grid-row: 8; }
+    .pref-miyazaki { grid-column: 4;  grid-row: 9; }
+    .pref-kagoshima{ grid-column: 3;  grid-row: 9; }
+    .pref-okinawa  { grid-column: 1;  grid-row: 11; }
+  }
 }
 
 /* ========================================
-   スマホ対応 (レスポンシブ)
+   全体・都道府県ページ (body.pref)
    ======================================== */
-@media (max-width: 600px) {
-  body.pref {
+body.pref {
+  font-family: $font-family-base;
+  background-color: $bg-main;
+  color: $text-main;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+
+  @media (max-width: $breakpoint-sp) {
     padding: 10px;
   }
 
-  .today-weather,
-  .tomorrow-weather {
-    padding: 16px;
+  .js-pref-name {
+    font-size: 28px;
+    text-align: center;
+    color: $text-title;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $primary-color;
   }
+
+  .weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .weather-main {
+    font-weight: bold;
+    color: $text-dark;
+    line-height: 1.4;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  .weather-img {
+    background-color: $bg-sub;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .weather-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $text-dark;
+    font-weight: 500;
+    margin: 6px 0;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      flex-shrink: 0;
+    }
+
+    &.info-temp::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23e53e3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>');
+    }
+
+    &.info-wind::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%233182ce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>');
+    }
+  }
+
+  .rain-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+
+    th, td {
+      text-align: center;
+      border-bottom: 1px solid #edf2f7;
+      white-space: nowrap;
+    }
+
+    .table-header-rain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-weight: bold;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233182ce"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>');
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .today-weather {
+    background: $bg-card;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(49, 130, 206, 0.12);
+    border: 2px solid $primary-light;
+
+    h3 {
+      font-size: 24px;
+      color: $primary-dark;
+      margin-bottom: 12px;
+      border-bottom: 2px solid $primary-light;
+      padding-bottom: 8px;
+    }
+
+    .js-date-today {
+      font-size: 16px;
+      color: $text-muted;
+      font-weight: bold;
+    }
+
+    .js-weather-main-today {
+      font-size: 26px;
+      margin: 12px 0;
+    }
+
+    .weather-img {
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .info-temp {
+      font-size: 20px;
+      font-weight: bold;
+      &::before { width: 24px; height: 24px; }
+    }
+
+    .info-wind {
+      font-size: 16px;
+      &::before { width: 22px; height: 22px; }
+    }
+
+    .rain-table {
+      th, td { padding: 10px 8px; font-size: 14px; }
+      .table-header-rain {
+        font-size: 15px;
+        &::before { width: 18px; height: 18px; }
+      }
+    }
+  }
+
+  .tomorrow-weather {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+    h3 {
+      font-size: 16px;
+      color: $text-muted;
+      margin-bottom: 6px;
+    }
+
+    .js-date-tomorrow {
+      font-size: 13px;
+      color: $text-muted;
+    }
+
+    .js-weather-main-tomorrow {
+      font-size: 16px;
+      margin: 6px 0;
+    }
+
+    .weather-img {
+      border-radius: 8px;
+      padding: 8px;
+      margin-bottom: 12px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .info-temp {
+      font-size: 14px;
+      &::before { width: 18px; height: 18px; }
+    }
+
+    .info-wind {
+      font-size: 13px;
+      color: $text-muted;
+      &::before { width: 16px; height: 16px; }
+    }
+
+    .rain-table {
+      margin-top: 10px;
+      th, td { padding: 6px 4px; font-size: 12px; }
+      .table-header-rain {
+        font-size: 13px;
+        &::before { width: 14px; height: 14px; }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-sp) {
+    .today-weather {
+      padding: 20px 16px;
+
+      h3 { font-size: 20px; }
+      .js-weather-main-today { font-size: 20px; }
+      .info-temp { font-size: 17px; }
+      .weather-img img { width: 75px; height: 75px; }
+    }
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: $bg-card;
+
+    thead {
+      background-color: $primary-light;
+    }
+
+    th {
+      color: $primary-dark;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 2px solid $border-color-light;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px 10px;
+      font-size: 12px;
+      text-align: center;
+      border-bottom: 1px solid #edf2f7;
+
+      .pop-badge-high {
+        background-color: $primary-light;
+        color: $primary-dark;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+    }
+
+    th, td {
+      @media (max-width: $breakpoint-sp) {
+        padding: 8px 4px;
+        font-size: 12px;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: $bg-sub;
+        }
+
+        &:hover {
+          background-color: #edf2f7;
+        }
+      }
+    }
+  }
+
+  > p {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: $button-bg;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(66, 153, 225, 0.4);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(66, 153, 225, 0.5);
+    }
+  }
+}
+$text-dark: #2d3748;
+$text-muted: #718096;
+
+$bg-main: #f4f7f9;
+$bg-card: #ffffff;
+$bg-sub: #f7fafc;
+
+// アクセントカラー（最高/最低気温用など）
+$temp-max-color: #e53e3e; // 赤系
+$temp-min-color: #3182ce; // 青系
+$button-bg: #4299e1;
+
+// ブレイクポイント
+$breakpoint-sp: 600px;
+$breakpoint-pc: 768px;
+
+/* ========================================
+   ローディングスピナー
+   ======================================== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e2e8f0;
+    border-top: 5px solid $primary-color;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   トップページ (body.home) - 日本地図レイアウト
+   ======================================== */
+body.home {
+  font-family: $font-family-base;
+  background-color: $bg-main;
+  color: $text-main;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    color: $text-title;
+    margin-bottom: 8px;
+  }
+
+  .lead-text {
+    text-align: center;
+    color: $text-muted;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .japan-map-container {
+    background-color: $bg-card;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+  }
+
+  /* CSS Grid による簡易日本地図配置 */
+  .japan-map {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(12, 42px);
+    gap: 4px;
+    min-width: 600px; // 崩れ防止の最小幅
+
+    .map-pref {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        transform: scale(1.08);
+        z-index: 10;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    /* 地方ごとの色分け */
+    // 北海道・東北 (青)
+    .pref-hokkaido, .pref-aomori, .pref-akita, .pref-iwate, 
+    .pref-yamagata, .pref-miyagi, .pref-fukushima { background-color: #3182ce; }
+
+    // 関東 (緑)
+    .pref-ibaraki, .pref-tochigi, .pref-gunma, .pref-saitama, 
+    .pref-chiba, .pref-tokyo, .pref-kanagawa { background-color: #38a169; }
+
+    // 中部 (黄緑・黄色系)
+    .pref-niigata, .pref-toyama, .pref-ishikawa, .pref-fukui, .pref-yamanashi, 
+    .pref-nagano, .pref-gifu, .pref-shizuoka, .pref-aichi { background-color: #d69e2e; }
+
+    // 近畿 (オレンジ)
+    .pref-mie, .pref-shiga, .pref-kyoto, .pref-osaka, 
+    .pref-hyogo, .pref-nara, .pref-wakayama { background-color: #dd6b20; }
+
+    // 中国・四国 (赤・ピンク系)
+    .pref-tottori, .pref-shimane, .pref-okayama, .pref-hiroshima, .pref-yamaguchi,
+    .pref-tokushima, .pref-kagawa, .pref-ehime, .pref-kochi { background-color: #e53e3e; }
+
+    // 九州・沖縄 (紫)
+    .pref-fukuoka, .pref-saga, .pref-nagasaki, .pref-kumamoto, 
+    .pref-oita, .pref-miyazaki, .pref-kagoshima, .pref-okinawa { background-color: #805ad5; }
+
+    /* 各都道府県の位置設定 (列 / 行) */
+    .pref-hokkaido { grid-column: 14 / 16; grid-row: 1 / 3; }
+    .pref-aomori   { grid-column: 14; grid-row: 3; }
+    .pref-akita    { grid-column: 13; grid-row: 4; }
+    .pref-iwate    { grid-column: 14; grid-row: 4; }
+    .pref-yamagata { grid-column: 13; grid-row: 5; }
+    .pref-miyagi   { grid-column: 14; grid-row: 5; }
+    .pref-fukushima{ grid-column: 14; grid-row: 6; }
+
+    .pref-ibaraki  { grid-column: 14; grid-row: 7; }
+    .pref-tochigi  { grid-column: 13; grid-row: 6; }
+    .pref-gunma    { grid-column: 12; grid-row: 6; }
+    .pref-saitama  { grid-column: 13; grid-row: 7; }
+    .pref-chiba    { grid-column: 14; grid-row: 8; }
+    .pref-tokyo    { grid-column: 13; grid-row: 8; }
+    .pref-kanagawa { grid-column: 13; grid-row: 9; }
+
+    .pref-niigata  { grid-column: 12; grid-row: 5; }
+    .pref-toyama   { grid-column: 10; grid-row: 5; }
+    .pref-ishikawa { grid-column: 10; grid-row: 4; }
+    .pref-fukui    { grid-column: 9;  grid-row: 5; }
+    .pref-yamanashi{ grid-column: 12; grid-row: 7; }
+    .pref-nagano   { grid-column: 11; grid-row: 6; }
+    .pref-gifu     { grid-column: 10; grid-row: 6; }
+    .pref-shizuoka { grid-column: 12; grid-row: 8; }
+    .pref-aichi    { grid-column: 11; grid-row: 7; }
+
+    .pref-mie      { grid-column: 10; grid-row: 8; }
+    .pref-shiga    { grid-column: 9;  grid-row: 6; }
+    .pref-kyoto    { grid-column: 9;  grid-row: 7; }
+    .pref-osaka    { grid-column: 9;  grid-row: 8; }
+    .pref-hyogo    { grid-column: 8;  grid-row: 7; }
+    .pref-nara     { grid-column: 10; grid-row: 9; }
+    .pref-wakayama { grid-column: 9;  grid-row: 9; }
+
+    .pref-tottori  { grid-column: 7;  grid-row: 6; }
+    .pref-shimane  { grid-column: 6;  grid-row: 6; }
+    .pref-okayama  { grid-column: 7;  grid-row: 7; }
+    .pref-hiroshima{ grid-column: 6;  grid-row: 7; }
+    .pref-yamaguchi{ grid-column: 5;  grid-row: 7; }
+
+    .pref-tokushima{ grid-column: 7;  grid-row: 9; }
+    .pref-kagawa   { grid-column: 7;  grid-row: 8; }
+    .pref-ehime    { grid-column: 6;  grid-row: 8; }
+    .pref-kochi    { grid-column: 6;  grid-row: 9; }
+
+    .pref-fukuoka  { grid-column: 4;  grid-row: 7; }
+    .pref-saga     { grid-column: 3;  grid-row: 7; }
+    .pref-nagasaki { grid-column: 2;  grid-row: 7; }
+    .pref-oita     { grid-column: 4;  grid-row: 8; }
+    .pref-kumamoto { grid-column: 3;  grid-row: 8; }
+    .pref-miyazaki { grid-column: 4;  grid-row: 9; }
+    .pref-kagoshima{ grid-column: 3;  grid-row: 9; }
+    .pref-okinawa  { grid-column: 1;  grid-row: 11; }
+  }
+}
+
+/* ========================================
+   全体・都道府県ページ (body.pref)
+   ======================================== */
+body.pref {
+  font-family: $font-family-base;
+  background-color: $bg-main;
+  color: $text-main;
+  line-height: 1.6;
+  max-width: 900px; // 2列配置用に少し幅を広げて見やすく調整
+  margin: 0 auto;
+  padding: 20px 15px 40px;
+
+  @media (max-width: $breakpoint-sp) {
+    padding: 10px;
+  }
+
+  // ページタイトル
+  .js-pref-name {
+    font-size: 28px;
+    text-align: center;
+    color: $text-title;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $primary-color;
+  }
+
+ /* ========================================
+   天気表示セクション（統合完全版）
+   ======================================== */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+/* --- 共通コンポーネント --- */
+
+/* 天気テキストの崩れ防止 */
+.weather-main {
+  font-weight: bold;
+  color: $text-dark;
+  line-height: 1.4;
+  word-break: keep-all;      /* 単語の途中で変な改行を防ぐ */
+  overflow-wrap: anywhere;   /* 長い文字の安全な折り返し */
+}
+
+/* 画像コンテナ */
+.weather-img {
+  background-color: $bg-sub;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+/* アイコン付き情報 (気温・風) */
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $text-dark;
+  font-weight: 500;
+  margin: 6px 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+  }
+
+  /* 温度計アイコン（赤系） */
+  &.info-temp::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23e53e3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>');
+  }
+
+  /* 風アイコン（青系） */
+  &.info-wind::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%233182ce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>');
+  }
+}
+
+/* 降水確率テーブル & 雨粒アイコン */
+.rain-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
 
   th, td {
-    padding: 8px 4px;
-    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #edf2f7;
+    white-space: nowrap; /* テーブル内の不自然な改行防止 */
   }
 
-  .js-weather-img-today img,
-  .js-weather-img-tomorrow img {
-    width: 60px;
-    height: 60px;
+  .table-header-rain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: bold;
+
+    /* 雨粒アイコン（青色） */
+    &::before {
+      content: "";
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233182ce"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>');
+      flex-shrink: 0;
+    }
   }
+}
+
+
+/* ----------------------------------------
+   【主役】今日の天気 (大きく目立たせる)
+   ---------------------------------------- */
+.today-weather {
+  background: $bg-card;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(49, 130, 206, 0.12);
+  border: 2px solid $primary-light;
+
+  h3 {
+    font-size: 24px;
+    color: $primary-dark;
+    margin-bottom: 12px;
+    border-bottom: 2px solid $primary-light;
+    padding-bottom: 8px;
+  }
+
+  .js-date-today {
+    font-size: 16px;
+    color: $text-muted;
+    font-weight: bold;
+  }
+
+  .js-weather-main-today {
+    font-size: 26px;
+    margin: 12px 0;
+  }
+
+  .weather-img {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .info-temp {
+    font-size: 20px;
+    font-weight: bold;
+    &::before { width: 24px; height: 24px; }
+  }
+
+  .info-wind {
+    font-size: 16px;
+    &::before { width: 22px; height: 22px; }
+  }
+
+  .rain-table {
+    th, td { padding: 10px 8px; font-size: 14px; }
+    .table-header-rain {
+      font-size: 15px;
+      &::before { width: 18px; height: 18px; }
+    }
+  }
+}
+
+
+/* ----------------------------------------
+   【控えめ】明日の天気 (小さくコンパクトに)
+   ---------------------------------------- */
+.tomorrow-weather {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  h3 {
+    font-size: 16px;
+    color: $text-muted;
+    margin-bottom: 6px;
+  }
+
+  .js-date-tomorrow {
+    font-size: 13px;
+    color: $text-muted;
+  }
+
+  .js-weather-main-tomorrow {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+
+  .weather-img {
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 12px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .info-temp {
+    font-size: 14px;
+    &::before { width: 18px; height: 18px; }
+  }
+
+  .info-wind {
+    font-size: 13px;
+    color: $text-muted;
+    &::before { width: 16px; height: 16px; }
+  }
+
+  .rain-table {
+    margin-top: 10px;
+    th, td { padding: 6px 4px; font-size: 12px; }
+    .table-header-rain {
+      font-size: 13px;
+      &::before { width: 14px; height: 14px; }
+    }
+  }
+}
+
+
+/* ----------------------------------------
+   レスポンシブ対応 (スマホ表示)
+   ---------------------------------------- */
+@media (max-width: $breakpoint-sp) {
+  .today-weather {
+    padding: 20px 16px;
+
+    h3 { font-size: 20px; }
+    .js-weather-main-today { font-size: 20px; }
+    .info-temp { font-size: 17px; }
+    .weather-img img { width: 75px; height: 75px; }
+  }
+}
+}
+
+  /* ----------------------------------------
+     テーブル＆はみ出し防止ラッパー（拡張）
+     ---------------------------------------- */
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; // iOSの滑らかなスクロール対応
+    margin-top: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: $bg-card;
+
+    thead {
+      background-color: $primary-light;
+    }
+
+    th {
+      color: $primary-dark;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 2px solid $border-color-light;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px 10px;
+      font-size: 12px;
+      text-align: center;
+      border-bottom: 1px solid #edf2f7;
+
+      /* 拡張：降水確率が高い場合などのバッジ装飾（JSで付与可） */
+      .pop-badge-high {
+        background-color: $primary-light;
+        color: $primary-dark;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+    }
+
+    th, td {
+      @media (max-width: $breakpoint-sp) {
+        padding: 8px 4px;
+        font-size: 12px;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: $bg-sub;
+        }
+
+        &:hover {
+        background-color: #edf2f7;
+        }
+      }
+    }
+  }
+
+  // ナビゲーション・戻るボタン
+  > p {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: $button-bg;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(66, 153, 225, 0.4);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(66, 153, 225, 0.5);
+    }
 }
