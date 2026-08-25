@@ -1,2 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body {
+    background-color: #FFFAC3;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #27566A;
+}
+
+header {
+    position: relative;
+}
+
+header .weather-text {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h1 {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+
+/* =========================
+   都道府県名
+========================= */
+
+.pref > h2 {
+    width: 1180px;
+    margin: 40px auto 25px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   今日・明日の天気
+========================= */
+
+.today-weather,
+.tomorrow-weather {
+    width: 565px;
+    height: 650px;
+    border: 6px solid #98A8F9;
+     background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* 2つのカードを横並び */
+
+.today-weather {
+    margin-left: calc(50% - 590px);
+}
+
+.tomorrow-weather {
+    position: absolute;
+    top: 112px;
+    left: calc(50% + 25px);
+}
+
+
+/* =========================
+   カード上部
+========================= */
+
+.today-weather h3,
+.tomorrow-weather h3 {
+    height: 70px;
+    padding: 15px 40px;
+    border-bottom: 4px solid #98A8F9;
+    font-size: 32px;
+}
+
+
+/* 日付 */
+
+.js-date-today,
+.js-date-tomorrow {
+    position: absolute;
+    top: 23px;
+    right: 40px;
+    font-size: 22px;
+}
+
+
+/* =========================
+   天気アイコン
+========================= */
+
+.js-weather-img-today,
+.js-weather-img-tomorrow {
+    width: 270px;
+    height: 270px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 40px auto 10px;
+}
+
+
+/* 天気画像 */
+
+.js-weather-img-today img,
+.js-weather-img-tomorrow img {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   天気名
+========================= */
+
+.js-weather-main-today,
+.js-weather-main-tomorrow {
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   気温
+========================= */
+
+.js-temp-today,
+.js-temp-tomorrow {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 5px;
+    position: relative;
+    top: 40px;
+    left: 0px;
+}
+
+
+/* =========================
+   天気情報の表
+========================= */
+
+.today-weather table,
+.tomorrow-weather table {
+    width: 90%;
+    margin: 35px auto 0;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+/* 見出し */
+
+.today-weather th,
+.tomorrow-weather th {
+    padding: 10px 5px;
+    border-bottom: 4px solid #98A8F9;
+}
+
+
+/* 内容 */
+
+.today-weather td,
+.tomorrow-weather td {
+    padding: 9px 5px;
+}
+
+
+/* =========================
+   日本地図に戻る
+========================= */
+
+.pref > p:last-child {
+    text-align: center;
+    margin: 25px 0 40px;
+}
+
+.pref > p:last-child a {
+    display: inline-block;
+    width: 300px;
+    padding: 15px 20px;
+
+    background-color: #ffffff;
+    color: #82A2D5;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pref > p:last-child a:hover {
+    opacity: 0.8;
+}
+
+.back-button {
+    text-align: center;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ed8d49;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+/* マウスを乗せたとき */
+.back-button a:hover {
+    background-color: #ed8d49;
+    color: #ffffff;
+}
+
+/* クリックしている瞬間 */
+.back-button a:active {
+    background-color: #ed8d49;
+    transform: scale(0.96);
+}
+
+
+.prefecture {
+    transition: 0.3s ease;
+}
+
+.prefecture:hover {
+    opacity: 0.7;
 }
