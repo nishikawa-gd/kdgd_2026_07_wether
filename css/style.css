@@ -1,2 +1,217 @@
+:root{
+    --black: #1C1F1E;
+    --beige: #fdf6ee;
+    --frame: #79C2A2;
+    --red: #F50000;
+    --blue: #0033FF;
+    --white: #fff;
+}
+
 body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--beige);
+    overflow: hidden;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.weather-title{
+    position: relative;
+}
+
+.weather-title h1{
+    position: absolute;
+    font-size: 90px;
+    font-weight: 500;
+    padding: 100px;
+    color: var(--black);
+}
+
+.map{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    
+}
+
+.map a{
+    transform-box: fill-box;
+    transform-origin: center;
+    /* transition-duration: .5s;
+    transition-timing-function: ease; */
+    transition: transform .5s ease, filter .5s ease;
+}
+
+.map a:hover{
+    transform: scale(1.08);
+    filter: invert(100%);
+}
+
+/* フレーム */
+.frame{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.frame-container {
+    width: 100%;
+    height: 100%;
+    border: 30px solid var(--frame);
+    box-sizing: border-box;
+}
+
+/* 都道府県 */
+.pref{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.js-pref-name{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.pref-weather{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.today-weather{
+    max-width: 550px;
+    max-height: 650px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 30px 40px 15px;
+}
+
+.p-weather-title{
+    display: flex;
+    padding: 0 50px 10px;
+    gap: 90px;
+    font-size: 20px;
+    border-bottom: 1px solid var(--black);
+}
+
+.weather-content{
+    display: flex;
+    padding: 40px 30px;
+    gap: 60px;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.js-weather-img-today img{
+    width: 170px;
+    height: auto;
+}
+
+.js-weather-main-today{
+    font-size: 30px;
+}
+
+/* 天気下 */
+.sub-content{
+    width: 100%;
+    font-size: 18px;
+}
+
+.sub-content th img{
+    object-fit: contain;
+}
+
+thead{
+    border-bottom: 1px solid var(--black);
+}
+
+tr{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px 0;
+    align-items: center;
+}
+
+th,td{
+    display: flex;
+    justify-content: center;
+}
+
+/* 明日 */
+.tomorrow-weather{
+    max-width: 550px;
+    max-height: 650px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 30px 40px 15px;
+}
+
+.js-weather-img-tomorrow img{
+    width: 170px;
+    height: auto;
+}
+
+.js-weather-main-tomorrow{
+    font-size: 30px;
+}
+
+/* 戻るぼたん */
+.return{
+    width: 520px;
+    height: 70px;
+    background-color: var(--white);
+    font-size: 32px;
+    margin: 5vh auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--black);
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.return:hover{
+    background-color: var(--black);
+    color: var(--beige);
+    letter-spacing: 0.2em;
+}
+
+
+/* 気温 */
+.max-temp,
+.min-temp{
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+.max-temp{
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.min-temp{
+    color: var(--blue);
 }

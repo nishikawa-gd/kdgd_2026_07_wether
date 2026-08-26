@@ -43,7 +43,11 @@ $(function() {
 				.attr('class', `js-weather-main-${prefix} ${info.weather.className}`);
 			
 			// 気温と天気画像を表示
-			$(`.js-temp-${prefix}`).text(`${info.maxTemp}℃ / ${info.minTemp}℃`);
+			// $(`.js-temp-${prefix}`).text(`${info.maxTemp}℃ / ${info.minTemp}℃`);
+			$(`.js-temp-${prefix}`).html(`
+				<span class="max-temp">最高 ${info.maxTemp}℃</span>
+				<span class="min-temp">最低 ${info.maxTemp}℃</span>
+			`)
 
 			// 天気画像を表示
 			$(`.js-weather-img-${prefix}`).html(`<img src="${info.weather.img}" alt="${info.weather.text}" width="50">`);
