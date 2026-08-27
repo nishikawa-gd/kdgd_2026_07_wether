@@ -797,8 +797,8 @@ body.home .japan-map .pref-toyama {
   grid-row: 5;
 }
 body.home .japan-map .pref-ishikawa {
-  grid-column: 10;
-  grid-row: 4;
+  grid-column: 11;
+  grid-row: 5;
 }
 body.home .japan-map .pref-fukui {
   grid-column: 9;
@@ -826,7 +826,7 @@ body.home .japan-map .pref-aichi {
 }
 body.home .japan-map .pref-mie {
   grid-column: 10;
-  grid-row: 8;
+  grid-row: 7;
 }
 body.home .japan-map .pref-shiga {
   grid-column: 9;
@@ -846,7 +846,7 @@ body.home .japan-map .pref-hyogo {
 }
 body.home .japan-map .pref-nara {
   grid-column: 10;
-  grid-row: 9;
+  grid-row: 8;
 }
 body.home .japan-map .pref-wakayama {
   grid-column: 9;
@@ -916,9 +916,12 @@ body.home .japan-map .pref-kagoshima {
   grid-column: 3;
   grid-row: 9;
 }
+body.home .japan-map {
+  /* 【修正】沖縄を福岡・佐賀の1行上（7行目→6行目）へ移動 */
+}
 body.home .japan-map .pref-okinawa {
-  grid-column: 1;
-  grid-row: 11;
+  grid-column: 2;
+  grid-row: 5;
 }
 
 /* ========================================

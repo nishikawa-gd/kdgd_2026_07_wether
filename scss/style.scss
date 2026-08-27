@@ -670,7 +670,7 @@ body.home {
 
     .pref-niigata  { grid-column: 12; grid-row: 5; }
     .pref-toyama   { grid-column: 10; grid-row: 5; }
-    .pref-ishikawa { grid-column: 10; grid-row: 4; }
+    .pref-ishikawa { grid-column: 11; grid-row: 5; }
     .pref-fukui    { grid-column: 9;  grid-row: 5; }
     .pref-yamanashi{ grid-column: 12; grid-row: 7; }
     .pref-nagano   { grid-column: 11; grid-row: 6; }
@@ -678,12 +678,12 @@ body.home {
     .pref-shizuoka { grid-column: 12; grid-row: 8; }
     .pref-aichi    { grid-column: 11; grid-row: 7; }
 
-    .pref-mie      { grid-column: 10; grid-row: 8; }
+    .pref-mie      { grid-column: 10; grid-row: 7; }
     .pref-shiga    { grid-column: 9;  grid-row: 6; }
     .pref-kyoto    { grid-column: 9;  grid-row: 7; }
     .pref-osaka    { grid-column: 9;  grid-row: 8; }
     .pref-hyogo    { grid-column: 8;  grid-row: 7; }
-    .pref-nara     { grid-column: 10; grid-row: 9; }
+    .pref-nara     { grid-column: 10; grid-row: 8; }
     .pref-wakayama { grid-column: 9;  grid-row: 9; }
 
     .pref-tottori  { grid-column: 7;  grid-row: 6; }
@@ -697,14 +697,16 @@ body.home {
     .pref-ehime    { grid-column: 6;  grid-row: 8; }
     .pref-kochi    { grid-column: 6;  grid-row: 9; }
 
-    .pref-fukuoka  { grid-column: 4;  grid-row: 7; }
+  .pref-fukuoka  { grid-column: 4;  grid-row: 7; }
     .pref-saga     { grid-column: 3;  grid-row: 7; }
     .pref-nagasaki { grid-column: 2;  grid-row: 7; }
     .pref-oita     { grid-column: 4;  grid-row: 8; }
     .pref-kumamoto { grid-column: 3;  grid-row: 8; }
     .pref-miyazaki { grid-column: 4;  grid-row: 9; }
     .pref-kagoshima{ grid-column: 3;  grid-row: 9; }
-    .pref-okinawa  { grid-column: 1;  grid-row: 11; }
+
+    /* 【修正】沖縄を福岡・佐賀の1行上（7行目→6行目）へ移動 */
+    .pref-okinawa  { grid-column: 2;  grid-row: 5; }
   }
 }
 
