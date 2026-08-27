@@ -8,61 +8,206 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/function.js"></script>
-    
-    </head>
+</head>
 <body class="home">
-    <h1>日本の天気予報</h1>
-    <div>
-        <img src="japan-map.png" alt="日本地図で各都道府県を選択したらページ移動できるようにする">
-    </div>
-    <div>
-        <a href="pref.html?pref=北海">北海道</a>
-        <a href="pref.html?pref=青森">青森県</a>
-        <a href="pref.html?pref=岩手">岩手県</a>
-        <a href="pref.html?pref=宮城">宮城県</a>
-        <a href="pref.html?pref=秋田">秋田県</a>
-        <a href="pref.html?pref=山形">山形県</a>
-        <a href="pref.html?pref=福島">福島県</a>
-        <a href="pref.html?pref=茨城">茨城県</a>
-        <a href="pref.html?pref=栃木">栃木県</a>
-        <a href="pref.html?pref=群馬">群馬県</a>
-        <a href="pref.html?pref=埼玉">埼玉県</a>
-        <a href="pref.html?pref=千葉">千葉県</a>
-        <a href="pref.html?pref=東京">東京都</a>
-        <a href="pref.html?pref=神奈川">神奈川県</a>
-        <a href="pref.html?pref=新潟">新潟県</a>
-        <a href="pref.html?pref=富山">富山県</a>
-        <a href="pref.html?pref=石川">石川県</a>
-        <a href="pref.html?pref=福井">福井県</a>
-        <a href="pref.html?pref=山梨">山梨県</a>
-        <a href="pref.html?pref=長野">長野県</a>
-        <a href="pref.html?pref=岐阜">岐阜県</a>
-        <a href="pref.html?pref=静岡">静岡県</a>
-        <a href="pref.html?pref=愛知">愛知県</a>
-        <a href="pref.html?pref=三重">三重県</a>
-        <a href="pref.html?pref=滋賀">滋賀県</a>
-        <a href="pref.html?pref=京都">京都府</a>
-        <a href="pref.html?pref=大阪">大阪府</a>
-        <a href="pref.html?pref=兵庫">兵庫県</a>
-        <a href="pref.html?pref=奈良">奈良県</a>
-        <a href="pref.html?pref=和歌山">和歌山県</a>
-        <a href="pref.html?pref=鳥取">鳥取県</a>
-        <a href="pref.html?pref=島根">島根県</a>
-        <a href="pref.html?pref=岡山">岡山県</a>
-        <a href="pref.html?pref=広島">広島県</a>
-        <a href="pref.html?pref=山口">山口県</a>
-        <a href="pref.html?pref=徳島">徳島県</a>
-        <a href="pref.html?pref=香川">香川県</a>
-        <a href="pref.html?pref=愛媛">愛媛県</a>
-        <a href="pref.html?pref=高知">高知県</a>
-        <a href="pref.html?pref=福岡">福岡県</a>
-        <a href="pref.html?pref=佐賀">佐賀県</a>
-        <a href="pref.html?pref=長崎">長崎県</a>
-        <a href="pref.html?pref=熊本">熊本県</a>
-        <a href="pref.html?pref=大分">大分県</a>
-        <a href="pref.html?pref=宮崎">宮崎県</a>
-        <a href="pref.html?pref=鹿児島">鹿児島県</a>
-        <a href="pref.html?pref=沖縄">沖縄県</a>
+    <div class="wrapper">
+        <!-- <h1>日本の天気予報</h1> -->
+        <h1>日本の<span class="japan-weather">天気</span><span class="japan-forecast">予報</span></h1>
+        <div class="svg-set">
+            <svg width="800" height="694" viewBox="0 0 705 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="pref.html?pref=北海道">
+                    <path d="M539 7C539 3.13401 542.134 0 546 0H698C701.866 0 705 3.13401 705 7V137C705 140.866 701.866 144 698 144H546C542.134 144 539 140.866 539 137V7Z" fill="#D6E4B9"/>
+                    <text x="622" y="72" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">北海道</text>
+                </a>
+                <a href="pref.html?pref=青森">
+                    <path d="M538 182C538 178.134 541.134 175 545 175H638C641.866 175 645 178.134 645 182V210C645 213.866 641.866 217 638 217H545C541.134 217 538 213.866 538 210V182Z" fill="#96CDFF"/>
+                    <text x="591.5" y="196" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">青森</text>
+                </a>
+                <a href="pref.html?pref=福島">
+                    <path d="M538 340C538 336.134 541.134 333 545 333H641C644.866 333 648 336.134 648 340V373C648 376.866 644.866 380 641 380H545C541.134 380 538 376.866 538 373V340Z" fill="#96CDFF"/>
+                    <text x="593" y="356.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">福島</text>
+                </a>
+                <a href="pref.html?pref=秋田">
+                    <path d="M538 226C538 222.134 541.134 219 545 219H585C588.866 219 592 222.134 592 226V267C592 270.866 588.866 274 585 274H545C541.134 274 538 270.866 538 267V226Z" fill="#96CDFF"/>
+                    <text x="565" y="246.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">秋田</text>
+                </a>
+                <a href="pref.html?pref=山形">
+                    <path d="M538 283C538 279.134 541.134 276 545 276H585C588.866 276 592 279.134 592 283V324C592 327.866 588.866 331 585 331H545C541.134 331 538 327.866 538 324V283Z" fill="#96CDFF"/>
+                    <text x="565" y="303.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">山形</text>
+                </a>
+                <a href="pref.html?pref=栃木">
+                    <path d="M538 389C538 385.134 541.134 382 545 382H585C588.866 382 592 385.134 592 389V411C592 414.866 588.866 418 585 418H545C541.134 418 538 414.866 538 411V389Z" fill="#FFC3CA"/>
+                    <text x="565" y="400" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">栃木</text>
+                </a>
+                <a href="pref.html?pref=福井">
+                    <path d="M357 407C357 403.134 360.134 400 364 400H407C410.866 400 414 403.134 414 407V435C414 438.866 410.866 442 407 442H364C360.134 442 357 438.866 357 435V407Z" fill="#B5D672"/>
+                    <text x="385.5" y="421" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">福井</text>
+                </a>
+                <a href="pref.html?pref=京都">
+                    <path d="M315 427C315 423.134 318.134 420 322 420H348C351.866 420 355 423.134 355 427V469C355 472.866 351.866 476 348 476H322C318.134 476 315 472.866 315 469V427Z" fill="#FCD8A1"/>
+                    <text x="335" y="448" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">京都</text>
+                </a>
+                <a href="pref.html?pref=大阪">
+                    <path d="M315 485C315 481.134 318.134 478 322 478H348C351.866 478 355 481.134 355 485V512C355 515.866 351.866 519 348 519H322C318.134 519 315 515.866 315 512V485Z" fill="#FCD8A1"/>
+                    <text x="335" y="498.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">大阪</text>
+                </a>
+                <a href="pref.html?pref=福岡">
+                    <path d="M56 430C56 426.134 59.134 423 63 423H131C134.866 423 138 426.134 138 430V456C138 459.866 134.866 463 131 463H63C59.134 463 56 459.866 56 456V430Z" fill="#F5A7A9"/>
+                    <text x="97" y="443" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">福岡</text>
+                </a>
+                <a href="pref.html?pref=熊本">
+                    <path d="M56 472C56 468.134 59.134 465 63 465H90C93.866 465 97 468.134 97 472V554C97 557.866 93.866 561 90 561H63C59.134 561 56 557.866 56 554V472Z" fill="#F5A7A9"/>
+                    <text x="76.5" y="513" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">熊本</text>
+                </a>
+                <a href="pref.html?pref=鹿児島">
+                    <path d="M56 570C56 566.134 59.134 563 63 563H133C136.866 563 140 566.134 140 570V583C140 586.866 136.866 590 133 590H63C59.134 590 56 586.866 56 583V570Z" fill="#F5A7A9"/>
+                    <text x="98" y="576.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">鹿児島</text>
+                </a>
+                <a href="pref.html?pref=沖縄">
+                    <path d="M70 287C70 283.134 73.134 280 77 280H113C116.866 280 120 283.134 120 287V340C120 343.866 116.866 347 113 347H77C73.134 347 70 343.866 70 340V287Z" fill="#F5A7A9"/>
+                    <text x="95" y="313.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">沖縄</text>
+                </a>
+                <a href="pref.html?pref=宮崎">
+                    <path d="M99 535C99 531.134 102.134 528 106 528H133C136.866 528 140 531.134 140 535V554C140 557.866 136.866 561 133 561H106C102.134 561 99 557.866 99 554V535Z" fill="#F5A7A9"/>
+                    <text x="119.5" y="544.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">宮崎</text>
+                </a>
+                <a href="pref.html?pref=長崎">
+                    <path d="M0 430C0 426.134 3.13401 423 7 423H19C22.866 423 26 426.134 26 430V490C26 493.866 22.866 497 19 497H7C3.13401 497 0 493.866 0 490V430Z" fill="#F5A7A9"/>
+                    <text x="13" y="460" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">長崎</text>
+                </a>
+                <a href="pref.html?pref=佐賀">
+                    <path d="M28 430C28 426.134 31.134 423 35 423H47C50.866 423 54 426.134 54 430V490C54 493.866 50.866 497 47 497H35C31.134 497 28 493.866 28 490V430Z" fill="#F5A7A9"/>
+                    <text x="41" y="460" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">佐賀</text>
+                </a>
+                <a href="pref.html?pref=大分">
+                    <path d="M99 472C99 468.134 102.134 465 106 465H131C134.866 465 138 468.134 138 472V519C138 522.866 134.866 526 131 526H106C102.134 526 99 522.866 99 519V472Z" fill="#F5A7A9"/>
+                    <text x="118.5" y="495.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">大分</text>
+                </a>
+                <a href="pref.html?pref=和歌山">
+                    <path d="M315 528C315 524.134 318.134 521 322 521H348C351.866 521 355 524.134 355 528V565C355 568.866 351.866 572 348 572H322C318.134 572 315 568.866 315 565V528Z" fill="#FCD8A1"/>
+                    <text x="335" y="546.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">和歌山</text>
+                </a>
+                <a href="pref.html?pref=滋賀">
+                    <path d="M357 451C357 447.134 360.134 444 364 444H407C410.866 444 414 447.134 414 451V478C414 481.866 410.866 485 407 485H364C360.134 485 357 481.866 357 478V451Z" fill="#FCD8A1"/>
+                    <text x="385.5" y="464.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">滋賀</text>
+                </a>
+                <a href="pref.html?pref=埼玉">
+                    <path d="M538 427C538 423.134 541.134 420 545 420H585C588.866 420 592 423.134 592 427V434C592 437.866 588.866 441 585 441H545C541.134 441 538 437.866 538 434V427Z" fill="#FFC3CA"/>
+                    <text x="565" y="430.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">埼玉</text>
+                </a>
+                <a href="pref.html?pref=富山">
+                    <path d="M416 367C416 363.134 419.134 360 423 360H448C451.866 360 455 363.134 455 367V385C455 388.866 451.866 392 448 392H423C419.134 392 416 388.866 416 385V367Z" fill="#B5D672"/>
+                    <text x="435.5" y="376" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">富山</text>
+                </a>
+                <a href="pref.html?pref=石川">
+                    <path d="M377 367C377 363.134 380.134 360 384 360H407C410.866 360 414 363.134 414 367V391C414 394.866 410.866 398 407 398H384C380.134 398 377 394.866 377 391V367Z" fill="#B5D672"/>
+                    <text x="395.5" y="379" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">石川</text>
+                </a>
+                <a href="pref.html?pref=群馬">
+                    <path d="M529 343C532.866 343 536 346.134 536 350V402C536 405.866 532.866 409 529 409H506C502.134 409 499 405.866 499 402V350C499 346.134 502.134 343 506 343H529Z" fill="#FFC3CA"/>
+                    <text x="517.5" y="376" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">群馬</text>
+                </a>
+                <a href="pref.html?pref=長野">
+                    <path d="M490 360C493.866 360 497 363.134 497 367V454C497 457.866 493.866 461 490 461H464C460.134 461 457 457.866 457 454V367C457 363.134 460.134 360 464 360H490Z" fill="#B5D672"/>
+                    <text x="477" y="410.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">長野</text>
+                </a>
+                <a href="pref.html?pref=岐阜">
+                    <path d="M448 394C451.866 394 455 397.134 455 401V475C455 478.866 451.866 482 448 482H423C419.134 482 416 478.866 416 475V401C416 397.134 419.134 394 423 394H448Z" fill="#B5D672"/>
+                    <text x="435.5" y="438" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">岐阜</text>
+                </a>
+                <a href="pref.html?pref=愛知">
+                    <path d="M448 484C451.866 484 455 487.134 455 491V518C455 521.866 451.866 525 448 525H423C419.134 525 416 521.866 416 518V491C416 487.134 419.134 484 423 484H448Z" fill="#B5D672"/>
+                    <text x="435.5" y="504.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">愛知</text>
+                </a>
+                <a href="pref.html?pref=三重">
+                    <path d="M407 487C410.866 487 414 490.134 414 494V542C414 545.866 410.866 549 407 549H391C387.134 549 384 545.866 384 542V494C384 490.134 387.134 487 391 487H407Z" fill="#B5D672"/>
+                    <text x="399" y="518" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">三重</text>
+                </a>
+                <a href="pref.html?pref=兵庫">
+                    <path d="M306 420C309.866 420 313 423.134 313 427V497C313 500.866 309.866 504 306 504H282C278.134 504 275 500.866 275 497V427C275 423.134 278.134 420 282 420H306Z" fill="#FCD8A1"/>
+                    <text x="294" y="462" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">兵庫</text>
+                </a>
+                <a href="pref.html?pref=山口">
+                    <path d="M182 420C185.866 420 189 423.134 189 427V496C189 499.866 185.866 503 182 503H168C164.134 503 161 499.866 161 496V427C161 423.134 164.134 420 168 420H182Z" fill="#C3B5E7"/>
+                    <text x="175" y="461.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">山口</text>
+                </a>
+                <a href="pref.html?pref=鳥取">
+                    <path d="M266 420C269.866 420 273 423.134 273 427V454C273 457.866 269.866 461 266 461H240C236.134 461 233 457.866 233 454V427C233 423.134 236.134 420 240 420H266Z" fill="#C3B5E7"/>
+                    <text x="253" y="440.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">鳥取</text>
+                </a>
+                <a href="pref.html?pref=岩手">
+                    <path d="M266 463C269.866 463 273 466.134 273 470V497C273 500.866 269.866 504 266 504H240C236.134 504 233 500.866 233 497V470C233 466.134 236.134 463 240 463H266Z" fill="#C3B5E7"/>
+                    <text x="253" y="483.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">岡山</text>
+                </a>
+                <a href="pref.html?pref=香川">
+                    <path d="M287 522C290.866 522 294 525.134 294 529V552C294 555.866 290.866 559 287 559H232C228.134 559 225 555.866 225 552V529C225 525.134 228.134 522 232 522H287Z" fill="#F8BF91"/>
+                    <text x="259.5" y="540.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">香川</text>
+                </a>
+                <a href="pref.html?pref=高知">
+                    <path d="M235 561C238.866 561 242 564.134 242 568V592C242 595.866 238.866 599 235 599H167C163.134 599 160 595.866 160 592V568C160 564.134 163.134 561 167 561H235Z" fill="#F8BF91"/>
+                    <text x="201" y="580" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">高知</text>
+                </a>
+                <a href="pref.html?pref=徳島">
+                    <path d="M287 561C290.866 561 294 564.134 294 568V592C294 595.866 290.866 599 287 599H251C247.134 599 244 595.866 244 592V568C244 564.134 247.134 561 251 561H287Z" fill="#F8BF91"/>
+                    <text x="269" y="580" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">徳島</text>
+                </a>
+                <a href="pref.html?pref=島根">
+                    <path d="M224 420C227.866 420 231 423.134 231 427V454C231 457.866 227.866 461 224 461H198C194.134 461 191 457.866 191 454V427C191 423.134 194.134 420 198 420H224Z" fill="#C3B5E7"/>
+                    <text x="211" y="440.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">島根</text>
+                </a>
+                <a href="pref.html?pref=広島">
+                    <path d="M224 463C227.866 463 231 466.134 231 470V497C231 500.866 227.866 504 224 504H198C194.134 504 191 500.866 191 497V470C191 466.134 194.134 463 198 463H224Z" fill="#C3B5E7"/>
+                    <text x="211" y="483.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">広島</text>
+                </a>
+                <a href="pref.html?pref=愛媛">
+                    <path d="M216 522C219.866 522 223 525.134 223 529V552C223 555.866 219.866 559 216 559H167C163.134 559 160 555.866 160 552V529C160 525.134 163.134 522 167 522H216Z" fill="#F8BF91"/>
+                    <text x="191.5" y="540.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">愛媛</text>
+                </a>
+                <a href="pref.html?pref=奈良">
+                    <path d="M375 487C378.866 487 382 490.134 382 494V542C382 545.866 378.866 549 375 549H364C360.134 549 357 545.866 357 542V494C357 490.134 360.134 487 364 487H375Z" fill="#FCD8A1"/>
+                    <text x="369.5" y="518" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">奈良</text>
+                </a>
+                <a href="pref.html?pref=山梨">
+                    <path d="M529 411C532.866 411 536 414.134 536 418V454C536 457.866 532.866 461 529 461H506C502.134 461 499 457.866 499 454V418C499 414.134 502.134 411 506 411H529Z" fill="#FFC3CA"/>
+                    <text x="517.5" y="436" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">山梨</text>
+                </a>
+                <a href="pref.html?pref=東京">
+                    <path d="M538 450C538 446.134 541.134 443 545 443H585C588.866 443 592 446.134 592 450V460C592 463.866 588.866 467 585 467H545C541.134 467 538 463.866 538 460V450Z" fill="#FFC3CA"/>
+                    <text x="565" y="455" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">東京</text>
+                </a>
+                <a href="pref.html?pref=神奈川">
+                    <path d="M538 476C538 472.134 541.134 469 545 469H585C588.866 469 592 472.134 592 476V486C592 489.866 588.866 493 585 493H545C541.134 493 538 489.866 538 486V476Z" fill="#FFC3CA"/>
+                    <text x="565" y="481" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">神奈川</text>
+                </a>
+                <a href="pref.html?pref=静岡">
+                    <path d="M457 470C457 466.134 460.134 463 464 463H529C532.866 463 536 466.134 536 470V495C536 498.866 532.866 502 529 502H464C460.134 502 457 498.866 457 495V470Z" fill="#B5D672"/>
+                    <text x="496.5" y="482.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">静岡</text>
+                </a>
+                <a href="pref.html?pref=茨城">
+                    <path d="M594 389C594 385.134 597.134 382 601 382H641C644.866 382 648 385.134 648 389V428C648 431.866 644.866 435 641 435H601C597.134 435 594 431.866 594 428V389Z" fill="#FFC3CA"/>
+                    <text x="621" y="408.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">茨城</text>
+                </a>
+                <a href="pref.html?pref=千葉">
+                    <path d="M594 444C594 440.134 597.134 437 601 437H641C644.866 437 648 440.134 648 444V486C648 489.866 644.866 493 641 493H601C597.134 493 594 489.866 594 486V444Z" fill="#FFC3CA"/>
+                    <text x="621" y="465" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">千葉</text>
+                </a>
+                <a href="pref.html?pref=岩手">
+                    <path d="M594 226C594 222.134 597.134 219 601 219H641C644.866 219 648 222.134 648 226V267C648 270.866 644.866 274 641 274H601C597.134 274 594 270.866 594 267V226Z" fill="#96CDFF"/>
+                    <text x="621" y="246.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">岩手</text>
+                </a>
+                <a href="pref.html?pref=宮城">
+                    <path d="M594 283C594 279.134 597.134 276 601 276H641C644.866 276 648 279.134 648 283V324C648 327.866 644.866 331 641 331H601C597.134 331 594 327.866 594 324V283Z" fill="#96CDFF"/>
+                    <text x="621" y="303.5" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">宮城</text>
+                </a>
+                <path d="M135.5 270L135.5 346.469L119.971 360L56 360" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                <a href="pref.html?pref=新潟">
+                    <svg x="457" y="305" width="79" height="51" viewBox="0 0 79 51" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M72 0C75.866 6.12043e-07 79 3.13401 79 7V28C79 31.866 75.866 35 72 35H40V44C40 47.866 36.866 51 33 51H7C3.13401 51 1.8523e-07 47.866 0 44V7C0 3.13401 3.13401 0 7 0H72Z" fill="#B5D672"/>
+                        <text x="36" y="18" font-size="12px" text-anchor="middle" dominant-baseline="central" fill="#333333">新潟</text>
+                    </svg>
+                </a>
+            </svg>
+        </div>
     </div>
 </body>
 </html>

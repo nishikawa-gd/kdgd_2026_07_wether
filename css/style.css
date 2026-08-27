@@ -1,2 +1,163 @@
 body {
+    background-color: #E5EFFA;
+    min-height: 100vh;
+    position: relative;
+}
+
+a:hover path {
+    stroke: #e65100; 
+    stroke-width: 2px;
+}
+h1{
+    font-weight: bold;
+    position: absolute;
+    left: 12%;
+    top: 23%;
+    font-size: 64px;
+}
+h1::before{
+	content: "";
+    display: inline-block; 
+    width: 64px;          
+    height: 64px;
+    background: url("../img/sunny.png") no-repeat center;
+    background-size: contain;
+    margin-right: 8px; 
+    vertical-align: middle;
+}
+.japan-weather{
+    color: #3498db;
+}
+.japan-forecast{
+    color: #e65100;
+}
+.svg-set {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.pref {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    padding: 80px;
+}
+
+.js-pref-name,
+body.pref > p {
+    width: 100%;
+}
+
+.js-pref-name {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 30px;
+}
+
+.today-weather,
+.tomorrow-weather {
+    flex: 1;
+    min-width: 320px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.today-weather h3,
+.tomorrow-weather h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.tomorrow-weather h3 {
+    border-left-color: #e67e22;
+}
+
+.js-date-today,
+.js-date-tomorrow {
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.js-weather-main-today,
+.js-weather-main-tomorrow {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.js-temp-today,
+.js-temp-tomorrow {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.js-weather-img-today,
+.js-weather-img-tomorrow {
+    text-align: center;
+    margin: 15px 0;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-weather-img-today img,
+.js-weather-img-tomorrow img {
+    max-width: 220px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+table {
+    width: 100%;
+    margin-top: auto;
+}
+
+th, td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #eef2f5;
+}
+
+th {
+    background-color: #f8fafc;
+    font-weight: bold;
+}
+
+body.pref > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+body.pref a[href="index.html"] {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 32px;
+    background-color: transparent; 
+    color: #3498db;               
+    border: 2px solid #3498db;    
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;     
+}
+
+body.pref a[href="index.html"]:hover {
+    background-color: #3498db;    
+    color: #ffffff;
 }
