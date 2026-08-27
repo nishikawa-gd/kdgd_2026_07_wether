@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2930.21 2217.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #40220f;
+      }
+
+      .cls-2 {
+        font-size: 70px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+        font-family: RoGSanSrfStd-Bd-83pv-RKSJ-H, 'Ro GSan Serif Std';
+      }
+
+      .cls-3 {
+        font-size: 40px;
+      }
+
+      .cls-4 {
+        font-size: 50px;
+      }
+    </style>
+  </defs>
+  <g id="hokkaido">
+    <g>
+      <rect class="cls-1" x="2388.87" width="541.34" height="541.34" rx="198.43" ry="198.43"/>
+      <text class="cls-2" transform="translate(2549.54 296.9)"><tspan x="0" y="0">北海道</tspan></text>
+    </g>
+  </g>
+  <g id="aomori">
+    <g>
+      <path class="cls-1" d="M2518.1,628.29h157.5c62.58,0,113.39,50.81,113.39,113.39v50.13h-384.27v-50.13c0-62.58,50.81-113.39,113.39-113.39Z"/>
+      <text class="cls-4" transform="translate(2549.65 732.78)"><tspan x="0" y="0">青森</tspan></text>
+    </g>
+  </g>
+  <g id="akita">
+    <g>
+      <rect class="cls-1" x="2404.71" y="802.1" width="179.01" height="170.4"/>
+      <text class="cls-4" transform="translate(2448.29 907.31)"><tspan x="0" y="0">秋田</tspan></text>
+    </g>
+  </g>
+  <g id="iwate">
+    <g>
+      <rect class="cls-1" x="2596.85" y="802.1" width="192.14" height="169.24"/>
+      <text class="cls-4" transform="translate(2642.96 907.31)"><tspan x="0" y="0">岩手</tspan></text>
+    </g>
+  </g>
+  <g id="yamagata">
+    <g>
+      <path class="cls-1" d="M2404.71,982.54h179.01v168.89h-93.98c-46.93,0-85.04-38.1-85.04-85.04v-83.85h0Z"/>
+      <text class="cls-4" transform="translate(2448.29 1076.93)"><tspan x="0" y="0">山形</tspan></text>
+    </g>
+  </g>
+  <g id="miyagi">
+    <g>
+      <rect class="cls-1" x="2596.85" y="982.54" width="192.14" height="168.89"/>
+      <text class="cls-4" transform="translate(2643.96 1085.93)"><tspan x="0" y="0">宮城</tspan></text>
+    </g>
+  </g>
+  <g id="hukushima">
+    <g>
+      <path class="cls-1" d="M2788.99,1162.58v89.63c0,.31,0,.62-.01.93-.5,46.53-38.37,84.11-85.03,84.11h-22.06c-46.65,0-85.68-37.58-86.18-84.11h0c-3.01-41.29-29.91-75.95-66.95-90.21v-.35h260.23Z"/>
+      <text class="cls-4" transform="translate(2643.96 1255.91)"><tspan x="0" y="0">福島</tspan></text>
+    </g>
+  </g>
+  <g id="toyama">
+    <g>
+      <rect class="cls-1" x="2012.1" y="1189.86" width="168.77" height="186"/>
+      <text class="cls-4" transform="translate(2040.61 1306.71)"><tspan x="0" y="0">富山</tspan></text>
+    </g>
+  </g>
+  <g id="niigata">
+    <g>
+      <path class="cls-1" d="M2191.45,1189.86h271.26c51.33,0,93,41.67,93,93h0c0,51.33-41.67,93-93,93h-271.26v-186h0Z"/>
+      <text class="cls-4" transform="translate(2322.02 1306.71)"><tspan x="0" y="0">新潟</tspan></text>
+    </g>
+  </g>
+  <g id="saitama">
+    <g>
+      <rect class="cls-1" x="2425.67" y="1580.71" width="178.03" height="165.4"/>
+      <text class="cls-4" transform="translate(2464.35 1684.62)"><tspan x="0" y="0">埼玉</tspan></text>
+    </g>
+  </g>
+  <g id="gunnma">
+    <g>
+      <path class="cls-1" d="M2595.75,1397.1h7.95v173.65h-178.03v-3.58c0-93.87,76.21-170.08,170.08-170.08Z"/>
+      <text class="cls-4" transform="translate(2469.02 1529.47)"><tspan x="0" y="0">群馬</tspan></text>
+    </g>
+  </g>
+  <g id="tochigi">
+    <g>
+      <path class="cls-1" d="M2614.26,1397.1h13.47c93.87,0,170.08,76.21,170.08,170.08v3.58h-183.55v-173.65h0Z"/>
+      <text class="cls-4" transform="translate(2645.84 1525.47)"><tspan x="0" y="0">栃木</tspan></text>
+    </g>
+  </g>
+  <g id="ibaragi">
+    <g>
+      <rect class="cls-1" x="2614.26" y="1580.71" width="183.55" height="165.4"/>
+      <text class="cls-4" transform="translate(2651.69 1685.22)"><tspan x="0" y="0">茨城</tspan></text>
+    </g>
+  </g>
+  <g id="chiba">
+    <g>
+      <path class="cls-1" d="M2614.26,1756.38h183.55v192.47c0,93.87-76.21,170.08-170.08,170.08h-13.47v-362.55h0Z"/>
+      <text class="cls-4" transform="translate(2648.69 1947.86)"><tspan x="0" y="0">千葉</tspan></text>
+    </g>
+  </g>
+  <g id="tokyo">
+    <g>
+      <rect class="cls-1" x="2425.14" y="1756.38" width="178.56" height="172.46"/>
+      <text class="cls-4" transform="translate(2464.9 1865.87)"><tspan x="0" y="0">東京</tspan></text>
+    </g>
+  </g>
+  <g id="kanagawa">
+    <g>
+      <path class="cls-1" d="M2425.14,1938.65h178.56v181.28h-8.48c-93.87,0-170.08-76.21-170.08-170.08v-11.2h0Z"/>
+      <text class="cls-3" transform="translate(2465.87 2029.29)"><tspan x="0" y="0">神奈川</tspan></text>
+    </g>
+  </g>
+  <g id="nagano">
+    <g>
+      <path class="cls-1" d="M2415.32,1385.83c-22.29,15.68-37.42,40.87-39.49,69.67h-.25v98.23h-363.48v-167.9h403.22Z"/>
+      <text class="cls-4" transform="translate(2139.42 1492.02)"><tspan x="0" y="0">長野</tspan></text>
+    </g>
+  </g>
+  <g id="yamanashi">
+    <g>
+      <rect class="cls-1" x="2193.45" y="1563.71" width="182.13" height="168.95"/>
+      <text class="cls-4" transform="translate(2231.29 1670.9)"><tspan x="0" y="0">山梨</tspan></text>
+    </g>
+  </g>
+  <g id="shizuoka">
+    <g>
+      <path class="cls-1" d="M2193.45,1742.38h182.13v92.15c0,46.93-38.1,85.04-85.04,85.04h-97.09v-177.19h0Z"/>
+      <text class="cls-4" transform="translate(2234.41 1848.63)"><tspan x="0" y="0">静岡</tspan></text>
+    </g>
+  </g>
+  <g id="ishikawa">
+    <g>
+      <path class="cls-1" d="M2002.18,1189.87v185.99h-236.4s6.07,0,24.41-17.75c18.89-18.28,20.63-29.8,20.75-32.62.02-.45,0-.68,0-.68v-37.66c0-53.73,43.56-97.28,97.29-97.28h93.95Z"/>
+      <text class="cls-4" transform="translate(1860.6 1306.71)"><tspan x="0" y="0">石川</tspan></text>
+    </g>
+  </g>
+  <g id="hukui">
+    <g>
+      <path class="cls-1" d="M1728.19,1386.49h273.81v167.9h-273.81c-46.33,0-83.95-37.62-83.95-83.95h0c0-46.33,37.62-83.95,83.95-83.95Z"/>
+      <text class="cls-4" transform="translate(1771.56 1492.02)"><tspan x="0" y="0">福井</tspan></text>
+    </g>
+  </g>
+  <g id="gihu">
+    <g>
+      <path class="cls-1" d="M2182.88,1563.72v168.95h-181.7v-81.47c.07-1,.13-2,.18-3.01.07-1.57.11-3.15.11-4.74,0-2.61-.1-5.2-.29-7.75-2.23-29.26-16.95-55.03-38.83-71.98h220.53Z"/>
+      <text class="cls-4" transform="translate(2040.73 1670.9)"><tspan x="0" y="0">岐阜</tspan></text>
+    </g>
+  </g>
+  <g id="aichi">
+    <g>
+      <path class="cls-1" d="M2001.47,1742.38h181.41v177.19h-96.37c-46.93,0-85.04-38.1-85.04-85.04v-92.15h0Z"/>
+      <text class="cls-4" transform="translate(2044.85 1848.63)"><tspan x="0" y="0">愛知</tspan></text>
+    </g>
+  </g>
+  <g id="shiga">
+    <g>
+      <path class="cls-1" d="M1782.95,1584.66h93.39c46.93,0,85.04,38.1,85.04,85.04v93.39h-178.43v-178.43h0Z"/>
+      <text class="cls-4" transform="translate(1822.16 1701.21)"><tspan x="0" y="0">滋賀</tspan></text>
+    </g>
+  </g>
+  <g id="mie">
+    <g>
+      <path class="cls-1" d="M1782.95,1770.52h178.43v282.97c0,46.93-38.1,85.04-85.04,85.04h-93.39v-368.01h0Z"/>
+      <text class="cls-4" transform="translate(1816.28 1963.82)"><tspan x="0" y="0">三重</tspan></text>
+    </g>
+  </g>
+  <g id="wakayama">
+    <g>
+      <path class="cls-1" d="M1412.5,1963.82h360.57v174.71h-247.19c-62.58,0-113.39-50.81-113.39-113.39v-61.32h0Z"/>
+      <text class="cls-4" transform="translate(1520.66 2062.99)"><tspan x="0" y="0">和歌山</tspan></text>
+    </g>
+  </g>
+  <g id="nara">
+    <g>
+      <rect class="cls-1" x="1607.66" y="1770.52" width="165.42" height="183.07"/>
+      <text class="cls-4" transform="translate(1640.37 1878.42)"><tspan x="0" y="0">奈良</tspan></text>
+    </g>
+  </g>
+  <g id="oosaka">
+    <g>
+      <rect class="cls-1" x="1412.5" y="1770.52" width="183.07" height="183.07"/>
+      <text class="cls-4" transform="translate(1455.04 1878.42)"><tspan x="0" y="0">大阪</tspan></text>
+    </g>
+  </g>
+  <g id="kyoto">
+    <g>
+      <path class="cls-1" d="M1773.08,1584.66v178.43h-360.57v-365.26h98.03c43.93,0,80.07,33.3,84.57,76.03h.13c3.89,58.88,50.55,106.07,109.2,110.8,2.51.21,5.04.34,7.59.37.71.02,1.43.03,2.14.03,3.28,0,6.52-.13,9.73-.4h49.18Z"/>
+      <text class="cls-4" transform="translate(1533.04 1694.94)"><tspan x="0" y="0">京都</tspan></text>
+    </g>
+  </g>
+  <g id="hyogo">
+    <g>
+      <path class="cls-1" d="M1403.2,1397.83v437.04h-.1c-1.93-35.87-27.24-64.35-67.95-64.35v-.02c-61.88-.86-111.77-51.28-111.77-113.36v-145.93c0-62.62,50.76-113.38,113.39-113.38h66.43Z"/>
+      <text class="cls-4" transform="translate(1262.24 1616.35)"><tspan x="0" y="0">兵庫</tspan></text>
+    </g>
+  </g>
+  <g id="ehime">
+    <g>
+      <path class="cls-1" d="M853.91,1850.17h10.2v180.28h-180.28v-10.2c0-93.87,76.21-170.08,170.08-170.08Z"/>
+      <text class="cls-4" transform="translate(733.36 1982.09)"><tspan x="0" y="0">愛媛</tspan></text>
+    </g>
+  </g>
+  <g id="kagawa">
+    <g>
+      <path class="cls-1" d="M873.36,1850.17h15.16c93.87,0,170.08,76.21,170.08,170.08v10.2h-185.24v-180.28h0Z"/>
+      <text class="cls-4" transform="translate(904.66 1982.09)"><tspan x="0" y="0">香川</tspan></text>
+    </g>
+  </g>
+  <g id="tokushima">
+    <g>
+      <path class="cls-1" d="M873.36,2036.84h185.24c0,99.5-80.78,180.28-180.28,180.28h-4.96v-180.28h0Z"/>
+      <text class="cls-4" transform="translate(907.78 2126.98)"><tspan x="0" y="0">徳島</tspan></text>
+    </g>
+  </g>
+  <g id="kochi">
+    <g>
+      <path class="cls-1" d="M683.83,2036.84h180.28v180.28h0c-99.5,0-180.28-80.78-180.28-180.28h0Z"/>
+      <text class="cls-4" transform="translate(736.48 2126.98)"><tspan x="0" y="0">高知</tspan></text>
+    </g>
+  </g>
+  <g id="tottori">
+    <g>
+      <path class="cls-1" d="M1195.26,1574.72c0-103.22-84.77-186.89-189.35-186.89v186.9h189.35Z"/>
+      <text class="cls-4" transform="translate(1038.23 1514.42)"><tspan x="0" y="0">鳥取</tspan></text>
+    </g>
+  </g>
+  <g id="okayama">
+    <g>
+      <path class="cls-1" d="M1195.26,1585.06h0c0,101.32-84.77,183.46-189.35,183.46v-183.46h189.35Z"/>
+      <text class="cls-4" transform="translate(1037.23 1682.12)"><tspan x="0" y="0">岡山</tspan></text>
+    </g>
+  </g>
+  <g id="shimane">
+    <g>
+      <rect class="cls-1" x="833.36" y="1387.82" width="162.61" height="186.9"/>
+      <text class="cls-4" transform="translate(865.32 1516)"><tspan x="0" y="0">島根</tspan></text>
+    </g>
+  </g>
+  <g id="hiroshima">
+    <g>
+      <rect class="cls-1" x="833.36" y="1584.72" width="162.61" height="183.46"/>
+      <text class="cls-4" transform="translate(866.32 1695.26)"><tspan x="0" y="0">広島</tspan></text>
+    </g>
+  </g>
+  <g id="yamagushi">
+    <g>
+      <path class="cls-1" d="M823.36,1767.52c-109.35,0-198-85-198-189.85h0c0-104.85,88.65-189.85,198-189.85v379.7"/>
+      <text class="cls-4" transform="translate(683.62 1601.15)"><tspan x="0" y="0">山口</tspan></text>
+    </g>
+  </g>
+  <g id="saga">
+    <g>
+      <rect class="cls-1" x="230.58" y="1405.44" width="174.1" height="187.61"/>
+      <text class="cls-4" transform="translate(265.63 1521.06)"><tspan x="0" y="0">佐賀</tspan></text>
+    </g>
+  </g>
+  <g id="miyazaki">
+    <g>
+      <path class="cls-1" d="M417.41,1778.11h178.98v93.94c0,46.93-38.1,85.04-85.04,85.04h-93.94v-178.98h0Z"/>
+      <text class="cls-4" transform="translate(455.06 1885.42)"><tspan x="0" y="0">宮崎</tspan></text>
+    </g>
+  </g>
+  <g id="hukuoka">
+    <g>
+      <path class="cls-1" d="M416.41,1405.08h93.94c46.93,0,85.04,38.1,85.04,85.04v102.57h-178.98v-187.61h0Z"/>
+      <text class="cls-4" transform="translate(455.94 1522.94)"><tspan x="0" y="0">福岡</tspan></text>
+    </g>
+  </g>
+  <g id="ohita">
+    <g>
+      <rect class="cls-1" x="416.41" y="1601.36" width="178.98" height="166.16"/>
+      <text class="cls-4" transform="translate(456.06 1703.08)"><tspan x="0" y="0">大分</tspan></text>
+    </g>
+  </g>
+  <g id="kumamoto">
+    <g>
+      <rect class="cls-1" x="231.86" y="1601.36" width="174.1" height="167.16"/>
+      <text class="cls-4" transform="translate(268.35 1702.08)"><tspan x="0" y="0">熊本</tspan></text>
+    </g>
+  </g>
+  <g id="kagoshima">
+    <g>
+      <path class="cls-1" d="M231.86,1778.11h174.1v178.98h-89.06c-46.93,0-85.04-38.1-85.04-85.04v-93.94h0Z"/>
+      <text class="cls-4" transform="translate(244.35 1881.42)"><tspan x="0" y="0">鹿児島</tspan></text>
+    </g>
+  </g>
+  <g id="nagasaki">
+    <g>
+      <path class="cls-1" d="M222.17,1405.08v187.61h-.02v66.4c-.96-36.83-31.13-66.4-68.19-66.4h-30.37c-46.97,0-85.04-38.07-85.04-85.04v-17.53c0-46.96,38.07-85.04,85.04-85.04h98.58Z"/>
+      <text class="cls-4" transform="translate(85.1 1516.03)"><tspan x="0" y="0">長崎</tspan></text>
+    </g>
+  </g>
+  <g id="okinawa">
+    <g>
+      <circle class="cls-1" cx="98.1" cy="2107.97" r="98.1"/>
+      <text class="cls-4" transform="translate(48.1 2123.6)"><tspan x="0" y="0">沖縄</tspan></text>
+    </g>
+  </g>
+</svg>

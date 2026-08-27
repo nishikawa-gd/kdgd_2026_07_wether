@@ -1,2 +1,45 @@
 body {
+    background-color: #a6ddd6;
+
+}
+
+.japan-map {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+}
+
+.title {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    z-index: 10;
+}
+
+
+h1 {
+    color: #603939;
+    font-size: 64px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+}
+
+.title p {
+    color: #603939;
+    font-size: 20px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.japan-map svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.japan-map a {
+    cursor: pointer;
 }

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3401.57 2551.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4dbcb1;
+      }
+
+      .cls-2 {
+        fill: #40220f;
+      }
+
+      .cls-3 {
+        font-size: 70px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+        font-family: RoGSanSrfStd-Bd-83pv-RKSJ-H, 'Ro GSan Serif Std';
+      }
+
+      .cls-4 {
+        font-size: 40px;
+      }
+
+      .cls-5 {
+        font-size: 50px;
+      }
+    </style>
+  </defs>
+  <g id="_背景" data-name="背景">
+    <rect class="cls-1" width="3401.57" height="2551.18"/>
+  </g>
+  <g id="_北海道" data-name="北海道">
+    <g>
+      <rect class="cls-2" x="2606.61" y="136.7" width="541.34" height="541.34" rx="198.43" ry="198.43"/>
+      <text class="cls-3" transform="translate(2767.28 433.6)"><tspan x="0" y="0">北海道</tspan></text>
+    </g>
+  </g>
+  <g id="_青森" data-name="青森">
+    <g>
+      <path class="cls-2" d="M2735.84,764.99h157.5c62.58,0,113.39,50.81,113.39,113.39v50.13h-384.27v-50.13c0-62.58,50.81-113.39,113.39-113.39Z"/>
+      <text class="cls-5" transform="translate(2767.39 869.48)"><tspan x="0" y="0">青森</tspan></text>
+    </g>
+  </g>
+  <g id="_秋田" data-name="秋田">
+    <g>
+      <rect class="cls-2" x="2622.46" y="938.8" width="179.01" height="170.4"/>
+      <text class="cls-5" transform="translate(2666.03 1044.01)"><tspan x="0" y="0">秋田</tspan></text>
+    </g>
+  </g>
+  <g id="_岩手" data-name="岩手">
+    <g>
+      <rect class="cls-2" x="2814.59" y="938.8" width="192.14" height="169.24"/>
+      <text class="cls-5" transform="translate(2860.7 1044.01)"><tspan x="0" y="0">岩手</tspan></text>
+    </g>
+  </g>
+  <g id="_山形" data-name="山形">
+    <g>
+      <path class="cls-2" d="M2622.46,1119.24h179.01v168.89h-93.98c-46.93,0-85.04-38.1-85.04-85.04v-83.85h0Z"/>
+      <text class="cls-5" transform="translate(2666.03 1213.64)"><tspan x="0" y="0">山形</tspan></text>
+    </g>
+  </g>
+  <g id="_宮城" data-name="宮城">
+    <g>
+      <rect class="cls-2" x="2814.59" y="1119.24" width="192.14" height="168.89"/>
+      <text class="cls-5" transform="translate(2861.7 1222.64)"><tspan x="0" y="0">宮城</tspan></text>
+    </g>
+  </g>
+  <g id="_福島" data-name="福島">
+    <g>
+      <path class="cls-2" d="M3006.73,1299.28v89.63c0,.31,0,.62-.01.93-.5,46.53-38.37,84.11-85.03,84.11h-22.06c-46.65,0-85.68-37.58-86.18-84.11h0c-3.01-41.29-29.91-75.95-66.95-90.21v-.35h260.23Z"/>
+      <text class="cls-5" transform="translate(2861.7 1392.61)"><tspan x="0" y="0">福島</tspan></text>
+    </g>
+  </g>
+  <g id="_富山" data-name="富山">
+    <g>
+      <rect class="cls-2" x="2229.84" y="1326.56" width="168.77" height="186"/>
+      <text class="cls-5" transform="translate(2258.36 1443.41)"><tspan x="0" y="0">富山</tspan></text>
+    </g>
+  </g>
+  <g id="_新潟" data-name="新潟">
+    <g>
+      <path class="cls-2" d="M2409.19,1326.56h271.26c51.33,0,93,41.67,93,93h0c0,51.33-41.67,93-93,93h-271.26v-186h0Z"/>
+      <text class="cls-5" transform="translate(2539.76 1443.41)"><tspan x="0" y="0">新潟</tspan></text>
+    </g>
+  </g>
+  <g id="_埼玉" data-name="埼玉">
+    <g>
+      <rect class="cls-2" x="2643.41" y="1717.42" width="178.03" height="165.4"/>
+      <text class="cls-5" transform="translate(2682.09 1821.32)"><tspan x="0" y="0">埼玉</tspan></text>
+    </g>
+  </g>
+  <g id="_群馬" data-name="群馬">
+    <g>
+      <path class="cls-2" d="M2813.49,1533.81h7.95v173.65h-178.03v-3.58c0-93.87,76.21-170.08,170.08-170.08Z"/>
+      <text class="cls-5" transform="translate(2686.76 1666.17)"><tspan x="0" y="0">群馬</tspan></text>
+    </g>
+  </g>
+  <g id="_栃木" data-name="栃木">
+    <g>
+      <path class="cls-2" d="M2832,1533.81h13.47c93.87,0,170.08,76.21,170.08,170.08v3.58h-183.55v-173.65h0Z"/>
+      <text class="cls-5" transform="translate(2863.58 1662.17)"><tspan x="0" y="0">栃木</tspan></text>
+    </g>
+  </g>
+  <g id="_茨城" data-name="茨城">
+    <g>
+      <rect class="cls-2" x="2832" y="1717.42" width="183.55" height="165.4"/>
+      <text class="cls-5" transform="translate(2869.44 1821.92)"><tspan x="0" y="0">茨城</tspan></text>
+    </g>
+  </g>
+  <g id="_千葉" data-name="千葉">
+    <g>
+      <path class="cls-2" d="M2832,1893.08h183.55v192.47c0,93.87-76.21,170.08-170.08,170.08h-13.47v-362.55h0Z"/>
+      <text class="cls-5" transform="translate(2866.44 2084.57)"><tspan x="0" y="0">千葉</tspan></text>
+    </g>
+  </g>
+  <g id="_東京" data-name="東京">
+    <g>
+      <rect class="cls-2" x="2642.88" y="1893.08" width="178.56" height="172.46"/>
+      <text class="cls-5" transform="translate(2682.64 2002.57)"><tspan x="0" y="0">東京</tspan></text>
+    </g>
+  </g>
+  <g id="_神奈川" data-name="神奈川">
+    <g>
+      <path class="cls-2" d="M2642.88,2075.36h178.56v181.28h-8.48c-93.87,0-170.08-76.21-170.08-170.08v-11.2h0Z"/>
+      <text class="cls-4" transform="translate(2683.61 2165.99)"><tspan x="0" y="0">神奈川</tspan></text>
+    </g>
+  </g>
+  <g id="_長野" data-name="長野">
+    <g>
+      <path class="cls-2" d="M2633.06,1522.53c-22.29,15.68-37.42,40.87-39.49,69.67h-.25v98.23h-363.48v-167.9h403.22Z"/>
+      <text class="cls-5" transform="translate(2357.16 1628.72)"><tspan x="0" y="0">長野</tspan></text>
+    </g>
+  </g>
+  <g id="_山梨" data-name="山梨">
+    <g>
+      <rect class="cls-2" x="2411.19" y="1700.42" width="182.13" height="168.95"/>
+      <text class="cls-5" transform="translate(2449.03 1807.6)"><tspan x="0" y="0">山梨</tspan></text>
+    </g>
+  </g>
+  <g id="_静岡" data-name="静岡">
+    <g>
+      <path class="cls-2" d="M2411.19,1879.08h182.13v92.15c0,46.93-38.1,85.04-85.04,85.04h-97.09v-177.19h0Z"/>
+      <text class="cls-5" transform="translate(2452.15 1985.34)"><tspan x="0" y="0">静岡</tspan></text>
+    </g>
+  </g>
+  <g id="_石川" data-name="石川">
+    <g>
+      <path class="cls-2" d="M2219.92,1326.57v185.99h-236.4s6.07,0,24.41-17.75c18.89-18.28,20.63-29.8,20.75-32.62.02-.45,0-.68,0-.68v-37.66c0-53.73,43.56-97.28,97.29-97.28h93.95Z"/>
+      <text class="cls-5" transform="translate(2078.34 1443.41)"><tspan x="0" y="0">石川</tspan></text>
+    </g>
+  </g>
+  <g id="_福井" data-name="福井">
+    <g>
+      <path class="cls-2" d="M1945.93,1523.19h273.81v167.9h-273.81c-46.33,0-83.95-37.62-83.95-83.95h0c0-46.33,37.62-83.95,83.95-83.95Z"/>
+      <text class="cls-5" transform="translate(1989.3 1628.72)"><tspan x="0" y="0">福井</tspan></text>
+    </g>
+  </g>
+  <g id="_岐阜" data-name="岐阜">
+    <g>
+      <path class="cls-2" d="M2400.62,1700.42v168.95h-181.7v-81.47c.07-1,.13-2,.18-3.01.07-1.57.11-3.15.11-4.74,0-2.61-.1-5.2-.29-7.75-2.23-29.26-16.95-55.03-38.83-71.98h220.53Z"/>
+      <text class="cls-5" transform="translate(2258.47 1807.6)"><tspan x="0" y="0">岐阜</tspan></text>
+    </g>
+  </g>
+  <g id="_愛知" data-name="愛知">
+    <g>
+      <path class="cls-2" d="M2219.21,1879.08h181.41v177.19h-96.37c-46.93,0-85.04-38.1-85.04-85.04v-92.15h0Z"/>
+      <text class="cls-5" transform="translate(2262.59 1985.34)"><tspan x="0" y="0">愛知</tspan></text>
+    </g>
+  </g>
+  <g id="_滋賀" data-name="滋賀">
+    <g>
+      <path class="cls-2" d="M2000.69,1721.36h93.39c46.93,0,85.04,38.1,85.04,85.04v93.39h-178.43v-178.43h0Z"/>
+      <text class="cls-5" transform="translate(2039.9 1837.91)"><tspan x="0" y="0">滋賀</tspan></text>
+    </g>
+  </g>
+  <g id="_三重" data-name="三重">
+    <g>
+      <path class="cls-2" d="M2000.69,1907.22h178.43v282.97c0,46.93-38.1,85.04-85.04,85.04h-93.39v-368.01h0Z"/>
+      <text class="cls-5" transform="translate(2034.02 2100.52)"><tspan x="0" y="0">三重</tspan></text>
+    </g>
+  </g>
+  <g id="_和歌山" data-name="和歌山">
+    <g>
+      <path class="cls-2" d="M1630.25,2100.52h360.57v174.71h-247.19c-62.58,0-113.39-50.81-113.39-113.39v-61.32h0Z"/>
+      <text class="cls-5" transform="translate(1738.4 2199.69)"><tspan x="0" y="0">和歌山</tspan></text>
+    </g>
+  </g>
+  <g id="_奈良" data-name="奈良">
+    <g>
+      <rect class="cls-2" x="1825.4" y="1907.22" width="165.42" height="183.07"/>
+      <text class="cls-5" transform="translate(1858.11 2015.12)"><tspan x="0" y="0">奈良</tspan></text>
+    </g>
+  </g>
+  <g id="_大阪" data-name="大阪">
+    <g>
+      <rect class="cls-2" x="1630.25" y="1907.22" width="183.07" height="183.07"/>
+      <text class="cls-5" transform="translate(1672.78 2015.12)"><tspan x="0" y="0">大阪</tspan></text>
+    </g>
+  </g>
+  <g id="_京都" data-name="京都">
+    <g>
+      <path class="cls-2" d="M1990.82,1721.36v178.43h-360.57v-365.26h98.03c43.93,0,80.07,33.3,84.57,76.03h.13c3.89,58.88,50.55,106.07,109.2,110.8,2.51.21,5.04.34,7.59.37.71.02,1.43.03,2.14.03,3.28,0,6.52-.13,9.73-.4h49.18Z"/>
+      <text class="cls-5" transform="translate(1750.78 1831.64)"><tspan x="0" y="0">京都</tspan></text>
+    </g>
+  </g>
+  <g id="_兵庫" data-name="兵庫">
+    <g>
+      <path class="cls-2" d="M1620.94,1534.53v437.04h-.1c-1.93-35.87-27.24-64.35-67.95-64.35v-.02c-61.88-.86-111.77-51.28-111.77-113.36v-145.93c0-62.62,50.76-113.38,113.39-113.38h66.43Z"/>
+      <text class="cls-5" transform="translate(1479.98 1753.05)"><tspan x="0" y="0">兵庫</tspan></text>
+    </g>
+  </g>
+  <g id="_愛媛" data-name="愛媛">
+    <g>
+      <path class="cls-2" d="M1071.65,1986.87h10.2v180.28h-180.28v-10.2c0-93.87,76.21-170.08,170.08-170.08Z"/>
+      <text class="cls-5" transform="translate(951.1 2118.79)"><tspan x="0" y="0">愛媛</tspan></text>
+    </g>
+  </g>
+  <g id="_香川" data-name="香川">
+    <g>
+      <path class="cls-2" d="M1091.1,1986.87h15.16c93.87,0,170.08,76.21,170.08,170.08v10.2h-185.24v-180.28h0Z"/>
+      <text class="cls-5" transform="translate(1122.4 2118.79)"><tspan x="0" y="0">香川</tspan></text>
+    </g>
+  </g>
+  <g id="_徳島" data-name="徳島">
+    <g>
+      <path class="cls-2" d="M1091.1,2173.54h185.24c0,99.5-80.78,180.28-180.28,180.28h-4.96v-180.28h0Z"/>
+      <text class="cls-5" transform="translate(1125.52 2263.68)"><tspan x="0" y="0">徳島</tspan></text>
+    </g>
+  </g>
+  <g id="_高知" data-name="高知">
+    <g>
+      <path class="cls-2" d="M901.57,2173.54h180.28v180.28h0c-99.5,0-180.28-80.78-180.28-180.28h0Z"/>
+      <text class="cls-5" transform="translate(954.22 2263.68)"><tspan x="0" y="0">高知</tspan></text>
+    </g>
+  </g>
+  <g id="_鳥取" data-name="鳥取">
+    <g>
+      <path class="cls-2" d="M1413,1711.42c0-103.22-84.77-186.89-189.35-186.89v186.9"/>
+      <text class="cls-5" transform="translate(1255.97 1651.13)"><tspan x="0" y="0">鳥取</tspan></text>
+    </g>
+  </g>
+  <g id="_岡山" data-name="岡山">
+    <g>
+      <path class="cls-2" d="M1223.65,1721.76v183.46c104.57,0,189.35-82.14,189.35-183.46h0"/>
+      <text class="cls-5" transform="translate(1254.97 1818.82)"><tspan x="0" y="0">岡山</tspan></text>
+    </g>
+  </g>
+  <g id="_島根" data-name="島根">
+    <g>
+      <rect class="cls-2" x="1051.1" y="1524.52" width="162.61" height="186.9"/>
+      <text class="cls-5" transform="translate(1083.06 1652.7)"><tspan x="0" y="0">島根</tspan></text>
+    </g>
+  </g>
+  <g id="_広島" data-name="広島">
+    <g>
+      <rect class="cls-2" x="1051.1" y="1721.42" width="162.61" height="183.46"/>
+      <text class="cls-5" transform="translate(1084.06 1831.96)"><tspan x="0" y="0">広島</tspan></text>
+    </g>
+  </g>
+  <g id="_山口" data-name="山口">
+    <g>
+      <path class="cls-2" d="M1041.1,1904.22c-109.35,0-198-85-198-189.85h0c0-104.85,88.65-189.85,198-189.85v379.7"/>
+      <text class="cls-5" transform="translate(901.36 1737.85)"><tspan x="0" y="0">山口</tspan></text>
+    </g>
+  </g>
+  <g id="_佐賀" data-name="佐賀">
+    <g>
+      <rect class="cls-2" x="448.32" y="1542.14" width="174.1" height="187.61"/>
+      <text class="cls-5" transform="translate(483.37 1657.77)"><tspan x="0" y="0">佐賀</tspan></text>
+    </g>
+  </g>
+  <g id="_宮崎" data-name="宮崎">
+    <g>
+      <path class="cls-2" d="M635.16,1914.81h178.98v93.94c0,46.93-38.1,85.04-85.04,85.04h-93.94v-178.98h0Z"/>
+      <text class="cls-5" transform="translate(672.8 2022.12)"><tspan x="0" y="0">宮崎</tspan></text>
+    </g>
+  </g>
+  <g id="_福岡" data-name="福岡">
+    <g>
+      <path class="cls-2" d="M634.16,1541.78h93.94c46.93,0,85.04,38.1,85.04,85.04v102.57h-178.98v-187.61h0Z"/>
+      <text class="cls-5" transform="translate(673.68 1659.65)"><tspan x="0" y="0">福岡</tspan></text>
+    </g>
+  </g>
+  <g id="_大分" data-name="大分">
+    <g>
+      <rect class="cls-2" x="634.16" y="1738.06" width="178.98" height="166.16"/>
+      <text class="cls-5" transform="translate(673.8 1839.78)"><tspan x="0" y="0">大分</tspan></text>
+    </g>
+  </g>
+  <g id="_熊本" data-name="熊本">
+    <g>
+      <rect class="cls-2" x="449.6" y="1738.06" width="174.1" height="167.16"/>
+      <text class="cls-5" transform="translate(486.09 1838.78)"><tspan x="0" y="0">熊本</tspan></text>
+    </g>
+  </g>
+  <g id="_鹿児島" data-name="鹿児島">
+    <g>
+      <path class="cls-2" d="M449.6,1914.81h174.1v178.98h-89.06c-46.93,0-85.04-38.1-85.04-85.04v-93.94h0Z"/>
+      <text class="cls-5" transform="translate(462.09 2018.12)"><tspan x="0" y="0">鹿児島</tspan></text>
+    </g>
+  </g>
+  <g id="_長崎" data-name="長崎">
+    <g>
+      <path class="cls-2" d="M439.91,1541.78v187.61h-.02v66.4c-.96-36.83-31.13-66.4-68.19-66.4h-30.37c-46.97,0-85.04-38.07-85.04-85.04v-17.53c0-46.96,38.07-85.04,85.04-85.04h98.58Z"/>
+      <text class="cls-5" transform="translate(302.84 1652.73)"><tspan x="0" y="0">長崎</tspan></text>
+    </g>
+  </g>
+  <g id="_沖縄" data-name="沖縄">
+    <g>
+      <circle class="cls-2" cx="315.84" cy="2244.68" r="98.1"/>
+      <text class="cls-5" transform="translate(265.84 2260.3)"><tspan x="0" y="0">沖縄</tspan></text>
+    </g>
+  </g>
+</svg>
