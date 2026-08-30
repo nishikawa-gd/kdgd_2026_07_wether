@@ -1,3 +1,179 @@
-body {
-    background-color: #F00;
+.home {
+    background-color: #BAFFF9;
+
+    .title {
+        position: relative;
+        top: 150px;
+        left: 200px;
+        width: 350px;
+        height: 80px;
+        border-radius: 15px;
+        background-color: #fff;
+        color: #458F90;
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+        font-family: "Zen Maru Gothic", sans-serif;
+        filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));
+
+        h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        p {
+            padding-top: 15px;
+            font-size: 16px;
+            font-weight: medium;
+        }
+    }
+
+    .wether_map {
+        margin-top: -50px;
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));
+
+        .path_bg {
+            transition: fill .2s ease-in-out;
+            transform-origin: center;
+
+            &:hover {
+                fill: #458F90;
+            }
+        }
+    }
+}
+
+.pref {
+    background-color: #BAFFF9;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #458F90;
+    width: 1100px;
+    margin: 0 auto;
+
+    .js-pref-name {
+        font-size: 42px;
+        font-weight: bold;
+        margin-top: 60px;
+    }
+
+    .section-wrap {
+        display: flex;
+        gap: 120px;
+        margin-top: 40px;
+
+        .today-weather,
+        .tomorrow-weather {
+            width: 480px;
+            filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));
+
+            .today-weather-header,
+            .tomorrow-weather-header {
+                background-color: #fff;
+                font-size: 32px;
+                font-weight: bold;
+                display: flex;
+                padding: 30px 30px 22px;
+                justify-content: space-between;
+                border-radius: 30px 30px 0 0;
+            }
+
+            .today-weather-body,
+            .tomorrow-weather-body {
+                background-color: #F7F7F7;
+                border-radius: 0 0 30px 30px;
+                padding: 0 0 20px 0;
+
+                .today-weather-box,
+                .tomorrow-weather-box {
+                    display: flex;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding: 20px 0;
+
+                    .js-weather-img-today,
+                    .js-weather-img-tomorrow {
+                        width: 160px;
+                        height: 160px;
+                        filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .today-weather-txt,
+                    .tomorrow-weather-txt {
+                        font-size: 32px;
+                        font-weight: medium;
+
+                        .js-temp-today,
+                        .js-temp-tomorrow {
+                            margin-top: 18px;
+                        }
+                    }
+                }
+
+                .today-table,
+                .tomorrow-table {
+                    width: 420px;
+                    margin: 0 auto;
+
+                    th {
+                        border-bottom: 1px dashed #458F90;
+                        width: 105px;
+                        text-align: center;
+                        padding-bottom: 10px;
+                    }
+
+                    td {
+                        width: 105px;
+                        text-align: center;
+                        padding: 15px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-btn {
+        margin: 60px auto 0;
+
+        font-size: 32px;
+        font-weight: bold;
+        background-color: #458F90;
+        border: #458F90 solid 2px;
+        border-radius: 40px;
+        filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));
+
+
+        width: 420px;
+        height: 70px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: background .2s ease-in-out;
+
+
+        a {
+            display: block;
+            padding: 18px 0 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: color .2s ease-in-out;
+
+
+            &:hover {
+                color: #458F90;
+            }
+
+        }
+
+        &:hover {
+            background: #fff;
+            border: #458F90 solid 2px;
+        }
+    }
 }

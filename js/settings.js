@@ -2,12 +2,12 @@
 
 // 各天気パターン
 const WEATHER_LIST = {
-  sunny: { text: "晴れ", className: "weather-sunny", img: "img/sun.png" },
-  cloudy: { text: "曇り", className: "weather-cloudy", img: "img/cloud.png" },
-  rain: { text: "雨", className: "weather-rain", img: "img/rain.png" },
-  snow: { text: "雪", className: "weather-snow", img: "img/snow.png" },
-  thunder: { text: "雷", className: "weather-thunder", img: "img/thunder.png" },
-  fog: { text: "霧", className: "weather-fog", img: "img/fog.png" }
+  sunny: { text: "晴れ", className: "weather-sunny", img: "/img/sun.png" },
+  cloudy: { text: "曇り", className: "weather-cloudy", img: "/img/cloud.png" },
+  rain: { text: "雨", className: "weather-rain", img: "/img/rain.png" },
+  snow: { text: "雪", className: "weather-snow", img: "/img/snow.png" },
+  thunder: { text: "雷", className: "weather-thunder", img: "/img/thunder.png" },
+  fog: { text: "霧", className: "weather-fog", img: "/img/fog.png" }
 };
 
 // 都道府県ごとの固定天気データ
@@ -36,7 +36,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "青森": {
+  "青森県": {
     today: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 3,
@@ -60,7 +60,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "岩手": {
+  "岩手県": {
     today: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 4,
@@ -84,7 +84,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "宮城": {
+  "宮城県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -108,7 +108,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "秋田": {
+  "秋田県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -132,7 +132,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "山形": {
+  "山形県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -156,7 +156,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "福島": {
+  "福島県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -180,7 +180,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "茨城": {
+  "茨城県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -204,7 +204,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "栃木": {
+  "栃木県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -228,7 +228,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "群馬": {
+  "群馬県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -252,7 +252,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "埼玉": {
+  "埼玉県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -276,7 +276,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "千葉": {
+  "千葉県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -300,7 +300,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "東京": {
+  "東京都": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -324,7 +324,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "神奈川": {
+  "神奈川県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -348,7 +348,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "新潟": {
+  "新潟県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -372,7 +372,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "富山": {
+  "富山県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -396,7 +396,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "石川": {
+  "石川県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -420,7 +420,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "福井": {
+  "福井県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -444,7 +444,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "山梨": {
+  "山梨県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -468,7 +468,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "長野": {
+  "長野県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -492,7 +492,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "岐阜": {
+  "岐阜県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -516,7 +516,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "静岡": {
+  "静岡県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -540,7 +540,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "愛知": {
+  "愛知県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -564,7 +564,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "三重": {
+  "三重県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -588,7 +588,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "滋賀": {
+  "滋賀県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -612,7 +612,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "京都": {
+  "京都府": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -636,7 +636,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "大阪": {
+  "大阪府": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -660,7 +660,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "兵庫": {
+  "兵庫県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -684,7 +684,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "奈良": {
+  "奈良県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -708,7 +708,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "和歌山": {
+  "和歌山県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -732,7 +732,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "鳥取": {
+  "鳥取県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -756,7 +756,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "島根": {
+  "島根県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -780,7 +780,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "岡山": {
+  "岡山県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -804,7 +804,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "広島": {
+  "広島県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -828,7 +828,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "山口": {
+  "山口県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -852,7 +852,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "徳島": {
+  "徳島県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -876,7 +876,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "香川": {
+  "香川県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -900,7 +900,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "愛媛": {
+  "愛媛県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -924,7 +924,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "高知": {
+  "高知県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -948,7 +948,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "福岡": {
+  "福岡県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -972,7 +972,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "佐賀": {
+  "佐賀県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -996,7 +996,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "長崎": {
+  "長崎県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -1020,7 +1020,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "熊本": {
+  "熊本県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -1044,7 +1044,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "大分": {
+  "大分県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -1068,7 +1068,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "宮崎": {
+  "宮崎県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -1092,7 +1092,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "鹿児島": {
+  "鹿児島県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
@@ -1116,7 +1116,7 @@ const PREF_WEATHER = {
       ]
     }
   },
-  "沖縄": {
+  "沖縄県": {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,

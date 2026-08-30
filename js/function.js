@@ -29,7 +29,7 @@ $(function() {
 		tomorrow.setDate(today.getDate() + 1);
 
 		// 日付を「M月D日 (曜)」の形式でフォーマットする関数
-		const formatDate = (d) => `${d.getMonth()+1}月${d.getDate()}日 (${dayNames[d.getDay()]})`;
+		const formatDate = (d) => `${d.getMonth()+1}/${d.getDate()} (${dayNames[d.getDay()]})`;
 
 		// 天気情報を画面に表示する関数("today"または"tomorrow"をprefixに指定, dateObjに日付オブジェクト, infoに天気情報を指定)
 		const renderWeather = (prefix, dateObj, info) => {
