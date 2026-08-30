@@ -1,3 +1,74 @@
 body {
-    background-color: #F00;
+    background-color: #f4f8fc;
+    color: #233043;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    margin: 0;
+    padding: 24px 16px;
+    background: #1769aa;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.home-content {
+    width: min(100% - 32px, 960px);
+    margin: 32px auto 48px;
+}
+
+.map-introduction,
+.map-help {
+    text-align: center;
+}
+
+.map-wrapper {
+    max-width: 849px;
+    margin: 20px auto 10px;
+    padding: 12px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgb(35 48 67 / 12%);
+}
+
+.japan-map {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.prefecture-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+
+    a {
+        padding: 4px 10px;
+        border: 1px solid #b6c9db;
+        border-radius: 999px;
+        background: #fff;
+        color: #1769aa;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            background: #1769aa;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .home-content {
+        width: min(100% - 20px, 960px);
+        margin-top: 20px;
+    }
+
+    .map-wrapper {
+        padding: 6px;
+    }
 }
