@@ -1,2 +1,79 @@
 body {
+    background-color: #CBF8FF;
+    padding: 0 50px;
+}
+
+
+.deco {
+    position: relative;
+}
+
+.top_tit {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+
+.deco-1 {
+    position: absolute;
+    top: 270px;
+    left: -70px;
+}
+
+.deco-2 {
+    position: absolute;
+    top: -40px;
+    left: 600px;
+}
+
+.deco-3 {
+    position: absolute;
+    top: 280px;
+    right: -70px;
+}
+
+.deco-4 {
+    position: absolute;
+    top: 480px;
+    left: 0;
+}
+
+.deco-5 {
+    position: absolute;
+    top: 330px;
+    left: 200px;
+}
+
+.deco-6 {
+    position: absolute;
+    top: 430px;
+    left: 420px;
+}
+
+.deco-7 {
+    position: absolute;
+    top: 220px;
+    left: 590px;
+}
+
+.deco-8 {
+    position: absolute;
+    top: 470px;
+    right: 140px;
+}
+
+.deco-9 {
+    position: absolute;
+    top: 600px;
+    right: 10px;
+}
+
+.deco-10 {
+    position: absolute;
+    top: -110px;
+    right: -150px;
+}
+.japan-map-main{
+    text-align: center;
 }
