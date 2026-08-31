@@ -14,7 +14,7 @@ body {
 
 .weather-flex {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     margin: 0 0 50px 0;
@@ -25,10 +25,11 @@ body {
     background-color: #fff;
     border: 5px solid #0376C3;
     border-radius: 30px;
-    
+
 }
 
-.today-tit {
+.today-tit,
+.tomorrow-tit {
     font-size: 30px;
     font-family: Zen Kaku Gothic New;
     font-weight: 700;
@@ -37,15 +38,18 @@ body {
 
 }
 
-.today-header {
+.today-header,
+.tomorrow-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #0376C3;
     border-radius: 20px 20px 0 0;
     padding: 20px;
 }
 
-.js-date-today {
+.js-date-today,
+.js-date-tomorrow {
     font-size: 30px;
     font-family: Zen Kaku Gothic New;
     font-weight: 700;
@@ -54,12 +58,74 @@ body {
     text-align: right;
 }
 
+.today-date-box,
+.tomorrow-date-box {
+    padding: 20px;
+}
+
+.main-box,
+.main-box-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin: 50px 0 60px 0;
+}
+
+.js-weather-main-today,
+.js-weather-main-tomorrow {
+    font-size: 30px;
+    font-family: Zen Kaku Gothic New;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.js-temp-today,
+.js-temp-tomorrow {
+    font-size: 40px;
+    font-family: Zen Kaku Gothic New;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 30px 0 0 0;
+}
+
+.today-date-box table,
+.tomorrow-date-box table {
+    max-width: 500px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.today-date-box th,
+.tomorrow-date-box th {
+    width: 25%;
+    font-size: 16px;
+    font-family: Zen Kaku Gothic New;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    border-bottom: 3px solid #0376C3;
+    padding: 0 0 8px 0;
+
+}
+
+.today-date-box td,
+.tomorrow-date-box td {
+    font-size: 16px;
+    font-family: Zen Kaku Gothic New;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    padding: 8px 0 0 0;
+}
+
+
 /* 明日の天気 */
 .tomorrow-weather {
     background-color: #fff;
     border: 5px solid #0376C3;
     border-radius: 30px;
-    padding: 20px;
 }
 
 /* ボタン */

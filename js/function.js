@@ -46,7 +46,7 @@ $(function() {
 			$(`.js-temp-${prefix}`).text(`${info.maxTemp}℃ / ${info.minTemp}℃`);
 
 			// 天気画像を表示
-			$(`.js-weather-img-${prefix}`).html(`<img src="${info.weather.img}" alt="${info.weather.text}" width="50">`);
+			$(`.js-weather-img-${prefix}`).html(`<img src="${info.weather.img}" alt="${info.weather.text}"  height="200">`);
 
 			// 詳細情報の表を表示
 			const $table = $(`.js-weather-table-${prefix}`);
