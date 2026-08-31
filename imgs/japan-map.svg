@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_3" data-name="レイヤー 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1348.36 932.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a0e9;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        opacity: .76;
+      }
+
+      .cls-2 {
+        fill: #fff100;
+      }
+
+      .cls-3 {
+        fill: #7e318e;
+      }
+
+      .cls-4 {
+        fill: #ea5514;
+      }
+
+      .cls-5 {
+        fill: #e4007f;
+      }
+
+      .cls-6 {
+        fill: #13ae67;
+      }
+    </style>
+  </defs>
+  <rect id="hokkaido" class="cls-1" x="1050.42" width="297.94" height="216.7" rx="12" ry="12"/>
+  <rect id="aomoori" class="cls-1" x="1051.33" y="230.43" width="260.2" height="85.59" rx="12" ry="12"/>
+  <rect id="akita" class="cls-1" x="1051.33" y="320.79" width="126.4" height="79.18" rx="12" ry="12"/>
+  <rect id="iwate" class="cls-1" x="1181.43" y="320.79" width="126.4" height="79.18" rx="12" ry="12"/>
+  <rect id="miyagi" class="cls-1" x="1181.43" y="404.74" width="126.4" height="79.18" rx="12" ry="12"/>
+  <rect id="hukusima" class="cls-1" x="1100.52" y="488.7" width="207.3" height="75.72" rx="12" ry="12"/>
+  <path id="nagano" class="cls-6" d="M1082.6,613.49h-119.74c-6.6,0-12,5.4-12,12v158.16c0,6.6,5.4,12,12,12h34.74c6.6,0,12-5.4,12-12v-111.42h73c6.6,0,12-5.4,12-12v-34.74c0-6.6-5.4-12-12-12Z"/>
+  <rect id="yamanasi" class="cls-6" x="1014.15" y="677" width="58.74" height="118.65" rx="12" ry="12"/>
+  <path id="niigata" class="cls-6" d="M1082.6,489.46h-35.08c-6.6,0-12,5.4-12,12v32.26h-72.66c-6.6,0-12,5.4-12,12v51.72c0,6.6,5.4,12,12,12h119.74c6.6,0,12-5.4,12-12v-95.98c0-6.6-5.4-12-12-12Z"/>
+  <path id="isikawa" class="cls-6" d="M749.75,466.57h29.54c5.56,0,10.1,5.4,10.1,12v32.26h61.18c5.56,0,10.1,5.4,10.1,12v51.72c0,6.6-4.55,12-10.1,12h-100.82c-5.56,0-10.1-5.4-10.1-12v-95.98c0-6.6,4.55-12,10.1-12Z"/>
+  <rect id="ibaraki" class="cls-2" x="1223.34" y="569.19" width="84.49" height="102.27" rx="12" ry="12"/>
+  <rect id="tiba" class="cls-2" x="1223.34" y="676.24" width="84.49" height="160.6" rx="12" ry="12"/>
+  <rect id="saitama" class="cls-2" x="1077.44" y="676.24" width="138.52" height="58.14" rx="12" ry="12"/>
+  <rect id="tokyo" class="cls-2" x="1077.44" y="736.75" width="138.52" height="58.14" rx="12" ry="12"/>
+  <rect id="kanagawa" class="cls-2" x="1016.03" y="801.19" width="126.85" height="85.1" rx="12" ry="12"/>
+  <rect id="toyama" class="cls-6" x="865.87" y="530.03" width="75.35" height="109.57" rx="12" ry="12"/>
+  <rect id="gihu" class="cls-6" x="869.23" y="659.45" width="75.35" height="130.95" rx="12" ry="12"/>
+  <rect id="hukui" class="cls-6" x="739.65" y="593.98" width="121.03" height="93.21" rx="12" ry="12"/>
+  <rect id="siga" class="cls-4" x="786.05" y="697.58" width="74.63" height="97.3" rx="12" ry="12"/>
+  <rect id="nara" class="cls-4" x="719.86" y="697.58" width="62.32" height="97.3" rx="12" ry="12"/>
+  <rect id="osaka" class="cls-4" x="654.41" y="697.58" width="58.83" height="97.3" rx="12" ry="12"/>
+  <rect id="kyoto" class="cls-4" x="654.41" y="591.93" width="80.2" height="97.3" rx="12" ry="12"/>
+  <rect id="hyogo" class="cls-4" x="570.36" y="591.93" width="80.2" height="169.11" rx="12" ry="12"/>
+  <rect id="yamaguti" class="cls-3" x="314.86" y="591.93" width="80.2" height="169.11" rx="12" ry="12"/>
+  <rect id="saga" class="cls-5" x="136.65" y="591.93" width="73.54" height="145.97" rx="12" ry="12"/>
+  <rect id="nagasaki" class="cls-5" x="51.76" y="591.93" width="73.54" height="145.97" rx="12" ry="12"/>
+  <rect id="okinawa" class="cls-5" y="786.43" width="57.75" height="114.62" rx="12" ry="12"/>
+  <rect id="hukuoka" class="cls-5" x="218.17" y="591.93" width="73.54" height="145.97" rx="12" ry="12"/>
+  <rect id="ooita" class="cls-5" x="192.12" y="741.87" width="109.26" height="78.71" rx="12" ry="12"/>
+  <rect id="kumamoto" class="cls-5" x="76.35" y="741.87" width="109.26" height="78.71" rx="12" ry="12"/>
+  <rect id="miyazaki" class="cls-5" x="192.12" y="824.55" width="109.26" height="78.71" rx="12" ry="12"/>
+  <rect id="kagosima" class="cls-5" x="76.35" y="824.55" width="109.26" height="78.71" rx="12" ry="12"/>
+  <rect id="tottori" class="cls-3" x="486.31" y="591.93" width="80.2" height="80.2" rx="12" ry="12"/>
+  <rect id="simane" class="cls-3" x="402.27" y="591.93" width="80.2" height="80.2" rx="12" ry="12"/>
+  <rect id="hirosima" class="cls-3" x="402.27" y="676.49" width="80.2" height="80.2" rx="12" ry="12"/>
+  <rect id="okayama" class="cls-3" x="486.31" y="676.49" width="80.2" height="80.2" rx="12" ry="12"/>
+  <rect id="kagawa" class="cls-3" x="490.16" y="773.14" width="144.67" height="65.93" rx="12" ry="12"/>
+  <rect id="ehime" class="cls-3" x="337.8" y="773.14" width="144.67" height="65.93" rx="12" ry="12"/>
+  <rect id="kouti" class="cls-3" x="337.8" y="843.74" width="144.67" height="65.93" rx="12" ry="12"/>
+  <rect id="tokusima" class="cls-3" x="490.16" y="843.74" width="144.67" height="65.93" rx="12" ry="12"/>
+  <rect id="mie" class="cls-4" x="744.86" y="801.19" width="74.63" height="130.95" rx="12" ry="12"/>
+  <rect id="wakayama" class="cls-4" x="659.98" y="801.19" width="74.63" height="130.95" rx="12" ry="12"/>
+  <rect id="sizuoka" class="cls-6" x="913.19" y="801.19" width="75.35" height="130.95" rx="12" ry="12"/>
+  <rect id="aiti" class="cls-6" x="828.2" y="801.19" width="75.35" height="130.95" rx="12" ry="12"/>
+  <rect id="gunnma" class="cls-2" x="1100.52" y="569.19" width="54.02" height="102.27" rx="12" ry="12"/>
+  <rect id="totigi" class="cls-2" x="1161.93" y="569.19" width="54.02" height="102.27" rx="12" ry="12"/>
+  <rect id="yamagata" class="cls-1" x="1051.33" y="404.74" width="126.4" height="79.18" rx="12" ry="12"/>
+</svg>
