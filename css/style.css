@@ -460,5 +460,21 @@ background-color: #F0F3FF;}
     font-size: 20px;
 
 }
-
-
+.today-weather tr th{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding: 15px;
+    background-color: #C3CFFF;
+}
+.tomorrow-weather tr th{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding: 15px
+    
+}
+.today-weather tr td{
+    padding: 10px;
+}
+.tomorrow-weather tr td{
+padding: 10px;
+}
