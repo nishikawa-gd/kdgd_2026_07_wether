@@ -11,7 +11,7 @@ a:hover path {
 h1{
     font-weight: bold;
     position: absolute;
-    left: 12%;
+    left: 164px;
     top: 23%;
     font-size: 64px;
 }
@@ -24,6 +24,12 @@ h1::before{
     background-size: contain;
     margin-right: 8px; 
     vertical-align: middle;
+}
+.prefectures{
+    position: absolute;
+    top: 32%;
+    left: 242px;
+    font-size: 20px;
 }
 .japan-weather{
     color: #3498db;
