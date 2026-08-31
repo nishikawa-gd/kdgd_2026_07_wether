@@ -1,2 +1,32 @@
 body {
+    background-color: #93d9f3;
+}
+
+.page-title{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+body.pref{
+    margin-top: 40px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.weather-info{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.top-btn{
+    margin-top: 40px;
+    text-align: center;
 }
