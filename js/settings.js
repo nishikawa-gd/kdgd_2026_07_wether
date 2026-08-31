@@ -2,9 +2,9 @@
 
 // 各天気パターン
 const WEATHER_LIST = {
-  sunny: { text: "晴れ", className: "weather-sunny", img: "img/sun.png" },
-  cloudy: { text: "曇り", className: "weather-cloudy", img: "img/cloud.png" },
-  rain: { text: "雨", className: "weather-rain", img: "img/rain.png" },
+  sunny: { text: "晴れ", className: "weather-sunny", img: "img/sunny.svg" },
+  cloudy: { text: "曇り", className: "weather-cloudy", img: "img/cloudy.svg" },
+  rain: { text: "雨", className: "weather-rain", img: "img/rain.svg" },
   snow: { text: "雪", className: "weather-snow", img: "img/snow.png" },
   thunder: { text: "雷", className: "weather-thunder", img: "img/thunder.png" },
   fog: { text: "霧", className: "weather-fog", img: "img/fog.png" }

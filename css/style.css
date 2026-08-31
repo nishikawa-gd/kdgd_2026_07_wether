@@ -1,5 +1,6 @@
 /* 页面背景 */
 body {
+<<<<<<< HEAD
     margin: 0;
     padding: 30px;
     font-family: "Yu Gothic", "Meiryo", sans-serif;
@@ -261,4 +262,168 @@ body.pref > p a{
 body.pref > p a:hover{
     background:#1565c0;
     transform:translateY(-3px);
+=======
+    background-color: #CBF8FF;
+    padding: 0 50px;
+}
+
+
+.deco {
+    position: relative;
+}
+
+.top_tit {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+
+.deco-1 {
+    position: absolute;
+    top: 270px;
+    left: -70px;
+    animation: swayCloud 6s ease-in-out infinite alternate;
+}
+
+.deco-2 {
+    position: absolute;
+    top: -40px;
+    left: 600px;
+    animation: swayCloud 8s ease-in-out 1s infinite alternate;
+}
+
+.deco-3 {
+    position: absolute;
+    top: 280px;
+    right: -70px;
+    animation: swayCloud 5s ease-in-out 2s infinite alternate;
+}
+
+
+@keyframes swayCloud {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, -5px);
+    }
+
+    100% {
+        transform: translate(-20px, 3px);
+    }
+}
+
+.deco-4 {
+    position: absolute;
+    top: 480px;
+    left: 0;
+    animation: waveMotion 6s ease-in-out infinite alternate;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+.deco-5 {
+    position: absolute;
+    top: 330px;
+    left: 200px;
+    animation: waveMotion 6s ease-in-out infinite alternate;
+    animation-duration: 6s;
+    animation-delay: -1.5s;
+}
+
+.deco-6 {
+    position: absolute;
+    top: 430px;
+    left: 420px;
+    animation: waveMotion 6s ease-in-out infinite alternate;
+    animation-duration: 5s;
+    animation-delay: -3s
+}
+
+.deco-7 {
+    position: absolute;
+    top: 220px;
+    left: 590px;
+    animation: waveMotion 6s ease-in-out infinite alternate;
+    animation-duration: 7.5s;
+    animation-delay: -0.5s;
+}
+
+.deco-8 {
+    position: absolute;
+    top: 470px;
+    right: 140px;
+    animation: waveMotion 6s ease-in-out infinite alternate;
+    animation-duration: 8s;
+    animation-delay: -4s;
+}
+
+.deco-9 {
+    position: absolute;
+    top: 600px;
+    right: 10px;
+    animation: waveMotion 6s ease-in-out infinite alternate;
+    animation-duration: 5.5s;
+    animation-delay: -2s;
+}
+
+@keyframes waveMotion {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-10px, -6px);
+    }
+    100% {
+        transform: translate(12px, 4px);
+    }
+}
+
+.deco-10 {
+    position: absolute;
+    top: -110px;
+    right: -150px;
+    transform-origin: center;
+    animation: sunPulse 2s ease-in-out infinite alternate;
+    transform-origin: center;
+    animation: sunPulseAndSway 6s ease-in-out infinite;
+}
+
+@keyframes sunPulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes sunPulseAndSway {
+    0% {
+        transform: scale(1) translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.15) translate(10px, -8px) rotate(6deg);
+    }
+    100% {
+        transform: scale(0.95) translate(-8px, 6px) rotate(-4deg);
+    }
+}
+
+.japan-map-main {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.japan-map-main path {
+    transition: transform 0.2s ease, fill 0.2s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.japan-map-main a:hover path {
+    transform: scale(1.08);
+>>>>>>> nakaotatsuki
 }
