@@ -2,9 +2,9 @@
 
 // 各天気パターン
 const WEATHER_LIST = {
-  sunny: { text: "晴れ", className: "weather-sunny", img: "img/sun.png" },
+  sunny: { text: "晴れ", className: "weather-sunny", img: "img/san.png" },
   cloudy: { text: "曇り", className: "weather-cloudy", img: "img/cloud.png" },
-  rain: { text: "雨", className: "weather-rain", img: "img/rain.png" },
+  rain: { text: "雨", className: "weather-rain", img: "img/rein.png" },
   snow: { text: "雪", className: "weather-snow", img: "img/snow.png" },
   thunder: { text: "雷", className: "weather-thunder", img: "img/thunder.png" },
   fog: { text: "霧", className: "weather-fog", img: "img/fog.png" }
@@ -14,7 +14,7 @@ const WEATHER_LIST = {
 const PREF_WEATHER = {
   "北海道": {
     today: {
-      weather: WEATHER_LIST.snow,
+      weather: WEATHER_LIST. sunny,
       maxTemp: -2,
       minTemp: -8,
       table: [
@@ -25,7 +25,7 @@ const PREF_WEATHER = {
       ]
     },
     tomorrow: {
-      weather: WEATHER_LIST.snow,
+      weather: WEATHER_LIST. sunny,
       maxTemp: -1,
       minTemp: -7,
       table: [

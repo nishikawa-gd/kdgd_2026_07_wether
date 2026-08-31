@@ -15,7 +15,7 @@
   <h1>日本の天気予報</h1>
   <div>
     <div class="hokkaido">
-    <a href="pref.html?pref=北海">
+    <a href="pref.html?pref=北海道">
       <img src="img/hokkaidou.png" alt="北海道"></a>
     </div>
     <div class="aomori">
@@ -254,16 +254,84 @@
       熱中症警戒アラート発動中
     </p>
   </div>
-  <div class="top_tenki">
-    <p>
-      東京
-    </p>
-    <p>
-      大阪
-    </p>
-    <p>
-      福岡
-    </p>
+    <div class="top_tenki">
+
+      <!-- 東京 -->
+      <div class="tenki_row">
+          <div class="main_tokyo">
+              <p>東京</p>
+              <div class="san"></div>
+          </div>
+  
+          <div class="weather_data">
+              <div>
+                  <p>天候</p>
+                  <img src="img/san.png" alt="晴れ">
+              </div>
+  
+              <div>
+                  <p>降水確率</p>
+                  <p>40%</p>
+              </div>
+  
+              <div>
+                  <p>湿度</p>
+                  <p>高い</p>
+              </div>
+          </div>
+      </div>
+  
+  
+      <!-- 大阪 -->
+      <div class="tenki_row">
+          <div class="main_osaka">
+              <p>大阪</p>
+          </div>
+  
+          <div class="weather_data">
+              <div>
+                  <p>天候</p>
+                  <img src="img/cloud.png" alt="曇り">
+              </div>
+  
+              <div>
+                  <p>降水確率</p>
+                  <p>60%</p>
+              </div>
+  
+              <div>
+                  <p>湿度</p>
+                  <p>高い</p>
+              </div>
+          </div>
+      </div>
+  
+  
+      <!-- 福岡 -->
+      <div class="tenki_row">
+          <div class="main_fukuoka">
+              <p>福岡</p>
+          </div>
+  
+          <div class="weather_data">
+              <div>
+                  <p>天候</p>
+                  <img src="img/rein.png" alt="雨">
+              </div>
+  
+              <div>
+                  <p>降水確率</p>
+                  <p>90%</p>
+              </div>
+  
+              <div>
+                  <p>湿度</p>
+                  <p>高い</p>
+              </div>
+          </div>
+      </div>
+  
+  </div>
 
   </div>
 </body>
