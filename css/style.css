@@ -49,9 +49,8 @@ body.home {
   padding: 20px 15px 40px;
 }
 body.home h1 {
-  font-size: 28px;
+  width: 50%;
   text-align: center;
-  color: #1a365d;
   margin-bottom: 8px;
 }
 body.home .lead-text {
