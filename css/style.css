@@ -1269,4 +1269,119 @@ a:hover {
   background-color: #3182ce;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(66, 153, 225, 0.5);
+}
+
+/* 親要素のコンテナ */
+.crt-container {
+  position: relative;
+  overflow: hidden;
+  /* 歪み（グリッチ）アニメーション：5秒ごとに実行 */
+  animation: crtGlitch 5s infinite;
+}
+
+/* --- 1. 画面全体の歪み・ブレ（5秒に1回発動） --- */
+@keyframes crtGlitch {
+  0%, 88%, 100% {
+    transform: translate(0, 0) skew(0deg);
+    filter: blur(0);
+  }
+  /* 5秒の最後の数%（約0.3秒間）だけ急激に歪ませる */
+  89% {
+    transform: translate(-3px, 2px) skew(1.5deg);
+    filter: blur(0.5px);
+  }
+  91% {
+    transform: translate(4px, -1px) skew(-2deg);
+    filter: opacity(0.8);
+  }
+  93% {
+    transform: translate(-2px, 3px) skew(1deg);
+  }
+  95% {
+    transform: translate(0, 0) skew(0deg);
+  }
+}
+/* --- 2. ブラウン管特有の走査線ノイズ overlay --- */
+.crt-distortion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 下の要素のクリックを阻害しない */
+  /* うっすら横縞模様（ブラウン管の走査線）を入れる */
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+  /* 走査線も5秒に1回明暗を激しくブレさせる */
+  animation: scanlineGlitch 5s infinite;
+  opacity: 0.3;
+}
+
+@keyframes scanlineGlitch {
+  0%, 88%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  89% {
+    opacity: 0.8;
+    transform: translateY(-5px);
+  }
+  92% {
+    opacity: 0.4;
+    transform: translateY(10px);
+  }
+}
+/* 島根の1行上（日本海側）に配置 */
+.pref-secret {
+  grid-column: 5; /* 島根の列位置に合わせて調整してください */
+  grid-row: 5; /* 島根の行(6)の1つ上 */
+  /* レトロ・不気味さを出す装飾 */
+  background-color: #222;
+  color: #ff3333;
+  border: 1px dashed #ff3333;
+  opacity: 0.8;
+  font-family: "Courier New", monospace;
+  animation: secretBlink 1s infinite alternate;
+}
+
+/* 怪しく点滅させるアニメーション */
+@keyframes secretBlink {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 隠しページ（?pref=secret）表示時の全体一括変更 */
+/* 1. bodyおよびすべての要素の背景を黒（薄い黒/ダークグレー）、文字を赤にする */
+body.is-secret-mode,
+body.is-secret-mode * {
+  background-color: #121212 !important; /* 薄い黒（ダークグレー） */
+  color: #ff3333 !important; /* 赤文字 */
+  border-color: #550000 !important; /* 枠線も暗い赤に変更 */
+}
+
+/* 2. カードや枠組みなどの背景を少し深めの黒にして立体感を出す場合（お好みで調整） */
+body.is-secret-mode .weather-card,
+body.is-secret-mode .weather-box,
+body.is-secret-mode table,
+body.is-secret-mode th,
+body.is-secret-mode td,
+body.is-secret-mode header,
+body.is-secret-mode footer {
+  background-color: #050505 !important; /* より濃い黒 */
+}
+
+/* 3. 都道府県名や見出しを赤く怪しく光らせる */
+body.is-secret-mode h1,
+body.is-secret-mode h2,
+body.is-secret-mode .js-pref-name {
+  color: #ff0000 !important;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* 赤いグロー効果 */
+}
+
+/* 4. リンク（戻るボタンなど）も赤文字を維持 */
+body.is-secret-mode a {
+  color: #ff6666 !important;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

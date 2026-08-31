@@ -46,5 +46,7 @@ const PREF_MAP = {
   "oita":     { name: "大分県", code: "440000" },
   "miyazaki": { name: "宮崎県", code: "450000" },
   "kagoshima":{ name: "鹿児島県", code: "460100" },
-  "okinawa":  { name: "沖縄県", code: "471000" }
+  "okinawa":  { name: "沖縄県", code: "471000" },
+  // 隠しデータを追加
+  "secret": { name: "？？？？", code: "secret" },
 };

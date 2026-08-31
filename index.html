@@ -10,7 +10,7 @@
   <script src="js/settings.js"></script>
   <script src="js/function.js"></script>
 </head>
-<body class="home">
+<body class="home" class="crt-container">
   <h1><img src="img/wether_mv.png" alt="日本の天気予報" width="100%"></h1>
   <p class="lead-text">都道府県または地図のエリアを選択してください</p>
 
@@ -57,6 +57,11 @@
 
       <!-- 中国 -->
       <a href="pref.html?pref=tottori" class="map-pref pref-tottori">鳥取</a>
+      <!-- 島根の上あたりに配置する謎のボタン -->
+<!-- リンク先を pref.html?pref=secret にする -->
+<a href="pref.html?pref=secret" class="pref-btn pref-secret">？？？</a><!-- 謎の音（怪しい効果音）用オーディオ要素 -->
+<!-- Web Audio APIで自動生成も可能ですが、音声ファイルを使う場合は以下のように配置します -->
+<audio id="js-secret-sound" src="img/" preload="auto"></audio>
       <a href="pref.html?pref=shimane" class="map-pref pref-shimane">島根</a>
       <a href="pref.html?pref=okayama" class="map-pref pref-okayama">岡山</a>
       <a href="pref.html?pref=hiroshima" class="map-pref pref-hiroshima">広島</a>
@@ -78,6 +83,7 @@
       <a href="pref.html?pref=kagoshima" class="map-pref pref-kagoshima">鹿児島</a>
       <a href="pref.html?pref=okinawa" class="map-pref pref-okinawa">沖縄</a>
     </div>
+    <div class="crt-distortion"></div>
   </main>
 </body>
 </html>
