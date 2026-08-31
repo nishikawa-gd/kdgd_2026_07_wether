@@ -30,3 +30,8 @@ h2{
     margin-top: 40px;
     text-align: center;
 }
+
+.today-weather,.tomorrow-weather{
+    background-color: #fefefe;
+    padding: 20px;
+}
