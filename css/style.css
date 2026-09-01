@@ -1,6 +1,8 @@
-/* 页面背景 */
+/* =========================
+   共通
+========================= */
+
 body {
-<<<<<<< HEAD
     margin: 0;
     padding: 30px;
     font-family: "Yu Gothic", "Meiryo", sans-serif;
@@ -8,16 +10,314 @@ body {
     min-height: 100vh;
 }
 
-/* 标题 */
+/* =========================
+   トップページ
+========================= */
+
 h1 {
     text-align: center;
     font-size: 42px;
     color: #ffffff;
     margin-bottom: 35px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* 天气表 */
+/* =========================
+   日本地図
+========================= */
+
+.japan-map {
+    position: relative;
+    width: 894px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.japan-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 都道府県のクリック範囲 */
+
+.japan-map .area {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 35px;
+    font-size: 0;
+    background: transparent;
+    z-index: 10;
+
+    transform: translateY(20px);
+}
+
+/* マウスを乗せたとき */
+.japan-map .area:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+}
+
+
+/* =========================
+   都道府県の位置
+========================= */
+
+/* 北海道 */
+.hokkaido {
+    top: 5%;
+    right: 5%;
+}
+
+/* 東北 */
+.aomori {
+    top: 20%;
+    right: 14%;
+}
+
+.iwate {
+    top: 25%;
+    right: 14%;
+}
+
+.miyagi {
+    top: 30%;
+    right: 14%;
+}
+
+.akita {
+    top: 23%;
+    right: 18%;
+}
+
+.yamagata {
+    top: 29%;
+    right: 18%;
+}
+
+.fukushima {
+    top: 35%;
+    right: 15%;
+}
+
+
+/* 関東 */
+.ibaraki {
+    top: 38%;
+    right: 13%;
+}
+
+.tochigi {
+    top: 36%;
+    right: 18%;
+}
+
+.gunma {
+    top: 37%;
+    right: 23%;
+}
+
+.saitama {
+    top: 41%;
+    right: 18%;
+}
+
+.chiba {
+    top: 44%;
+    right: 11%;
+}
+
+.tokyo {
+    top: 44%;
+    right: 17%;
+}
+
+.kanagawa {
+    top: 48%;
+    right: 18%;
+}
+
+
+/* 中部 */
+.niigata {
+    top: 31%;
+    right: 27%;
+}
+
+.toyama {
+    top: 38%;
+    right: 29%;
+}
+
+.ishikawa {
+    top: 36%;
+    right: 34%;
+}
+
+.fukui {
+    top: 42%;
+    right: 34%;
+}
+
+.yamanashi {
+    top: 45%;
+    right: 25%;
+}
+
+.nagano {
+    top: 40%;
+    right: 24%;
+}
+
+.gifu {
+    top: 44%;
+    right: 31%;
+}
+
+.shizuoka {
+    top: 49%;
+    right: 24%;
+}
+
+.aichi {
+    top: 49%;
+    right: 30%;
+}
+
+.mie {
+    top: 53%;
+    right: 33%;
+}
+
+
+/* 近畿 */
+.shiga {
+    top: 48%;
+    left: 51%;
+}
+
+.kyoto {
+    top: 47%;
+    left: 46%;
+}
+
+.osaka {
+    top: 54%;
+    left: 46%;
+}
+
+.hyogo {
+    top: 50%;
+    left: 40%;
+}
+
+.nara {
+    top: 55%;
+    left: 51%;
+}
+
+.wakayama {
+    top: 61%;
+    left: 45%;
+}
+
+
+/* 中国 */
+.tottori {
+    top: 49%;
+    left: 31%;
+}
+
+.shimane {
+    top: 48%;
+    left: 25%;
+}
+
+.okayama {
+    top: 55%;
+    left: 32%;
+}
+
+.hiroshima {
+    top: 56%;
+    left: 25%;
+}
+
+.yamaguchi {
+    top: 57%;
+    left: 19%;
+}
+
+
+/* 四国 */
+.tokushima {
+    top: 64%;
+    left: 43%;
+}
+
+.kagawa {
+    top: 61%;
+    left: 39%;
+}
+
+.ehime {
+    top: 65%;
+    left: 32%;
+}
+
+.kochi {
+    top: 70%;
+    left: 38%;
+}
+
+
+/* 九州 */
+.fukuoka {
+    top: 61%;
+    left: 12%;
+}
+
+.saga {
+    top: 65%;
+    left: 9%;
+}
+
+.nagasaki {
+    top: 67%;
+    left: 5%;
+}
+
+.kumamoto {
+    top: 70%;
+    left: 10%;
+}
+
+.oita {
+    top: 66%;
+    left: 16%;
+}
+
+.miyazaki {
+    top: 74%;
+    left: 16%;
+}
+
+.kagoshima {
+    top: 78%;
+    left: 10%;
+}
+
+.okinawa {
+    top: 88%;
+    left: 4%;
+}
+
+
+/* =========================
+   天気表
+========================= */
+
 #weather-table {
     width: 90%;
     margin: 0 auto;
@@ -25,10 +325,9 @@ h1 {
     background: #ffffff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 表头 */
 #weather-table thead {
     background: #3ea6ff;
     color: #ffffff;
@@ -41,7 +340,6 @@ h1 {
     border: none;
 }
 
-/* 单元格 */
 #weather-table td {
     padding: 14px;
     text-align: center;
@@ -50,22 +348,23 @@ h1 {
     transition: background .3s;
 }
 
-/* 隔行颜色 */
 #weather-table tbody tr:nth-child(even) {
     background: #f7fbff;
 }
 
-/* 鼠标悬停 */
 #weather-table tbody tr:hover {
     background: #dff1ff;
 }
 
-/* 最后一行不显示边框 */
 #weather-table tbody tr:last-child td {
     border-bottom: none;
 }
 
-/* 天气图标 */
+
+/* =========================
+   天気アイコン
+========================= */
+
 .weather-icon {
     width: 30px;
     height: 30px;
@@ -73,7 +372,11 @@ h1 {
     margin-right: 6px;
 }
 
-/* 超链接 */
+
+/* =========================
+   リンク
+========================= */
+
 a {
     color: #0077cc;
     text-decoration: none;
@@ -82,11 +385,15 @@ a {
 }
 
 a:hover {
-    color: #ff7b00;
+    color: #ffd000;
     text-decoration: underline;
 }
 
-/* 响应式 */
+
+/* =========================
+   スマホ
+========================= */
+
 @media (max-width: 768px) {
 
     body {
@@ -112,318 +419,8 @@ a:hover {
         height: 22px;
     }
 
-}
-
-
-
-
-/* ===========================
-   詳細ページ
-=========================== */
-
-body.pref{
-    font-family:"Yu Gothic","Meiryo",sans-serif;
-    background:linear-gradient(to bottom,#e8f5ff,#ffffff);
-    color:#333;
-    max-width:1100px;
-    margin:0 auto;
-    padding:40px 30px 120px;
-    min-height:100vh;
-    box-sizing:border-box;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-    position:relative;
-}
-
-/* 地区标题 */
-.js-pref-name{
-    width:100%;
-    text-align:center;
-    font-size:42px;
-    color:#1976d2;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-.js-pref-name::after{
-    content:"";
-    display:block;
-    width:120px;
-    height:4px;
-    background:#4aa3ff;
-    margin:15px auto 0;
-    border-radius:10px;
-}
-
-/* 今日、明日天气卡片 */
-.today-weather,
-.tomorrow-weather{
-    width:500px;
-    background:#fff;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transition:.3s;
-}
-
-.today-weather:hover,
-.tomorrow-weather:hover{
-    transform:translateY(-5px);
-}
-
-.today-weather h3,
-.tomorrow-weather h3{
-    text-align:center;
-    font-size:28px;
-    color:#1976d2;
-    margin-bottom:20px;
-}
-
-.js-date-today,
-.js-date-tomorrow,
-.js-weather-main-today,
-.js-weather-main-tomorrow,
-.js-temp-today,
-.js-temp-tomorrow{
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.js-weather-main-today,
-.js-weather-main-tomorrow{
-    font-size:30px;
-    font-weight:bold;
-}
-
-.js-temp-today,
-.js-temp-tomorrow{
-    font-size:24px;
-    color:#ff5722;
-}
-
-.js-weather-img-today,
-.js-weather-img-tomorrow{
-    text-align:center;
-    margin:20px 0;
-}
-
-.js-weather-img-today img,
-.js-weather-img-tomorrow img{
-    width:120px;
-}
-
-/* 表格 */
-.today-weather table,
-.tomorrow-weather table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-.today-weather th,
-.tomorrow-weather th{
-    background:#2196f3;
-    color:#fff;
-    padding:12px;
-}
-
-.today-weather td,
-.tomorrow-weather td{
-    padding:12px;
-    text-align:center;
-    border-bottom:1px solid #e5e5e5;
-}
-
-.today-weather tr:nth-child(even),
-.tomorrow-weather tr:nth-child(even){
-    background:#f7fbff;
-}
-
-/* 返回按钮放到底部 */
-body.pref > p{
-    width:100%;
-    margin-top:40px;
-    text-align:center;
-}
-
-body.pref > p a{
-    display:inline-block;
-    padding:14px 45px;
-    background:#2196f3;
-    color:#fff;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:18px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-body.pref > p a:hover{
-    background:#1565c0;
-    transform:translateY(-3px);
-=======
-    background-color: #CBF8FF;
-    padding: 0 50px;
-}
-
-
-.deco {
-    position: relative;
-}
-
-.top_tit {
-    position: absolute;
-    top: 30px;
-    left: 0;
-}
-
-
-.deco-1 {
-    position: absolute;
-    top: 270px;
-    left: -70px;
-    animation: swayCloud 6s ease-in-out infinite alternate;
-}
-
-.deco-2 {
-    position: absolute;
-    top: -40px;
-    left: 600px;
-    animation: swayCloud 8s ease-in-out 1s infinite alternate;
-}
-
-.deco-3 {
-    position: absolute;
-    top: 280px;
-    right: -70px;
-    animation: swayCloud 5s ease-in-out 2s infinite alternate;
-}
-
-
-@keyframes swayCloud {
-    0% {
-        transform: translate(0, 0);
+    .japan-map {
+        width: 100%;
     }
 
-    50% {
-        transform: translate(30px, -5px);
-    }
-
-    100% {
-        transform: translate(-20px, 3px);
-    }
-}
-
-.deco-4 {
-    position: absolute;
-    top: 480px;
-    left: 0;
-    animation: waveMotion 6s ease-in-out infinite alternate;
-    animation-duration: 4s;
-    animation-delay: 0s;
-}
-
-.deco-5 {
-    position: absolute;
-    top: 330px;
-    left: 200px;
-    animation: waveMotion 6s ease-in-out infinite alternate;
-    animation-duration: 6s;
-    animation-delay: -1.5s;
-}
-
-.deco-6 {
-    position: absolute;
-    top: 430px;
-    left: 420px;
-    animation: waveMotion 6s ease-in-out infinite alternate;
-    animation-duration: 5s;
-    animation-delay: -3s
-}
-
-.deco-7 {
-    position: absolute;
-    top: 220px;
-    left: 590px;
-    animation: waveMotion 6s ease-in-out infinite alternate;
-    animation-duration: 7.5s;
-    animation-delay: -0.5s;
-}
-
-.deco-8 {
-    position: absolute;
-    top: 470px;
-    right: 140px;
-    animation: waveMotion 6s ease-in-out infinite alternate;
-    animation-duration: 8s;
-    animation-delay: -4s;
-}
-
-.deco-9 {
-    position: absolute;
-    top: 600px;
-    right: 10px;
-    animation: waveMotion 6s ease-in-out infinite alternate;
-    animation-duration: 5.5s;
-    animation-delay: -2s;
-}
-
-@keyframes waveMotion {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-10px, -6px);
-    }
-    100% {
-        transform: translate(12px, 4px);
-    }
-}
-
-.deco-10 {
-    position: absolute;
-    top: -110px;
-    right: -150px;
-    transform-origin: center;
-    animation: sunPulse 2s ease-in-out infinite alternate;
-    transform-origin: center;
-    animation: sunPulseAndSway 6s ease-in-out infinite;
-}
-
-@keyframes sunPulse {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.15);
-    }
-}
-
-@keyframes sunPulseAndSway {
-    0% {
-        transform: scale(1) translate(0, 0) rotate(0deg);
-    }
-    50% {
-        transform: scale(1.15) translate(10px, -8px) rotate(6deg);
-    }
-    100% {
-        transform: scale(0.95) translate(-8px, 6px) rotate(-4deg);
-    }
-}
-
-.japan-map-main {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.japan-map-main path {
-    transition: transform 0.2s ease, fill 0.2s ease;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-.japan-map-main a:hover path {
-    transform: scale(1.08);
->>>>>>> nakaotatsuki
 }
