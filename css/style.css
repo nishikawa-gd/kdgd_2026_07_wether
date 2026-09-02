@@ -31,12 +31,6 @@ h1::before{
     left: 242px;
     font-size: 20px;
 }
-.japan-weather{
-    color: #3498db;
-}
-.japan-forecast{
-    color: #e65100;
-}
 .svg-set {
     position: absolute;
     top: 50%;
@@ -82,12 +76,6 @@ body.pref > p {
 .tomorrow-weather h3 {
     color: #34495e;
     margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 4px solid #3498db;
-}
-
-.tomorrow-weather h3 {
-    border-left-color: #e67e22;
 }
 
 .js-date-today,
