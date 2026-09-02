@@ -1,6 +1,7 @@
 body {
     position: relative;
-    max-width: 390px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .home h1{
     text-align: center;
@@ -11,329 +12,329 @@ body {
 }
 
 .hokkaido img{
-    width: 100px;
+    width: 150px;
     height: auto;
     position: absolute;
     top: 141px;
-    right: 14px;
+    right: 270px;
 
 }
 .aomori img{
-    width: 51px;
+    width: 101px;
     height: auto;
     position: absolute;
-    top: 225px;
-    right: 64px;
+    top: 280px;
+    right: 340px;
 }
 .iwate img{
-    width: 25px;
-    height: auto;
-    position: absolute;
-    top: 256px;
-    right: 63px;
-}
-.miyagi img{
-    width: 25px;
-    height: auto;
-    position: absolute;
-    top: 290px;
-    right: 63px;
-}
-.akita img{
-    width: 27px;
-    height: auto;
-    position: absolute;
-    top: 257px;
-    right: 90px;
-}
-.yamagata img{
-    width: 24px;
-    height: auto;
-    position: absolute;
-    top: 294px;
-    right: 90px;
-}
-.fukusima img{
-    width: 48px;
-    height: auto;
-    position: absolute;
-    top: 318px;
-    right: 67px;
-}
-.ibaraki img{
-    width: 29px;
-    height: auto;
-    position: absolute;
-    top: 344px;
-    right: 59px;
-}
-.totigi img{
-    width: 20px;
+    width: 50px;
     height: auto;
     position: absolute;
     top: 341px;
-    right: 80px;
+    right: 340px;
+}
+.miyagi img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 407px;
+    right: 340px;
+}
+.akita img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 341px;
+    right: 394px;
+}
+.yamagata img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 410px;
+    right: 394px;
+}
+.fukusima img{
+    width: 105px;
+    height: auto;
+    position: absolute;
+    top: 462px;
+    right: 346px;
+}
+.ibaraki img{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 519px;
+    right: 324px;
+}
+.totigi img{
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 513px;
+    right: 374px;
 }
 .gunma img{
-    width: 38px;
+    width: 70px;
     height: auto;
     position: absolute;
-    top: 343px;
-    right: 92px;
+    top: 520px;
+    right: 405px;
 }
 .saitama img{
-    width: 34px;
+    width: 60px;
     height: auto;
     position: absolute;
-    top: 364px;
-    right: 81px;
+    top: 562px;
+    right: 387px;
 }
 .chiba img{
-    width: 21px;
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 375px;
-    right: 59px;
+    top: 595px;
+    right: 326px;
 }
 .tokyo img{
-    width: 26px;
+    width: 55px;
     height: auto;
     position: absolute;
-    top: 379px;
-    right: 81px;
+    top: 590px;
+    right: 385px;
 }
 .kanagawa img{
-    width: 24px;
+    width: 55px;
     height: auto;
     position: absolute;
-    top: 388px;
-    right: 84px;
+    top: 610px;
+    right: 385px;
 }
 .niigata img{
-    width: 41px;
-    height: auto;
-    position: absolute;
-    top: 304px;
-    right: 110px;
-}
-.toyama img{
-    width: 26px;
-    height: auto;
-    position: absolute;
-    top: 339px;
-    right: 152px;
-}
-.isikawa img{
-    width: 27px;
-    height: auto;
-    position: absolute;
-    top: 322px;
-    right: 162px;
-}
-.fukui img{
-    width: 30px;
-    height: auto;
-    position: absolute;
-    top: 353px;
-    right: 180px;
-}
-.yamanasi img{
-    width: 20px;
-    height: auto;
-    position: absolute;
-    top: 378px;
-    right: 110px;
-}
-.nagano img{
-    width: 38px;
-    height: auto;
-    position: absolute;
-    top: 345px;
-    right: 117px;
-}
-.gifu img{
-    width: 27px;
-    height: auto;
-    position: absolute;
-    top: 359px;
-    right: 157px;
-}
-
-.sizuoka img{
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 390px;
-    right: 104px;
-}
-.aichi img{
-    width: 22px;
-    height: auto;
-    position: absolute;
-    top: 392px;
-    right: 146px;
-}
-.mie img{
-    width: 23px;
-    height: auto;
-    position: absolute;
-    top: 391px;
-    right: 165px;
-}
-.siga img{
-    width: 24px;
-    height: auto;
-    position: absolute;
-    top: 374px;
-    right: 181px;
-}
-.kyoto img{
-    width: 34px;
-    height: auto;
-    position: absolute;
-    top: 375px;
-    right: 189px;
-}
-.osaka img{
-    width: 13px;
-    height: auto;
-    position: absolute;
-    top: 396px;
-    right: 198px;
-}
-.hyogo img{
-    width: 19px;
-    height: auto;
-    position: absolute;
-    top: 375px;
-    right: 214px;
-}
-.nara img{
-    width: 11px;
-    height: auto;
-    position: absolute;
-    top: 402px;
-    right: 185px;
-}
-.wakayama img{
-    width: 25px;
-    height: auto;
-    position: absolute;
-    top: 419px;
-    right: 184px;
-}
-.tottori img{
-    width: 23px;
-    height: auto;
-    position: absolute;
-    top: 375px;
-    left: 132px;
-}
-.simane img{
-    width: 36px;
-    height: auto;
-    position: absolute;
-    top: 375px;
-    left: 99px;
-}
-.okayama img{
-    width: 20px;
-    height: auto;
-    position: absolute;
-    top:387px ;
-    left: 135px;
-}
-.hirosima img{
-    width: 25px;
-    height: auto;
-    position: absolute;
-    top:387px;
-    left: 107px;
-}
-.yamaguti img{
-    width: 22px;
-    height: auto;
-    position: absolute;
-    top: 382px;
-    left: 84px;
-}
-.tokusima img{
-    width: 22px;
-    height: auto;
-    position: absolute;
-    top: 424px;
-    left: 144px;
-
-}
-.kagawa img{
-    width: 24px;
-    height: auto;
-    position: absolute;
-    top:416px ;
-    left: 139px;
-}
-.ehime img{
-    width: 44px;
-    height: auto;
-    position: absolute;
-    top: 415px;
-    left:98px ;
-}
-.kouchi img{
-    width: 48px;
+    width: 89px;
     height: auto;
     position: absolute;
     top: 431px;
-    left: 107px;
+    right: 439px;
 }
-.fukuoka img{
+.toyama img{
+    width: 55px;
+    height: auto;
+    position: absolute;
+    top: 505px;
+    right: 532px;
+}
+.isikawa img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 460px;
+    right: 553px;
+}
+.fukui img{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 530px;
+    right: 589px;
+}
+.yamanasi img{
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 595px;
+    right: 443px;
+}
+.nagano img{
+    width: 78px;
+    height: auto;
+    position: absolute;
+    top: 523px;
+    right: 455px;
+}
+.gifu img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 547px;
+    right: 538px;
+}
+
+.sizuoka img{
+    width: 85px;
+    height: auto;
+    position: absolute;
+    top: 622px;
+    right: 431px;
+}
+.aichi img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 623px;
+    right: 518px;
+}
+.mie img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 621px;
+    right: 559px;
+}
+.siga img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 575px;
+    right: 589px;
+}
+.kyoto img{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 580px;
+    right: 610px;
+}
+.osaka img{
     width: 30px;
     height: auto;
     position: absolute;
-    top:393px;
-    left: 44px;
+    top: 630px;
+    right: 631px;
+}
+.hyogo img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 580px;
+    right: 666px;
+}
+.nara img{
+    width: 25px;
+    height: auto;
+    position: absolute;
+    top: 644px;
+    right: 602px;
+}
+.wakayama img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 685px;
+    right: 605px;
+}
+.tottori img{
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 580px;
+    left: 435px;
+}
+.simane img{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 580px;
+    left: 370px;
+}
+.okayama img{
+    width: 41px;
+    height: auto;
+    position: absolute;
+    top:605px ;
+    left: 439px;
+}
+.hirosima img{
+    width: 49px;
+    height: auto;
+    position: absolute;
+    top:605px;
+    left: 387px;
+}
+.yamaguti img{
+    width: 46px;
+    height: auto;
+    position: absolute;
+    top: 595px;
+    left: 337px;
+}
+.tokusima img{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    top: 688px;
+    left: 465px;
+
+}
+.kagawa img{
+    width: 48px;
+    height: auto;
+    position: absolute;
+    top:670px ;
+    left: 450px;
+}
+.ehime img{
+    width: 88px;
+    height: auto;
+    position: absolute;
+    top: 670px;
+    left:373px ;
+}
+.kouchi img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 705px;
+    left: 391px;
+}
+.fukuoka img{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top:630px;
+    left: 240px;
 }
 .saga img{
-    width: 20px;
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 397px;
-    left: 31px;
+    top: 640px;
+    left: 205px;
 }
 .nagasaki img{
-    width: 16px;
+    width: 40px;
     height: auto;
     position: absolute;
-    top: 403px;
-    left: 26px;
+    top: 654px;
+    left: 190px;
 }
 .kumamoto img{
-    width: 22px;
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 414px;
-    left: 43px;
+    top: 678px;
+    left: 240px;
 }
 .ooita img{
-    width: 22px;
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 399px;
-    left: 64px;
+    top: 646px;
+    left: 285px;
 }
 .miyazaki img{
-    width: 24px;
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 423px;
-    left: 62px;
+    top: 700px;
+    left: 285px;
 }
 .kagosima img{
-    width: 31px;
+    width: 75px;
     height: auto;
     position: absolute;
-    top: 441px;
-    left: 43px;
+    top: 740px;
+    left:240px;
 }
 .okinawa img{
     width: 32px;
@@ -344,7 +345,7 @@ body {
 }
 
 .tenki{
-    margin-top: 403px;
+    margin-top: 800px;
     background-color: #FACE54;
     width: 100%;
     overflow: hidden;
@@ -470,6 +471,8 @@ background-color: #F0F3FF;}
     padding-left: 30px;
     padding-top: 20px;
     padding: 15px
+
+
     
 }
 .today-weather tr td{
