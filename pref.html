@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <title>都道府県の天気</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  
+  <link rel="stylesheet" href="css/style2.css">
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/function.js"></script>
-  
+
 </head>
+
 <body class="pref">
-  <h2 class="js-pref-name">都道府県名</h2>
+  <div class="inner">
 
-  <section class="today-weather">
-    <h3>今日の天気</h3>
-    <p class="js-date-today"></p>
-    <p class="js-weather-main-today"></p>
-    <p class="js-temp-today"></p>
-    <div class="js-weather-img-today"></div>
-    <table>
-      <thead>
-        <tr>
-          <th>時間帯</th><th>降水確率</th><th>風</th><th>波</th>
-        </tr>
-      </thead>
-      <tbody class="js-weather-table-today"></tbody>
-    </table>
-  </section>
+    <h2 class="js-pref-name">都道府県名</h2>
 
-  <section class="tomorrow-weather">
-    <h3>明日の天気</h3>
-    <p class="js-date-tomorrow"></p>
-    <p class="js-weather-main-tomorrow"></p>
-    <p class="js-temp-tomorrow"></p>
-    <div class="js-weather-img-tomorrow"></div>
-    <table>
-      <thead>
-        <tr>
-          <th>時間帯</th><th>降水確率</th><th>風</th><th>波</th>
-        </tr>
-      </thead>
-      <tbody class="js-weather-table-tomorrow"></tbody>
-    </table>
-  </section>
+    <div class="weather_box">
+      <section class="today-weather">
+        <div class="day_boder">
+          <div class="day">
+            <h3>今日の天気</h3>
+            <p class="js-date-today"></p>
+          </div>
+        </div>
+        <p class="js-weather-main-today"></p>
+        <p class="js-temp-today"></p>
+        <div class="js-weather-img-today"></div>
+        <div class="weather_table">
+          <table>
+            <thead>
+              <tr>
+                <th>時間帯</th>
+                <th>降水確率</th>
+                <th>風</th>
+                <th>波</th>
+              </tr>
+            </thead>
 
-  <p><a href="index.html">日本地図に戻る</a></p>
+            <tbody class="js-weather-table-today"></tbody>
+          </table>
+        </div>
+      </section>
 
+      <section class="tomorrow-weather">
+        <div class="day_boder">
+          <div class="day">
+            <h3>明日の天気</h3>
+            <p class="js-date-tomorrow"></p>
+          </div>
+        </div>
+        <p class="js-weather-main-tomorrow"></p>
+        <p class="js-temp-tomorrow"></p>
+        <div class="js-weather-img-tomorrow"></div>
+        <div class="weather_table">
+          <table>
+            <thead>
+              <tr>
+                <th>時間帯</th>
+                <th>降水確率</th>
+                <th>風</th>
+                <th>波</th>
+              </tr>
+            </thead>
+        </div>
+        <tbody class="js-weather-table-tomorrow"></tbody>
+        </table>
+
+      </section>
+    </div>
+
+    <div class="btn_center">
+      <div class="back_btn">
+        <p><a href="index.html">日本地図に戻る</a></p>
+      </div>
+    </div>
+
+  </div>
 </body>
+
 </html>

@@ -18,10 +18,10 @@ const PREF_WEATHER = {
       maxTemp: -2,
       minTemp: -8,
       table: [
-        { time: "0-6", precip: "50％", wind: "北西の風", wave: "1メートル" },
-        { time: "6-12", precip: "60％", wind: "北西の風", wave: "1メートル" },
-        { time: "12-18", precip: "70％", wind: "北西の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "80％", wind: "北西の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "50％", wind: "北西の風", wave: "1m" },
+        { time: "6-12", precip: "60％", wind: "北西の風", wave: "1m" },
+        { time: "12-18", precip: "70％", wind: "北西の風", wave: "1.5m" },
+        { time: "18-24", precip: "80％", wind: "北西の風", wave: "1.5m" }
       ]
     },
     tomorrow: {
@@ -29,10 +29,10 @@ const PREF_WEATHER = {
       maxTemp: -1,
       minTemp: -7,
       table: [
-        { time: "0-6", precip: "40％", wind: "北西の風", wave: "1メートル" },
-        { time: "6-12", precip: "50％", wind: "北西の風", wave: "1メートル" },
-        { time: "12-18", precip: "60％", wind: "北西の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "70％", wind: "北西の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "40％", wind: "北西の風", wave: "1m" },
+        { time: "6-12", precip: "50％", wind: "北西の風", wave: "1m" },
+        { time: "12-18", precip: "60％", wind: "北西の風", wave: "1.5m" },
+        { time: "18-24", precip: "70％", wind: "北西の風", wave: "1.5m" }
       ]
     }
   },
@@ -42,10 +42,10 @@ const PREF_WEATHER = {
       maxTemp: 3,
       minTemp: -2,
       table: [
-        { time: "0-6", precip: "20％", wind: "北の風", wave: "1メートル" },
-        { time: "6-12", precip: "30％", wind: "北の風", wave: "1メートル" },
-        { time: "12-18", precip: "40％", wind: "北の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "50％", wind: "北の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "20％", wind: "北の風", wave: "1m" },
+        { time: "6-12", precip: "30％", wind: "北の風", wave: "1m" },
+        { time: "12-18", precip: "40％", wind: "北の風", wave: "1.5m" },
+        { time: "18-24", precip: "50％", wind: "北の風", wave: "1.5m" }
       ]
     },
     tomorrow: {
@@ -53,10 +53,10 @@ const PREF_WEATHER = {
       maxTemp: 5,
       minTemp: 0,
       table: [
-        { time: "0-6", precip: "50％", wind: "北東の風", wave: "1メートル" },
-        { time: "6-12", precip: "60％", wind: "北東の風", wave: "1メートル" },
-        { time: "12-18", precip: "70％", wind: "北東の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "80％", wind: "北東の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "50％", wind: "北東の風", wave: "1m" },
+        { time: "6-12", precip: "60％", wind: "北東の風", wave: "1m" },
+        { time: "12-18", precip: "70％", wind: "北東の風", wave: "1.5m" },
+        { time: "18-24", precip: "80％", wind: "北東の風", wave: "1.5m" }
       ]
     }
   },
@@ -66,10 +66,10 @@ const PREF_WEATHER = {
       maxTemp: 4,
       minTemp: -1,
       table: [
-        { time: "0-6", precip: "10％", wind: "北の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "北の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "北の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "北の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "北の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "北の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "北の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "北の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -77,10 +77,10 @@ const PREF_WEATHER = {
       maxTemp: 6,
       minTemp: 1,
       table: [
-        { time: "0-6", precip: "0％", wind: "北東の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "北東の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "20％", wind: "北東の風", wave: "1メートル" },
-        { time: "18-24", precip: "30％", wind: "北東の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "北東の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "北東の風", wave: "0.5m" },
+        { time: "12-18", precip: "20％", wind: "北東の風", wave: "1m" },
+        { time: "18-24", precip: "30％", wind: "北東の風", wave: "1m" }
       ]
     }
   },
@@ -90,10 +90,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -101,10 +101,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -114,10 +114,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -125,10 +125,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -138,10 +138,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -149,10 +149,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -162,10 +162,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -173,10 +173,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -186,10 +186,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -197,10 +197,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -210,10 +210,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -221,10 +221,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -234,10 +234,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -245,10 +245,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -258,10 +258,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -269,10 +269,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -282,10 +282,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -293,10 +293,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -306,10 +306,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -317,10 +317,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -330,10 +330,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -341,10 +341,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -354,10 +354,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -365,10 +365,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -378,10 +378,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -389,10 +389,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -402,10 +402,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -413,10 +413,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -426,10 +426,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -437,10 +437,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -450,10 +450,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -461,10 +461,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -474,10 +474,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -485,10 +485,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -498,10 +498,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -509,10 +509,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -522,10 +522,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -533,10 +533,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -546,10 +546,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -557,10 +557,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -570,10 +570,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -581,10 +581,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -594,10 +594,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -605,10 +605,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -618,10 +618,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -629,10 +629,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -642,10 +642,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -653,10 +653,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -666,10 +666,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -677,10 +677,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -690,10 +690,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -701,10 +701,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -714,10 +714,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -725,10 +725,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -738,10 +738,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -749,10 +749,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -762,10 +762,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -773,10 +773,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -786,10 +786,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -797,10 +797,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -810,10 +810,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -821,10 +821,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -834,10 +834,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -845,10 +845,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -858,10 +858,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -869,10 +869,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -882,10 +882,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -893,10 +893,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -906,10 +906,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -917,10 +917,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -930,10 +930,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -941,10 +941,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -954,10 +954,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -965,10 +965,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -978,10 +978,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -989,10 +989,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -1002,10 +1002,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1013,10 +1013,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -1026,10 +1026,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1037,10 +1037,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -1050,10 +1050,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1061,10 +1061,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -1074,10 +1074,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1085,10 +1085,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -1098,10 +1098,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1109,10 +1109,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   },
@@ -1122,10 +1122,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南の風", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南の風", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1133,10 +1133,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1m" }
       ]
     }
   }

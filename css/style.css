@@ -1,264 +1,29 @@
-/* 页面背景 */
+
 body {
-    margin: 0;
-    padding: 30px;
-    font-family: "Yu Gothic", "Meiryo", sans-serif;
-    background: linear-gradient(180deg, #7cc7ff 0%, #dff4ff 100%);
-    min-height: 100vh;
+   background-color: #F2FAFF;
 }
 
-/* 标题 */
 h1 {
-    text-align: center;
-    font-size: 42px;
-    color: #ffffff;
-    margin-bottom: 35px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    position: relative;
 }
 
-/* 天气表 */
-#weather-table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.title {
+    position: absolute;
+    margin-top: 193px;
+    margin-left: 220px;
 }
 
-/* 表头 */
-#weather-table thead {
-    background: #3ea6ff;
-    color: #ffffff;
+.map_img {
+  text-align: center;
+  margin-top: 50px;
 }
 
-#weather-table th {
-    padding: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
+.map_img svg a path {
+    transition: 0.3s;
 }
 
-/* 单元格 */
-#weather-table td {
-    padding: 14px;
-    text-align: center;
-    border-bottom: 1px solid #eeeeee;
-    font-size: 16px;
-    transition: background .3s;
-}
-
-/* 隔行颜色 */
-#weather-table tbody tr:nth-child(even) {
-    background: #f7fbff;
-}
-
-/* 鼠标悬停 */
-#weather-table tbody tr:hover {
-    background: #dff1ff;
-}
-
-/* 最后一行不显示边框 */
-#weather-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-/* 天气图标 */
-.weather-icon {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-/* 超链接 */
-a {
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: bold;
-    transition: .3s;
-}
-
-a:hover {
-    color: #ff7b00;
-    text-decoration: underline;
-}
-
-/* 响应式 */
-@media (max-width: 768px) {
-
-    body {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    #weather-table {
-        width: 100%;
-    }
-
-    #weather-table th,
-    #weather-table td {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .weather-icon {
-        width: 22px;
-        height: 22px;
-    }
-
-}
-
-
-
-
-/* ===========================
-   詳細ページ
-=========================== */
-
-body.pref{
-    font-family:"Yu Gothic","Meiryo",sans-serif;
-    background:linear-gradient(to bottom,#e8f5ff,#ffffff);
-    color:#333;
-    max-width:1100px;
-    margin:0 auto;
-    padding:40px 30px 120px;
-    min-height:100vh;
-    box-sizing:border-box;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-    position:relative;
-}
-
-/* 地区标题 */
-.js-pref-name{
-    width:100%;
-    text-align:center;
-    font-size:42px;
-    color:#1976d2;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-.js-pref-name::after{
-    content:"";
-    display:block;
-    width:120px;
-    height:4px;
-    background:#4aa3ff;
-    margin:15px auto 0;
-    border-radius:10px;
-}
-
-/* 今日、明日天气卡片 */
-.today-weather,
-.tomorrow-weather{
-    width:500px;
-    background:#fff;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transition:.3s;
-}
-
-.today-weather:hover,
-.tomorrow-weather:hover{
-    transform:translateY(-5px);
-}
-
-.today-weather h3,
-.tomorrow-weather h3{
-    text-align:center;
-    font-size:28px;
-    color:#1976d2;
-    margin-bottom:20px;
-}
-
-.js-date-today,
-.js-date-tomorrow,
-.js-weather-main-today,
-.js-weather-main-tomorrow,
-.js-temp-today,
-.js-temp-tomorrow{
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.js-weather-main-today,
-.js-weather-main-tomorrow{
-    font-size:30px;
-    font-weight:bold;
-}
-
-.js-temp-today,
-.js-temp-tomorrow{
-    font-size:24px;
-    color:#ff5722;
-}
-
-.js-weather-img-today,
-.js-weather-img-tomorrow{
-    text-align:center;
-    margin:20px 0;
-}
-
-.js-weather-img-today img,
-.js-weather-img-tomorrow img{
-    width:120px;
-}
-
-/* 表格 */
-.today-weather table,
-.tomorrow-weather table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-.today-weather th,
-.tomorrow-weather th{
-    background:#2196f3;
-    color:#fff;
-    padding:12px;
-}
-
-.today-weather td,
-.tomorrow-weather td{
-    padding:12px;
-    text-align:center;
-    border-bottom:1px solid #e5e5e5;
-}
-
-.today-weather tr:nth-child(even),
-.tomorrow-weather tr:nth-child(even){
-    background:#f7fbff;
-}
-
-/* 返回按钮放到底部 */
-body.pref > p{
-    width:100%;
-    margin-top:40px;
-    text-align:center;
-}
-
-body.pref > p a{
-    display:inline-block;
-    padding:14px 45px;
-    background:#2196f3;
-    color:#fff;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:18px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-body.pref > p a:hover{
-    background:#1565c0;
-    transform:translateY(-3px);
+.map_img svg a:hover path {
+    transform: scale(1.02);
+    transform-box: fill-box;
+    transform-origin: center;
 }
