@@ -5,8 +5,19 @@
   <meta charset="UTF-8">
   <title>都道府県の天気</title>
   <link rel="stylesheet" href="css/reset.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style2.css">
+=======
+  <link rel="stylesheet" href="css/styles_pref.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+>>>>>>> d3a43121a01fbb84886f4cdca51bd0d7f4daf32a
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/function.js"></script>
@@ -16,6 +27,7 @@
 <body class="pref">
   <div class="inner">
 
+<<<<<<< HEAD
     <h2 class="js-pref-name">都道府県名</h2>
 
     <div class="weather_box">
@@ -44,6 +56,53 @@
           </table>
         </div>
       </section>
+=======
+  <div class="weather-flex">
+    <section class="today-weather">
+      <div class="today-header">
+        <h3 class="today-tit">今日の天気</h3>
+        <p class="js-date-today"></p>
+      </div>
+      <p class="js-weather-main-today"></p>
+      <p class="js-temp-today"></p>
+      <div class="js-weather-img-today"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>時間帯</th>
+            <th>降水確率</th>
+            <th>風</th>
+            <th>波</th>
+          </tr>
+        </thead>
+        <tbody class="js-weather-table-today"></tbody>
+      </table>
+    </section>
+
+    <section class="tomorrow-weather">
+      <h3>明日の天気</h3>
+      <p class="js-date-tomorrow"></p>
+      <p class="js-weather-main-tomorrow"></p>
+      <p class="js-temp-tomorrow"></p>
+      <div class="js-weather-img-tomorrow"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>時間帯</th>
+            <th>降水確率</th>
+            <th>風</th>
+            <th>波</th>
+          </tr>
+        </thead>
+        <tbody class="js-weather-table-tomorrow"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <a href="index.html">
+    <p class="pref-btn"><img src="./img/btn_tit.svg" alt="日本地図に戻る"></p>
+  </a>
+>>>>>>> d3a43121a01fbb84886f4cdca51bd0d7f4daf32a
 
       <section class="tomorrow-weather">
         <div class="day_boder">
