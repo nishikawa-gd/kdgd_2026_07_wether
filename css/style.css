@@ -8,16 +8,25 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+
+.home{
+    width: 1100px;
+
 }
 
 h1 {
-    /* position: absolute; */
-    width: 100%;
+    position: relative;
+    width: fit-content;
     height: 100%;
 
     top: 129px;
     left: 236px;
     z-index: 10;
+    filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.25));
+
 }
 
 h1 img {
@@ -25,7 +34,272 @@ h1 img {
 }
 
 .tizu {
-    position: relative;
+    position: absolute;
+    display: flex;
     margin-top: 129px;
     margin-left: 303px;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.25));
+}
+
+/* .pref {
+    background-color: #FFE72F;
+    font-family: "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    color: #000000;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.pref .js-pref-name {
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.weather-container {
+    display: flex;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.today-weather,
+.tomorrow-weather {
+    width: 480px;
+    background-color: #fff;
+    /* filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));} */
+
+
+/* h3 {
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    font-weight: medium;
+    padding: 20px 20px;
+} */
+
+.pref {
+    background-color: #FFE72F;
+    font-family: "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku ProN", "メイリオ", Meiryo, sans-serif;
+    color: #000;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.pref .js-pref-name {
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pref .section-wrap {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.pref .section-wrap .today-weather,
+.pref .section-wrap .tomorrow-weather {
+    width: 480px;
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));
+}
+
+.pref .section-wrap .today-weather .today-weather-header,
+.pref .section-wrap .today-weather .tomorrow-weather-header,
+.pref .section-wrap .tomorrow-weather .today-weather-header,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-header {
+    background-color: #000;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+.pref .section-wrap .today-weather .today-weather-body,
+.pref .section-wrap .today-weather .tomorrow-weather-body,
+.pref .section-wrap .tomorrow-weather .today-weather-body,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body {
+    background-color: #fff;
+    padding: 0 0 20px 0;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .js-weather-img-today,
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .js-weather-img-today,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .js-weather-img-today,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-today,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .js-weather-img-today,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .js-weather-img-today,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .js-weather-img-today,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .js-weather-img-tomorrow,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-today,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-tomorrow {
+    width: 160px;
+    height: 160px;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .js-weather-img-today img,
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .js-weather-img-today img,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .js-weather-img-today img,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-today img,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .js-weather-img-today img,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .js-weather-img-today img,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .js-weather-img-today img,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .js-weather-img-tomorrow img,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-today img,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .js-weather-img-tomorrow img {
+    width: 144px;
+    height: 104px;
+    margin-top: 30px;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .today-weather-txt,
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .today-weather-txt,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .today-weather-txt,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .today-weather-txt,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .today-weather-txt,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .today-weather-txt,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .today-weather-txt,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .tomorrow-weather-txt,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .today-weather-txt,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .tomorrow-weather-txt {
+    font-size: 32px;
+    font-weight: medium;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .today-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-weather-box .tomorrow-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .today-weather-txt .js-temp-tomorrow,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-today,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-weather-box .tomorrow-weather-txt .js-temp-tomorrow {
+    margin-top: 18px;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-table,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-table,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-table,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-table,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-table,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-table,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-table,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-table {
+    width: 420px;
+    margin: 0 auto;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-table th,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-table th,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-table th,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-table th,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-table th,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-table th,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-table th,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-table th {
+    border-bottom: 1px dashed #999999;
+    width: 105px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pref .section-wrap .today-weather .today-weather-body .today-table td,
+.pref .section-wrap .today-weather .today-weather-body .tomorrow-table td,
+.pref .section-wrap .today-weather .tomorrow-weather-body .today-table td,
+.pref .section-wrap .today-weather .tomorrow-weather-body .tomorrow-table td,
+.pref .section-wrap .tomorrow-weather .today-weather-body .today-table td,
+.pref .section-wrap .tomorrow-weather .today-weather-body .tomorrow-table td,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .today-table td,
+.pref .section-wrap .tomorrow-weather .tomorrow-weather-body .tomorrow-table td {
+    width: 105px;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.pref .home-btn {
+    margin: 60px auto 0;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #000000;
+    border-radius: 40px;
+    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.25));
+    width: 400px;
+    height: 70px;
+    box-sizing: border-box;
+    text-align: center;
+    transition:  0.2s ease-in-out;
+}
+
+.pref .home-btn a {
+    display: block;
+    padding: 18px 0 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+.pref .home-btn a:hover {
+    color: #000000;
+}
+
+.pref .home-btn:hover {
+    background: #fff;
+    border: #000000 solid 2px;
 }
